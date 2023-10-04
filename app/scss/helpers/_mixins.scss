@@ -1,0 +1,43 @@
+@mixin font($name, $font-family, $weight, $style) {
+  @font-face {
+    src:
+      local(""),
+      url("../fonts/" + $name + ".woff2") format("woff2");
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+// @include hover {}
+
+@mixin hover-focus {
+  @media (hover: hover) {
+    &:focus {
+      @content;
+    }
+
+    &:hover {
+      @content;
+    }
+  }
+}
+
+// @include hover-focus {}
+
+// @mixin px940 {
+//   @media (max-width: 940px) {
+//     @content;
+//   }
+// }
+
+// @include px940 {}

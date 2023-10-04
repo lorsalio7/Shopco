@@ -1,0 +1,12 @@
+.close-button {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.close-button__icon {
+  fill: var(--color-white);
+}

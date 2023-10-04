@@ -1,0 +1,25 @@
+.quick-registration {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: var(--color-black);
+}
+
+.quick-registration__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.quick-registration__link {
+  margin-left: 4px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--color-white);
+}
+
+.quick-registration__close-button {
+  display: none;
+}

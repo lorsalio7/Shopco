@@ -1,0 +1,7 @@
+.container {
+  --container-width: 1270px;
+
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: var(--container-width);
+}
