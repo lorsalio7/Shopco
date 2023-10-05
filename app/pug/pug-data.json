@@ -1,3 +1,38 @@
 {
-  "main_content": "Это из файла JSON"
+  "site_navigation": [
+    {
+      "link_name": "Shop",
+      "link_url": "#",
+      "submenu": [
+        {
+          "link_name": "Shirts",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Jeans",
+          "link_url": "#"
+        },
+        {
+          "link_name": "T-shirts",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Shorts",
+          "link_url": "#"
+        }
+      ]
+    },
+    {
+      "link_name": "On Sale",
+      "link_url": "#"
+    },
+    {
+      "link_name": "New Arrivals",
+      "link_url": "#"
+    },
+    {
+      "link_name": "Brands",
+      "link_url": "#"
+    }
+  ]
 }

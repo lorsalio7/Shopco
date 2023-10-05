@@ -18,7 +18,7 @@
   }
 }
 
-// @include hover {}
+/* @include hover {} */
 
 @mixin hover-focus {
   @media (hover: hover) {
@@ -32,12 +32,12 @@
   }
 }
 
-// @include hover-focus {}
+/* @include hover-focus {} */
 
-// @mixin px940 {
-//   @media (max-width: 940px) {
-//     @content;
-//   }
-// }
+/* @mixin px940 {
+  @media (max-width: 940px) {
+    @content;
+  }
+} */
 
-// @include px940 {}
+/* @include px940 {} */

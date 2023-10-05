@@ -3,4 +3,10 @@
   --serif: "Times New Roman", "Georgia", "Baskerville", serif;
   --color-white: rgb(255, 255, 255); /* #fff */
   --color-black: rgb(0, 0, 0); /* #000 */
+  --color-gallery: rgb(240, 240, 240);
+  --color-gray: rgb(144, 144, 144);
+
+  /* custom properties: */
+  --z-index-overlay: 10;
+  --z-index-active-elements: 15;
 }

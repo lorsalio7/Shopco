@@ -1,0 +1,22 @@
+.user-navigation {
+  display: flex;
+}
+
+.user-navigation__item {
+  display: flex;
+  flex-basis: 24px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  height: 24px;
+  background-color: transparent;
+}
+
+.user-navigation__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.user-navigation__open-search-button {
+  cursor: pointer;
+}
