@@ -1,5 +1,30 @@
 "use strict";
 
+function throttle(func, delay) {
+  var wait = false;
+  return function () {
+    if (wait) {
+      return;
+    }
+    func.apply(void 0, arguments);
+    wait = true;
+    setTimeout(function () {
+      wait = false;
+    }, delay);
+  };
+}
+function debounce(func, delay) {
+  var timeout;
+  return function () {
+    var context = this;
+    var args = arguments;
+    clearTimeout(timeout);
+    timeout = setTimeout(function () {
+      return func.apply(context, args);
+    }, delay);
+  };
+}
+;
 var burgerButton = document.querySelector(".burger-button");
 if (burgerButton) {
   var openSiteMenu = function openSiteMenu() {
@@ -28,6 +53,39 @@ if (openProductSearchButton) {
   var closeProductSearchButton = productSearchWindow.querySelector(".product-search__close-button");
   openProductSearchButton.addEventListener("click", openProductSearch);
   closeProductSearchButton.addEventListener("click", closeProductSearch);
+}
+;
+var advantagesList = document.querySelector(".advantages-list");
+if (advantagesList) {
+  var removeBorderRight = function removeBorderRight() {
+    var advantagesItems = Array.from(advantagesList.querySelectorAll(".advantages-list__item"));
+    advantagesItems.reduce(function (prev, curr) {
+      if (prev && prev.offsetLeft > curr.offsetLeft) {
+        curr.classList.add("advantages-list__item--without-border");
+      } else if (prev) {
+        prev.classList.remove("advantages-list__item--without-border");
+        curr.classList.add("advantages-list__item--without-border");
+      }
+      return curr;
+    }, null);
+  };
+  var advantagesListCheckWidth = function advantagesListCheckWidth(width) {
+    window.removeEventListener("resize", putin);
+    if (!width) {
+      return;
+    } else if (width) {
+      window.addEventListener("resize", putin);
+      removeBorderRight();
+    }
+  };
+  var advantagesWidth = window.matchMedia("(min-width: 390px)");
+  var putin = debounce(function () {
+    removeBorderRight();
+  }, 200);
+  advantagesListCheckWidth(advantagesWidth.matches);
+  advantagesWidth.onchange = function (e) {
+    advantagesListCheckWidth(e.matches);
+  };
 }
 ;
 var b = "var";

@@ -34,10 +34,10 @@
 
 /* @include hover-focus {} */
 
-/* @mixin px940 {
-  @media (max-width: 940px) {
+@mixin px390 {
+  @media (min-width: 390px) {
     @content;
   }
-} */
+}
 
-/* @include px940 {} */
+/* @include px390 {} */
