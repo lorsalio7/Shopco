@@ -88,5 +88,11 @@ if (advantagesList) {
   };
 }
 ;
+var brands = document.querySelector(".brands");
+if (brands) {
+  var copyBrandsLine = brands.querySelector(".brands__line").cloneNode(true);
+  brands.querySelector(".brands__ticker").appendChild(copyBrandsLine);
+}
+;
 var b = "var";
 ;
