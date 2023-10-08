@@ -1,0 +1,35 @@
+.subscribe {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    background-color: var(--color-gallery);
+  }
+}
+
+.subscribe__container {
+  border-radius: 20px;
+  padding: 30px 24px;
+  background-color: var(--color-black);
+}
+
+.subscribe__title {
+  font-family: "Anybody", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.subscribe__form {
+  max-width: 350px;
+}

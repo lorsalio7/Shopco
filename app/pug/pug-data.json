@@ -38,5 +38,91 @@
       "link_name": "Brands",
       "link_url": "#"
     }
+  ],
+  "store_navigation": [
+    {
+      "title": "Company",
+      "links": [
+        {
+          "link_name": "About",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Features",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Works",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Career",
+          "link_url": "#"
+        }
+      ]
+    },
+    {
+      "title": "Help",
+      "links": [
+        {
+          "link_name": "Customer Support",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Delivery Details",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Terms & Conditions",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Privacy Policy",
+          "link_url": "#"
+        }
+      ]
+    },
+    {
+      "title": "Faq",
+      "links": [
+        {
+          "link_name": "Account",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Manage Deliveries",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Orders",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Payments",
+          "link_url": "#"
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        {
+          "link_name": "Free eBooks",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Development Tutorial",
+          "link_url": "#"
+        },
+        {
+          "link_name": "How to - Blog",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Youtube Playlist",
+          "link_url": "#"
+        }
+      ]
+    }
   ]
 }

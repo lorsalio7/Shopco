@@ -1,1 +1,55 @@
-footer.site-footer This is site footer
+footer.site-footer
+  section.site-footer__subscribe.subscribe
+    .container
+      .subscribe__container
+        h2.subscribe__title.section-title Stay upto date about our latest offers
+        form(action="#").subscribe__form.subscribe-form
+          .subscribe-form__wrapper
+            label(for="").visually-hidden Enter your email
+            input(type="email" required placeholder="Enter your email address").subscribe-form__input
+          button(type="submit").subscribe-form__button.button.button--secondary Subscribe to Newsletter
+
+  .site-footer__content
+    .container
+      .site-footer__extra
+        if pageName !== "main"
+          a(href="#").site-footer__logo.logo
+            img(src="img/site-logo.svg", width="122" height="18" alt="Logo Shop.co").logo__image
+        else
+          a.site-footer__logo.logo
+            img(src="img/site-logo.svg", width="122" height="18" alt="Logo Shop.co").logo__image
+        p.site-footer__description We&nbsp;have clothes that suits your style and which you’re&nbsp;proud to&nbsp;wear. From women to&nbsp;men.
+        ul.site-footer__socials.socials
+          li.socials__item
+            a(href="#" aria-label="We on X").socials__link
+              +svg("socials__icon", "x-ic", 30, 30)
+          li.socials__item
+            a(href="#" aria-label="We on YouTube").socials__link
+              +svg("socials__icon", "yt-ic", 30, 30)
+          li.socials__item
+            a(href="#" aria-label="We on VK").socials__link
+              +svg("socials__icon", "vk-ic", 30, 30)
+          li.socials__item
+            a(href="#" aria-label="We on VK").socials__link
+              +svg("socials__icon", "github-ic", 30, 30)
+      .site-footer__store-navigation.store-navigation
+        each item in pugData.store_navigation
+          .store-navigation__column
+            h2.store-navigation__title= item.title
+            ul.store-navigation__list
+              each item_link in item.links
+                li.store-navigation__item
+                  a(href= item_link.link_url class="store-navigation__link")= item_link.link_name
+      .site-footer__bottom
+        ul.payment
+          li.payment__item
+            img(src="img/visa-ic.svg", width="40" height="26" alt="Visa payment").payment__logo
+          li.payment__item
+            img(src="img/mastercard-ic.svg", width="40" height="26" alt="Mastercard payment").payment__logo
+          li.payment__item
+            img(src="img/paypal-ic.svg", width="40" height="26" alt="PayPal payment").payment__logo
+          li.payment__item
+            img(src="img/apple-pay-ic.svg", width="40" height="26" alt="Apple Pay payment").payment__logo
+          li.payment__item
+            img(src="img/google-pay-ic.svg", width="40" height="26" alt="Google Pay payment").payment__logo
+        p.site-footer__copyright Shop.co &copy; 2000-2023, All Rights Reserved

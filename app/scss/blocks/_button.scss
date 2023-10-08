@@ -2,8 +2,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid var(--color-black);
   border-radius: 25px;
-  padding: 16px 54px;
+  padding: 12px 50px;
   width: 100%;
   font-weight: 500;
   font-size: 16px;
@@ -12,4 +13,11 @@
   text-transform: capitalize;
   color: var(--color-white);
   background-color: var(--color-black);
+  cursor: pointer;
+}
+
+.button--secondary {
+  border: 2px solid var(--color-white);
+  color: var(--color-black);
+  background-color: var(--color-white);
 }
