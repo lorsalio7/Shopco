@@ -124,5 +124,116 @@
         }
       ]
     }
+  ],
+  "new_arrivals_cards": [
+    {
+      "card_link": "#",
+      "card_image": "/img/new-arrivals-img-1.jpg",
+      "card_id": "Gwbdzu",
+      "card_title": "T-shirt with Tape Details",
+      "card_rating": "Rating 4.5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ],
+      "card_rating_text": "4.5/5",
+      "card_current_price": "$120",
+      "card_old_price": "",
+      "card_discount": ""
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/new-arrivals-img-2.jpg",
+      "card_id": "fFshs7",
+      "card_title": "Skinny Fit Jeans",
+      "card_rating": "Rating 3.5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ],
+      "card_rating_text": "3.5/5",
+      "card_current_price": "$240",
+      "card_old_price": "$260",
+      "card_discount": "-20%"
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/new-arrivals-img-3.jpg",
+      "card_id": "IPeuBR",
+      "card_title": "Checkered Shirt",
+      "card_rating": "Rating 4.5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ],
+      "card_rating_text": "4.5/5",
+      "card_current_price": "$180",
+      "card_old_price": "",
+      "card_discount": ""
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/new-arrivals-img-4.jpg",
+      "card_id": "wOOnEz",
+      "card_title": "Sleeve Striped T-shirt",
+      "card_rating": "Rating 4.5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ],
+      "card_rating_text": "4.5/5",
+      "card_current_price": "$130",
+      "card_old_price": "$160",
+      "card_discount": "-30%"
+    }
   ]
 }

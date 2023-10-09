@@ -1,0 +1,27 @@
+.product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.product-rating__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-black);
+}
+
+.product-rating__image {
+  display: flex;
+}
+
+.product-rating__star {
+  display: block;
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.product-rating__star:not(:last-of-type) {
+  margin-right: 4px;
+}

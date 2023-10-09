@@ -15,14 +15,14 @@ html(lang="en" class= htmlClass + additionalClasses)
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title= pageTitle
     meta(name="description" content= pageDescription)
-    link(rel="shortcut icon" type="image/svg+xml" href="img/favicon.svg")
-    link(rel="shortcut icon" type="image/png" href="img/favicon.png")
+    link(rel="shortcut icon" type="image/svg+xml" href="/img/favicon.svg")
+    link(rel="shortcut icon" type="image/png" href="/img/favicon.png")
     block styles
-      link(rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap")
-      link(rel="stylesheet", href="css/styles.min.css")
+      link(rel="stylesheet" href="https://api.fontshare.com/v2/css?f=satoshi@700,500,400&display=swap")
+      link(rel="stylesheet", href="/css/styles.min.css")
   body(class= bodyClass).full-height
     .wrapper
       block content
       span.overlay
     block scripts
-      script(src="js/script.min.js" defer)
+      script(src="/js/script.min.js" defer)

@@ -8,8 +8,14 @@ block vars
   - var additionalClasses = " full-height";
   - var bodyClass = "page__body";
 
+block prepend styles
+  link(rel="stylesheet", href="/libs/css/splide.min.css")
+
 block content
   include ../sections/_quick-registration.pug
   include ../sections/_header.pug
   include ../sections/_index-main.pug
   include ../sections/_footer.pug
+
+block prepend scripts
+  script(src="/libs/js/splide.min.js" defer)

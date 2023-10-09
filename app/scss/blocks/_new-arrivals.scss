@@ -1,0 +1,23 @@
+.new-arrivals__container {
+  position: relative;
+  padding-bottom: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    width: auto;
+    height: 1px;
+    background-color: var(--color-alto);
+  }
+}
+
+.new-arrivals__slider {
+  margin-bottom: 24px;
+}
+
+.new-arrivals__slider .splide__track {
+  overflow: visible;
+}

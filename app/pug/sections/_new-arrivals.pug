@@ -1,0 +1,23 @@
+section.page__new-arrivals.new-arrivals
+  .new-arrivals__container.container
+    h2.section-title New arrivals
+    .new-arrivals__slider.splide
+      .splide__track
+        ul.splide__list
+          each item in pugData.new_arrivals_cards
+            li.splide__slide
+              article.product-card
+                a(href= item.card_link).product-card__link
+                  img(src= item.card_image width="295" height="298" aria-labelledby= item.card_id, alt= item.card_title).product-card__image
+                h3(class="product-card__title" id= item.card_id)= item.card_title
+                .product-card__rating.product-rating
+                  div(role="img" aria-label= item.card_rating).product-rating__image
+                    each star_item in item.card_stars
+                      img(src= star_item.star width="18" height="18", alt="").product-rating__star
+                  p.product-rating__text= item.card_rating_text
+                p.product-card__prices
+                  span.product-card__current-price= item.card_current_price
+                  if item.card_old_price
+                    s.product-card__old-price= item.card_old_price
+                    span.product-card__discount= item.card_discount
+    a(href="#").button.button--outline View All
