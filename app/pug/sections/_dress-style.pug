@@ -1,0 +1,10 @@
+section.page__dress-style.dress-style
+  .container
+    .dress-style__container
+      h2.section-title Browse by dress style
+      ul.dress-style__list
+        each item in pugData.dress_style
+          li.dress-style__item
+            a(href= item.card_url).dress-style__link
+              span.dress-style__heading= item.card_name
+              img(src= item.card_image, width= item.card_image_width height= item.card_image_height alt= item.card_image_alt).dress-style__image

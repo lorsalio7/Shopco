@@ -340,5 +340,39 @@
       "card_old_price": "",
       "card_discount": ""
     }
+  ],
+  "dress_style": [
+    {
+      "card_url": "#",
+      "card_name": "Casual",
+      "card_image": "/img/casual-style-img.jpg",
+      "card_image_width": "407",
+      "card_image_height": "289",
+      "card_image_alt": "Casual dress style"
+    },
+    {
+      "card_url": "#",
+      "card_name": "Formal",
+      "card_image": "/img/formal-style-img.jpg",
+      "card_image_width": "684",
+      "card_image_height": "290",
+      "card_image_alt": "Formal dress style"
+    },
+    {
+      "card_url": "#",
+      "card_name": "Party",
+      "card_image": "/img/party-style-img.jpg",
+      "card_image_width": "684",
+      "card_image_height": "290",
+      "card_image_alt": "Party dress style"
+    },
+    {
+      "card_url": "#",
+      "card_name": "Gym",
+      "card_image": "/img/gym-style-img.jpg",
+      "card_image_width": "407",
+      "card_image_height": "289",
+      "card_image_alt": "Gym dress style"
+    }
   ]
 }

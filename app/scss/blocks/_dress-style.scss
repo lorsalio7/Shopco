@@ -1,0 +1,45 @@
+.dress-style__container {
+  border-radius: 20px;
+  padding: 40px 16px 19px;
+  background-color: var(--color-gallery);
+}
+
+.dress-style__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dress-style__item {
+  flex: 1 1 100%;
+  margin: 8px;
+}
+
+.dress-style__link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 190px;
+}
+
+.dress-style__heading {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  border-radius: 4px;
+  padding: 0 8px;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.dress-style__image {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
