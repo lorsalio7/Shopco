@@ -1,10 +1,10 @@
 section.page__assortment.assortment
   .assortment__container.container
-    h2.section-title New arrivals
-    .assortment__slider.new-arrivals-slider.splide
+    h2.section-title Top selling
+    .assortment__slider.top-selling-slider.splide
       .splide__track
         ul.splide__list
-          each item in pugData.new_arrivals_cards
+          each item in pugData.top_selling_cards
             li.splide__slide
               article.product-card
                 a(href= item.card_link).product-card__link

@@ -499,7 +499,7 @@ body {
   margin-bottom: 50px;
 }
 
-.page__new-arrivals {
+.page__assortment {
   margin-bottom: 40px;
 }
 
@@ -1382,12 +1382,12 @@ body {
      object-fit: contain;
 }
 
-.new-arrivals__container {
+.assortment:not(:last-of-type) .assortment__container {
   position: relative;
   padding-bottom: 40px;
 }
 
-.new-arrivals__container::before {
+.assortment:not(:last-of-type) .assortment__container::before {
   content: "";
   position: absolute;
   left: 15px;
@@ -1398,11 +1398,11 @@ body {
   background-color: var(--color-alto);
 }
 
-.new-arrivals__slider {
+.assortment__slider {
   margin-bottom: 24px;
 }
 
-.new-arrivals__slider .splide__track {
+.assortment__slider .splide__track {
   overflow: visible;
 }
 
@@ -1478,6 +1478,7 @@ body {
 .product-rating__text {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 6px;
   font-weight: 400;
   font-size: 12px;
   color: var(--color-black);

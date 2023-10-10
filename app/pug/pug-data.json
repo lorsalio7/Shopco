@@ -235,5 +235,110 @@
       "card_old_price": "$160",
       "card_discount": "-30%"
     }
+  ],
+  "top_selling_cards": [
+    {
+      "card_link": "#",
+      "card_image": "/img/top-selling-img-1.jpg",
+      "card_id": "k6PUVf",
+      "card_title": "Vertical Striped Shirt",
+      "card_rating": "Rating 5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ],
+      "card_rating_text": "5/5",
+      "card_current_price": "$212",
+      "card_old_price": "$232",
+      "card_discount": "-20%"
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/top-selling-img-2.jpg",
+      "card_id": "QyqODO",
+      "card_title": "Courage Graphic T-shirt",
+      "card_rating": "Rating 4 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ],
+      "card_rating_text": "4.0/5",
+      "card_current_price": "$145",
+      "card_old_price": "",
+      "card_discount": ""
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/top-selling-img-3.jpg",
+      "card_id": "dmO6J0",
+      "card_title": "Loose Fit Bermuda Shorts",
+      "card_rating": "Rating 3 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ],
+      "card_rating_text": "3.0/5",
+      "card_current_price": "$80",
+      "card_old_price": "",
+      "card_discount": ""
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/top-selling-img-4.jpg",
+      "card_id": "tTe3In",
+      "card_title": "Faded Skinny Jeans",
+      "card_rating": "Rating 4.5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ],
+      "card_rating_text": "4.5/5",
+      "card_current_price": "$210",
+      "card_old_price": "",
+      "card_discount": ""
+    }
   ]
 }
