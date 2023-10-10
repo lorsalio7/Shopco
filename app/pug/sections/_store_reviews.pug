@@ -1,0 +1,21 @@
+section.page__store-reviews.store-reviews
+  .container
+    header.store-reviews__header
+      h2.store-reviews__title.section-title Our happy customers
+      .store-reviews__controls
+        button(type="button" aria-label="Preview slide").store-reviews__button.store-reviews__left-button
+          +svg("", "arrow-left-ic", 24, 24)
+        button(type="button" aria-label="Next slide").store-reviews__button.store-reviews__right-button
+          +svg("", "arrow-right-ic", 24, 24)
+    .store-reviews-slider.splide
+      .splide__track
+        ul.splide__list
+          each item in pugData.reviews_about_store
+            li.splide__slide
+              blockquote.review
+                cite.review__name.review__name--verified= item.review_name
+                p.review__text= item.review_text
+                .review__rating.rating
+                  div(role="img" aria-label= item.review_rating).rating__image
+                    each star_item in item.stars
+                      img(src= star_item.star, width="18" height="18" alt="").rating__star

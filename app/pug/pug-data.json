@@ -374,5 +374,112 @@
       "card_image_height": "289",
       "card_image_alt": "Gym dress style"
     }
+  ],
+  "reviews_about_store": [
+    {
+      "review_name": "Mooen",
+      "review_text": "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.\"",
+      "stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ]
+    },
+    {
+      "review_name": "Sarah M.",
+      "review_text": "\"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.\"",
+      "stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ]
+    },
+    {
+      "review_name": "Alex K.",
+      "review_text": "\"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.\"",
+      "stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ]
+    },
+    {
+      "review_name": "James L.",
+      "review_text": "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.\"",
+      "stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ]
+    },
+    {
+      "review_name": "Maeve W.",
+      "review_text": "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.\"",
+      "stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ]
+    }
   ]
 }

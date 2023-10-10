@@ -10,11 +10,11 @@ section.page__assortment.assortment
                 a(href= item.card_link).product-card__link
                   img(src= item.card_image width="295" height="298" aria-labelledby= item.card_id, alt= item.card_title).product-card__image
                 h3(class="product-card__title" id= item.card_id)= item.card_title
-                .product-card__rating.product-rating
-                  div(role="img" aria-label= item.card_rating).product-rating__image
+                .product-card__rating.rating
+                  div(role="img" aria-label= item.card_rating).rating__image
                     each star_item in item.card_stars
-                      img(src= star_item.star width="18" height="18", alt="").product-rating__star
-                  p.product-rating__text= item.card_rating_text
+                      img(src= star_item.star width="18" height="18", alt="").rating__star
+                  p.rating__text= item.card_rating_text
                 p.product-card__prices
                   span.product-card__current-price= item.card_current_price
                   if item.card_old_price

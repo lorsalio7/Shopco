@@ -1,9 +1,9 @@
-.product-rating {
+.rating {
   display: flex;
   align-items: center;
 }
 
-.product-rating__text {
+.rating__text {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 6px;
@@ -12,17 +12,17 @@
   color: var(--color-black);
 }
 
-.product-rating__image {
+.rating__image {
   display: flex;
 }
 
-.product-rating__star {
+.rating__star {
   display: block;
   width: 15px;
   height: 15px;
   object-fit: contain;
 }
 
-.product-rating__star:not(:last-of-type) {
+.rating__star:not(:last-of-type) {
   margin-right: 4px;
 }

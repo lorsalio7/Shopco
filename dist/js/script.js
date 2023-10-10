@@ -97,6 +97,7 @@ if (brands) {
 document.addEventListener('DOMContentLoaded', function () {
   var newArrivalsSlider = document.querySelector(".new-arrivals-slider");
   var topSellingSlider = document.querySelector(".top-selling-slider");
+  var storeReviewsSlider = document.querySelector(".store-reviews-slider");
   if (newArrivalsSlider) {
     new Splide(newArrivalsSlider, {
       perMove: 1,
@@ -134,6 +135,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     }).mount();
+  }
+  if (storeReviewsSlider) {
+    var storeReviewsSliderPrevButton = document.querySelector(".store-reviews__left-button");
+    var storeReviewsSliderNextButton = document.querySelector(".store-reviews__right-button");
+    storeReviewsSlider = new Splide(storeReviewsSlider, {
+      arrows: false,
+      pagination: false,
+      gap: 15,
+      type: "loop"
+    }).mount();
+    storeReviewsSliderPrevButton.addEventListener("click", function (e) {
+      storeReviewsSlider.go("-1");
+    });
+    storeReviewsSliderNextButton.addEventListener("click", function (e) {
+      storeReviewsSlider.go("+1");
+    });
   }
 });
 ;

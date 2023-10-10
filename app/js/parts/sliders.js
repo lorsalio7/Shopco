@@ -1,6 +1,7 @@
 document.addEventListener( 'DOMContentLoaded', function() {
   let newArrivalsSlider = document.querySelector(".new-arrivals-slider");
   let topSellingSlider = document.querySelector(".top-selling-slider");
+  let storeReviewsSlider = document.querySelector(".store-reviews-slider");
 
   if(newArrivalsSlider) {
     new Splide(newArrivalsSlider, {
@@ -40,5 +41,24 @@ document.addEventListener( 'DOMContentLoaded', function() {
         }
       }
     }).mount();
+  }
+
+  if(storeReviewsSlider) {
+    let storeReviewsSliderPrevButton = document.querySelector(".store-reviews__left-button");
+    let storeReviewsSliderNextButton = document.querySelector(".store-reviews__right-button");
+    storeReviewsSlider = new Splide(storeReviewsSlider, {
+      arrows: false,
+      pagination: false,
+      gap: 15,
+      type: "loop"
+    }).mount();
+
+    storeReviewsSliderPrevButton.addEventListener("click", (e) => {
+      storeReviewsSlider.go("-1");
+    });
+
+    storeReviewsSliderNextButton.addEventListener("click", (e) => {
+      storeReviewsSlider.go("+1");
+    });
   }
 });

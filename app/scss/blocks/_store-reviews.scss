@@ -1,0 +1,36 @@
+.store-reviews__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.store-reviews__title {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.store-reviews__controls {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.store-reviews__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.store-reviews__button svg {
+  fill: var(--color-black);
+}
+
+.store-reviews__left-button {
+  margin-right: 16px;
+}
