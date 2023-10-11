@@ -1,0 +1,22 @@
+ul.breadcrumbs
+  if pageName === "category"
+    each item in pugData.category_breadcrumbs
+      li.breadcrumbs__item
+        if item.element_url
+          a(href="#").breadcrumbs__link= item.element_name
+        else
+          a.breadcrumbs__link.breadcrumbs__link--current= item.element_name
+  if pageName === "card"
+    each item in pugData.card_breadcrumbs
+      li.breadcrumbs__item
+        if item.element_url
+          a(href="#").breadcrumbs__link= item.element_name
+        else
+          a.breadcrumbs__link.breadcrumbs__link--current= item.element_name
+  if pageName === "cart"
+    each item in pugData.cart_breadcrumbs
+      li.breadcrumbs__item
+        if item.element_url
+          a(href="#").breadcrumbs__link= item.element_name
+        else
+          a.breadcrumbs__link.breadcrumbs__link--current= item.element_name

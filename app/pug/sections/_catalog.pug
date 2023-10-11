@@ -1,0 +1,39 @@
+section.catalog
+  .container
+    .catalog__cards.catalog-cards
+      .catalog-cards__header
+        h1.catalog-cards__title Casual
+        p.quantity-products
+          | Showing
+          span.quantity-products__current 1-9
+          | of
+          span.quantity-products__total 100
+        .catalog-cards__sorting
+          | Sort by:
+          form(action="#" method="get").sorting-form
+            select(name="sort").sorting-form__select
+              option(value="popularity" selected="selected") Most Popular
+              option(value="rating") Average rating
+              option(value="price-low-to-high") Price: Low to High
+              option(value="price-high-to-low") Price: High to Low
+        button(type="button" aria-label="Open products filters").catalog-cards__filters-button
+          +svg("", "settings-ic", 16, 16)
+      ul.catalog-cards__list
+        each item in pugData.category_cards
+          li.catalog-cards__item
+            article.product-card
+              a(href= item.card_link).product-card__link
+                img(src= item.card_image width="295" height="298" aria-labelledby= item.card_id, alt= item.card_title).product-card__image
+              h3(class="product-card__title" id= item.card_id)= item.card_title
+              .product-card__rating.rating
+                div(role="img" aria-label= item.card_rating).rating__image
+                  each star_item in item.card_stars
+                    img(src= star_item.star width="18" height="18", alt="").rating__star
+                p.rating__text= item.card_rating_text
+              p.product-card__prices
+                span.product-card__current-price= item.card_current_price
+                if item.card_old_price
+                  s.product-card__old-price= item.card_old_price
+                  span.product-card__discount= item.card_discount
+    .catalog__filters
+      | Filters

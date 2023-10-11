@@ -443,10 +443,10 @@ template {
   overflow: hidden;
 }
 
-/* @include font("$name", "$font-family", $weight, $style); */
+/* @include font("$name", "$font-family", $weight, $style, $font-name-local, $font-name-local-alternate); */
 
 @font-face {
-  src: local(""), url("../fonts/AnybodyBlack.woff2") format("woff2");
+  src: local("Anybody Black"), local("Anybody-Black"), url("../fonts/AnybodyBlack.woff2") format("woff2");
   font-family: "Anybody";
   font-weight: 800;
   font-style: normal;

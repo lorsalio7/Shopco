@@ -481,5 +481,282 @@
         }
       ]
     }
+  ],
+  "category_breadcrumbs": [
+    {
+      "element_url": "/",
+      "element_name": "Home"
+    },
+    {
+      "element_url": "",
+      "element_name": "Casual"
+    }
+  ],
+  "card_breadcrumbs": [
+    {
+      "element_url": "/",
+      "element_name": "Home"
+    },
+    {
+      "element_url": "#",
+      "element_name": "Shop"
+    },
+    {
+      "element_url": "#",
+      "element_name": "Men"
+    },
+    {
+      "element_url": "",
+      "element_name": "T-shirts"
+    }
+  ],
+  "cart_breadcrumbs": [
+    {
+      "element_url": "/",
+      "element_name": "Home"
+    },
+    {
+      "element_url": "",
+      "element_name": "Cart"
+    }
+  ],
+  "category_cards": [
+    {
+      "card_link": "#",
+      "card_image": "/img/category-img-1.jpg",
+      "card_id": "i9uzq3",
+      "card_title": "Gradient Graphic T-shirt",
+      "card_rating": "Rating 3.5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ],
+      "card_rating_text": "3.5/5",
+      "card_current_price": "$145",
+      "card_old_price": "",
+      "card_discount": ""
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/category-img-2.jpg",
+      "card_id": "qz4rZG",
+      "card_title": "Polo with Tipping Details",
+      "card_rating": "Rating 4.5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ],
+      "card_rating_text": "4.5/5",
+      "card_current_price": "$180",
+      "card_old_price": "",
+      "card_discount": ""
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/category-img-3.jpg",
+      "card_id": "aPrUhO",
+      "card_title": "Black Striped T-shirt",
+      "card_rating": "Rating 5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ],
+      "card_rating_text": "5.0/5",
+      "card_current_price": "$120",
+      "card_old_price": "$150",
+      "card_discount": "-30%"
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/category-img-4.jpg",
+      "card_id": "fFshs7",
+      "card_title": "Skinny Fit Jeans",
+      "card_rating": "Rating 3.5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ],
+      "card_rating_text": "3.5/5",
+      "card_current_price": "$240",
+      "card_old_price": "$260",
+      "card_discount": "-20%"
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/category-img-5.jpg",
+      "card_id": "IPeuBR",
+      "card_title": "Checkered Shirt",
+      "card_rating": "Rating 4.5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ],
+      "card_rating_text": "4.5/5",
+      "card_current_price": "$180",
+      "card_old_price": "",
+      "card_discount": ""
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/category-img-6.jpg",
+      "card_id": "wOOnEz",
+      "card_title": "Sleeve Striped T-shirt",
+      "card_rating": "Rating 4.5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ],
+      "card_rating_text": "4.5/5",
+      "card_current_price": "$130",
+      "card_old_price": "$160",
+      "card_discount": "-30%"
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/category-img-7.jpg",
+      "card_id": "k6PUVf",
+      "card_title": "Vertical Striped Shirt",
+      "card_rating": "Rating 5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ],
+      "card_rating_text": "5/5",
+      "card_current_price": "$212",
+      "card_old_price": "$232",
+      "card_discount": "-20%"
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/category-img-8.jpg",
+      "card_id": "QyqODO",
+      "card_title": "Courage Graphic T-shirt",
+      "card_rating": "Rating 4 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ],
+      "card_rating_text": "4.0/5",
+      "card_current_price": "$145",
+      "card_old_price": "",
+      "card_discount": ""
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/category-img-9.jpg",
+      "card_id": "dmO6J0",
+      "card_title": "Loose Fit Bermuda Shorts",
+      "card_rating": "Rating 3 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ],
+      "card_rating_text": "3.0/5",
+      "card_current_price": "$80",
+      "card_old_price": "",
+      "card_discount": ""
+    }
   ]
 }
