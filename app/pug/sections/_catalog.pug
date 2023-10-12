@@ -3,21 +3,22 @@ section.catalog
     .catalog__cards.catalog-cards
       .catalog-cards__header
         h1.catalog-cards__title Casual
-        p.quantity-products
-          | Showing
-          span.quantity-products__current 1-9
-          | of
-          span.quantity-products__total 100
-        .catalog-cards__sorting
-          | Sort by:
-          form(action="#" method="get").sorting-form
-            select(name="sort").sorting-form__select
-              option(value="popularity" selected="selected") Most Popular
-              option(value="rating") Average rating
-              option(value="price-low-to-high") Price: Low to High
-              option(value="price-high-to-low") Price: High to Low
-        button(type="button" aria-label="Open products filters").catalog-cards__filters-button
-          +svg("", "settings-ic", 16, 16)
+        .catalog-cards__wrapper
+          p.catalog-cards__quantity-products.quantity-products
+            | Showing&nbsp;
+            span.quantity-products__current 1-9
+            | &nbsp;of&nbsp;
+            span.quantity-products__total 100
+          .catalog-cards__sorting
+            | Sort by:
+            form(action="#" method="get").sorting-form
+              select(name="sort").sorting-form__select
+                option(value="popularity" selected="selected") Most Popular
+                option(value="rating") Average rating
+                option(value="price-low-to-high") Price: Low to High
+                option(value="price-high-to-low") Price: High to Low
+          button(type="button" aria-label="Open products filters").catalog-cards__filters-button
+            +svg("", "settings-ic", 16, 16)
       ul.catalog-cards__list
         each item in pugData.category_cards
           li.catalog-cards__item
@@ -35,5 +36,24 @@ section.catalog
                 if item.card_old_price
                   s.product-card__old-price= item.card_old_price
                   span.product-card__discount= item.card_discount
+      .pagination
+        .pagination__container
+          a(title="Previous page").pagination__control.pagination__control--prev
+            +svg("", "arrow-left-pagination", 16, 16)
+            span Previous
+          ul.pagination__list
+            li.pagination__item
+              a(href="#" title="Page 1").pagination__link.pagination__link--current 1
+            li.pagination__item
+              a(href="#" title="Page 2").pagination__link 2
+            li.pagination__item
+              span.pagination__link--disabled ...
+            li.pagination__item
+              a(href="#" title="Page 9").pagination__link 9
+            li.pagination__item
+              a(href="#" title="Page 10").pagination__link 10
+          a(href="#" title="Next page").pagination__control.pagination__control--next
+            +svg("", "arrow-right-pagination", 16, 16)
+            span Next
     .catalog__filters
       | Filters

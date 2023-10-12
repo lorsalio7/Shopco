@@ -86,33 +86,39 @@
         </div>
       </header>
       <main class="page__main main">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a>
-          </li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current">Casual</a>
-          </li>
-        </ul>
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a>
+              </li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current">Casual</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <section class="catalog">
           <div class="container">
             <div class="catalog__cards catalog-cards">
               <div class="catalog-cards__header">
                 <h1 class="catalog-cards__title">Casual</h1>
-                <p class="quantity-products">Showing<span class="quantity-products__current">1-9</span>of<span class="quantity-products__total">100</span></p>
-                <div class="catalog-cards__sorting">Sort by:
-                  <form class="sorting-form" action="#" method="get">
-                    <select class="sorting-form__select" name="sort">
-                      <option value="popularity" selected="selected">Most Popular</option>
-                      <option value="rating">Average rating</option>
-                      <option value="price-low-to-high">Price: Low to High</option>
-                      <option value="price-high-to-low">Price: High to Low</option>
-                    </select>
-                  </form>
+                <div class="catalog-cards__wrapper">
+                  <p class="catalog-cards__quantity-products quantity-products">Showing&nbsp;<span class="quantity-products__current">1-9</span>&nbsp;of&nbsp;<span class="quantity-products__total">100</span></p>
+                  <div class="catalog-cards__sorting">Sort by:
+                    <form class="sorting-form" action="#" method="get">
+                      <select class="sorting-form__select" name="sort">
+                        <option value="popularity" selected="selected">Most Popular</option>
+                        <option value="rating">Average rating</option>
+                        <option value="price-low-to-high">Price: Low to High</option>
+                        <option value="price-high-to-low">Price: High to Low</option>
+                      </select>
+                    </form>
+                  </div>
+                  <button class="catalog-cards__filters-button" type="button" aria-label="Open products filters">
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#settings-ic"></use>
+                    </svg>
+                  </button>
                 </div>
-                <button class="catalog-cards__filters-button" type="button" aria-label="Open products filters">
-                  <svg width="16" height="16">
-                    <use xlink:href="img/sprite.svg#settings-ic"></use>
-                  </svg>
-                </button>
               </div>
               <ul class="catalog-cards__list">
                 <li class="catalog-cards__item">
@@ -228,6 +234,23 @@
                   </article>
                 </li>
               </ul>
+              <div class="pagination">
+                <div class="pagination__container"><a class="pagination__control pagination__control--prev" title="Previous page">
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#arrow-left-pagination"></use>
+                    </svg><span>Previous</span></a>
+                  <ul class="pagination__list">
+                    <li class="pagination__item"><a class="pagination__link pagination__link--current" href="#" title="Page 1">1</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#" title="Page 2">2</a></li>
+                    <li class="pagination__item"><span class="pagination__link--disabled">...</span></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#" title="Page 9">9</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#" title="Page 10">10</a></li>
+                  </ul><a class="pagination__control pagination__control--next" href="#" title="Next page">
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#arrow-right-pagination"></use>
+                    </svg><span>Next</span></a>
+                </div>
+              </div>
             </div>
             <div class="catalog__filters">Filters</div>
           </div>
