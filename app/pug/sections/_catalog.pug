@@ -55,5 +55,292 @@ section.catalog
           a(href="#" title="Next page").pagination__control.pagination__control--next
             +svg("", "arrow-right-pagination", 16, 16)
             span Next
-    .catalog__filters
-      | Filters
+    .catalog__filters.catalog-filters
+      header.catalog-filters__header
+        h2.catalog-filters__title Filters
+        button(type="button").catalog-filters__close-button.close-button
+          +svg("close-button__icon", "close-ic", 24, 24)
+      form(action="#" method="GET").catalog-filters__form.filters-form
+        fieldset.filters-form__group
+          legend.visually-hidden Clothes
+          .filters-form__content
+            .accordion
+              .accordion__item
+                button(type="button" aria-expanded="false").accordion__button T-shirts
+              div(aria-hidden="true").accordion__panel
+                label(for="t-shirts_prada").filters-form__custom-checkbox
+                  input(type="checkbox" id="t-shirts_prada" name="t-shirts_prada").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Prada
+                label(for="t-shirts_zara").filters-form__custom-checkbox
+                  input(type="checkbox" id="t-shirts_zara" name="t-shirts_zara").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Zara
+                label(for="t-shirts_gucci").filters-form__custom-checkbox
+                  input(type="checkbox" id="t-shirts_gucci" name="t-shirts_gucci").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Gucci
+                label(for="t-shirts_versace").filters-form__custom-checkbox
+                  input(type="checkbox" id="t-shirts_versace" name="t-shirts_versace").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Versace
+                label(for="t-shirts_calvin-klein").filters-form__custom-checkbox
+                  input(type="checkbox" id="t-shirts_calvin-klein" name="t-shirts_calvin-klein").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Calvin Klein
+              .accordion__item
+                button(type="button" aria-expanded="false").accordion__button Shorts
+              div(aria-hidden="true").accordion__panel
+                label(for="shorts_prada").filters-form__custom-checkbox
+                  input(type="checkbox" id="shorts_prada" name="shorts_prada").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Prada
+                label(for="shorts_zara").filters-form__custom-checkbox
+                  input(type="checkbox" id="shorts_zara" name="shorts_zara").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Zara
+                label(for="shorts_gucci").filters-form__custom-checkbox
+                  input(type="checkbox" id="shorts_gucci" name="shorts_gucci").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Gucci
+                label(for="shorts_versace").filters-form__custom-checkbox
+                  input(type="checkbox" id="shorts_versace" name="shorts_versace").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Versace
+                label(for="shorts_calvin-klein").filters-form__custom-checkbox
+                  input(type="checkbox" id="shorts_calvin-klein" name="shorts_calvin-klein").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Calvin Klein
+              .accordion__item
+                button(type="button" aria-expanded="false").accordion__button Shirts
+              div(aria-hidden="true").accordion__panel
+                label(for="shirts_prada").filters-form__custom-checkbox
+                  input(type="checkbox" id="shirts_prada" name="shirts_prada").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Prada
+                label(for="shirts_zara").filters-form__custom-checkbox
+                  input(type="checkbox" id="shirts_zara" name="shirts_zara").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Zara
+                label(for="shirts_gucci").filters-form__custom-checkbox
+                  input(type="checkbox" id="shirts_gucci" name="shirts_gucci").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Gucci
+                label(for="shirts_versace").filters-form__custom-checkbox
+                  input(type="checkbox" id="shirts_versace" name="shirts_versace").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Versace
+                label(for="shirts_calvin-klein").filters-form__custom-checkbox
+                  input(type="checkbox" id="shirts_calvin-klein" name="shirts_calvin-klein").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Calvin Klein
+              .accordion__item
+                button(type="button" aria-expanded="false").accordion__button Hoodie
+              div(aria-hidden="true").accordion__panel
+                label(for="hoodie_prada").filters-form__custom-checkbox
+                  input(type="checkbox" id="hoodie_prada" name="hoodie_prada").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Prada
+                label(for="hoodie_zara").filters-form__custom-checkbox
+                  input(type="checkbox" id="hoodie_zara" name="hoodie_zara").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Zara
+                label(for="hoodie_gucci").filters-form__custom-checkbox
+                  input(type="checkbox" id="hoodie_gucci" name="hoodie_gucci").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Gucci
+                label(for="hoodie_versace").filters-form__custom-checkbox
+                  input(type="checkbox" id="hoodie_versace" name="hoodie_versace").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Versace
+                label(for="hoodie_calvin-klein").filters-form__custom-checkbox
+                  input(type="checkbox" id="hoodie_calvin-klein" name="hoodie_calvin-klein").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Calvin Klein
+              .accordion__item
+                button(type="button" aria-expanded="false").accordion__button Jeans
+              div(aria-hidden="true").accordion__panel
+                label(for="jeans_prada").filters-form__custom-checkbox
+                  input(type="checkbox" id="jeans_prada" name="jeans_prada").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Prada
+                label(for="jeans_zara").filters-form__custom-checkbox
+                  input(type="checkbox" id="jeans_zara" name="jeans_zara").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Zara
+                label(for="jeans_gucci").filters-form__custom-checkbox
+                  input(type="checkbox" id="jeans_gucci" name="jeans_gucci").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Gucci
+                label(for="jeans_versace").filters-form__custom-checkbox
+                  input(type="checkbox" id="jeans_versace" name="jeans_versace").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Versace
+                label(for="jeans_calvin-klein").filters-form__custom-checkbox
+                  input(type="checkbox" id="jeans_calvin-klein" name="jeans_calvin-klein").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Calvin Klein
+        fieldset.filters-form__group.accordion
+          legend.filters-form__legend.accordion__item
+            button(type="button" aria-expanded="false").accordion__button Price
+          .accordion__panel
+            div.price-range
+            label(for="minimal-price").visually-hidden
+              input(type="text" placeholder="Minimal price" id="minimal-price" name="minimal-price")
+              span.visually-hidden Price from
+            label(for="maximum-price").visually-hidden
+              input(type="text" placeholder="Maximum price" id="maximum-price" name="maximum-price")
+              span.visually-hidden Price to
+        fieldset.filters-form__group.accordion
+          legend.filters-form__legend.accordion__item
+            button(type="button" aria-expanded="false").accordion__button Colors
+          .accordion__panel
+            label(for="color_1").visually-hidden Green
+            input(type="checkbox" name="color" id="color_1").color-checkbox
+            label(for="color_2").visually-hidden Red
+            input(type="checkbox" name="color" id="color_2").color-checkbox
+            label(for="color_3").visually-hidden Yellow
+            input(type="checkbox" name="color" id="color_3").color-checkbox
+            label(for="color_4").visually-hidden Orange
+            input(type="checkbox" name="color" id="color_4").color-checkbox
+            label(for="color_5").visually-hidden Turquoise
+            input(type="checkbox" name="color" id="color_5").color-checkbox
+            label(for="color_6").visually-hidden Blue
+            input(type="checkbox" name="color" id="color_6").color-checkbox
+            label(for="color_7").visually-hidden Violet
+            input(type="checkbox" name="color" id="color_7").color-checkbox
+            label(for="color_8").visually-hidden Pink
+            input(type="checkbox" name="color" id="color_8").color-checkbox
+            label(for="color_9").visually-hidden White
+            input(type="checkbox" name="color" id="color_9").color-checkbox
+            label(for="color_10").visually-hidden Black
+            input(type="checkbox" name="color" id="color_10").color-checkbox
+        fieldset.filters-form__group.accordion
+          legend.filters-form__legend.accordion__item
+            button(type="button" aria-expanded="false").accordion__button Size
+          .accordion__panel
+            label(for="xx-small-size").size-checkbox
+              input(type="checkbox" name="size" id="xx-small-size").visually-hidden
+              span.size-checkbox__text XX-Small
+            label(for="x-small-size").size-checkbox
+              input(type="checkbox" name="size" id="x-small-size").visually-hidden
+              span.size-checkbox__text X-Small
+            label(for="small-size").size-checkbox
+              input(type="checkbox" name="size" id="small-size").visually-hidden
+              span.size-checkbox__text Small
+            label(for="medium-size").size-checkbox
+              input(type="checkbox" name="size" id="medium-size").visually-hidden
+              span.size-checkbox__text Medium
+            label(for="large-size").size-checkbox
+              input(type="checkbox" name="size" id="large-size").visually-hidden
+              span.size-checkbox__text Large
+            label(for="x-large-size").size-checkbox
+              input(type="checkbox" name="size" id="x-large-size").visually-hidden
+              span.size-checkbox__text X-Large
+            label(for="xx-large-size").size-checkbox
+              input(type="checkbox" name="size" id="xx-large-size").visually-hidden
+              span.size-checkbox__text XX-Large
+            label(for="xxx-large-size").size-checkbox
+              input(type="checkbox" name="size" id="xxx-large-size").visually-hidden
+              span.size-checkbox__text 3X-Large
+            label(for="xxxx-large-size").size-checkbox
+              input(type="checkbox" name="size" id="xxxx-large-size").visually-hidden
+              span.size-checkbox__text 4X-Large
+        fieldset.filters-form__group.accordion
+          legend.filters-form__legend.accordion__item
+            button(type="button" aria-expanded="false").accordion__button Dress Style
+          .accordion__panel
+            .accordion
+              .accordion__item
+                button(type="button" aria-expanded="false").accordion__button Casual
+              div(aria-hidden="true").accordion__panel
+                label(for="casual-t-shirts").filters-form__custom-checkbox
+                  input(type="checkbox" id="casual-t-shirts" name="casual-t-shirts").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | T-shirts
+                label(for="casual-shorts").filters-form__custom-checkbox
+                  input(type="checkbox" id="casual-shorts" name="casual-shorts").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Shorts
+                label(for="casual-shirts").filters-form__custom-checkbox
+                  input(type="checkbox" id="casual-shirts" name="casual-shirts").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Shirts
+                label(for="casual-hoodie").filters-form__custom-checkbox
+                  input(type="checkbox" id="casual-hoodie" name="casual-hoodie").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Hoodie
+                label(for="casual-jeans").filters-form__custom-checkbox
+                  input(type="checkbox" id="casual-jeans" name="casual-jeans").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Jeans
+              .accordion__item
+                button(type="button" aria-expanded="false").accordion__button Formal
+              div(aria-hidden="true").accordion__panel
+                label(for="formal-t-shirts").filters-form__custom-checkbox
+                  input(type="checkbox" id="formal-t-shirts" name="formal-t-shirts").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | T-shirts
+                label(for="formal-shorts").filters-form__custom-checkbox
+                  input(type="checkbox" id="formal-shorts" name="formal-shorts").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Shorts
+                label(for="formal-shirts").filters-form__custom-checkbox
+                  input(type="checkbox" id="formal-shirts" name="formal-shirts").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Shirts
+                label(for="formal-hoodie").filters-form__custom-checkbox
+                  input(type="checkbox" id="formal-hoodie" name="formal-hoodie").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Hoodie
+                label(for="formal-jeans").filters-form__custom-checkbox
+                  input(type="checkbox" id="formal-jeans" name="formal-jeans").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Jeans
+              .accordion__item
+                button(type="button" aria-expanded="false").accordion__button Party
+              div(aria-hidden="true").accordion__panel
+                label(for="party-t-shirts").filters-form__custom-checkbox
+                  input(type="checkbox" id="party-t-shirts" name="party-t-shirts").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | T-shirts
+                label(for="party-shorts").filters-form__custom-checkbox
+                  input(type="checkbox" id="party-shorts" name="party-shorts").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Shorts
+                label(for="party-shirts").filters-form__custom-checkbox
+                  input(type="checkbox" id="party-shirts" name="party-shirts").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Shirts
+                label(for="party-hoodie").filters-form__custom-checkbox
+                  input(type="checkbox" id="party-hoodie" name="party-hoodie").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Hoodie
+                label(for="party-jeans").filters-form__custom-checkbox
+                  input(type="checkbox" id="party-jeans" name="party-jeans").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Jeans
+              .accordion__item
+                button(type="button" aria-expanded="false").accordion__button Gym
+              div(aria-hidden="true").accordion__panel
+                label(for="gym-t-shirts").filters-form__custom-checkbox
+                  input(type="checkbox" id="gym-t-shirts" name="gym-t-shirts").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | T-shirts
+                label(for="gym-shorts").filters-form__custom-checkbox
+                  input(type="checkbox" id="gym-shorts" name="gym-shorts").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Shorts
+                label(for="gym-shirts").filters-form__custom-checkbox
+                  input(type="checkbox" id="gym-shirts" name="gym-shirts").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Shirts
+                label(for="gym-hoodie").filters-form__custom-checkbox
+                  input(type="checkbox" id="gym-hoodie" name="gym-hoodie").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Hoodie
+                label(for="gym-jeans").filters-form__custom-checkbox
+                  input(type="checkbox" id="gym-jeans" name="gym-jeans").filters-form__checkbox-input
+                  span.filters-form__custom-box
+                  | Jeans
+        button(type="submit" aria-label="Apply filter").button Apply Filter

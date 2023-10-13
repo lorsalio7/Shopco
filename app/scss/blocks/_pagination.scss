@@ -66,6 +66,7 @@
   font-size: 12px;
   line-height: 20px;
   color: var(--color-black);
+  user-select: none;
 
   @include px390 {
     display: block;
@@ -114,6 +115,7 @@
 .pagination__link--current {
   color: var(--color-black);
   background-color: var(--color-gallery);
+  cursor: default;
 }
 
 .pagination__link--disabled {
