@@ -1,0 +1,21 @@
+.size-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.size-checkboxes__item {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-scorpion);
+  background-color: var(--color-gallery);
+  cursor: pointer;
+}
+
+.size-checkboxes__checkbox:checked + .size-checkboxes__item {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}

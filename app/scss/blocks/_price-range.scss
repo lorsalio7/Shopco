@@ -1,0 +1,61 @@
+.price-range {
+  flex-basis: 100%;
+  width: 100%;
+}
+
+.noUi-horizontal .noUi-tooltip {
+  border: none;
+
+  &::before {
+    content: "$";
+  }
+}
+
+.price-range .noUi-connect {
+  background-color: var(--color-black);
+}
+
+.price-range .noUi-handle {
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-shadow: none;
+  background-color: var(--color-black);
+}
+
+.price-range .noUi-handle::before,
+.price-range .noUi-handle::after {
+  display: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  top: -7px;
+}
+
+.price-range.noUi-horizontal .noUi-tooltip {
+  bottom: -150%;
+}
+
+.noUi-base,
+.noUi-connects {
+  height: 6px;
+}
+
+.noUi-horizontal {
+  height: 6px;
+}
+
+.noUi-target {
+  border: none;
+  box-shadow: none;
+  background-color: var(--color-gallery);
+}
+
+.noUi-horizontal .noUi-handle-lower {
+  right: -20px;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+  right: -1px;
+}

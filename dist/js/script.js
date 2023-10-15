@@ -154,5 +154,57 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 ;
-var b = "var";
+var rangeSlider = document.querySelector(".price-range");
+if (rangeSlider) {
+  var minPriceInput = document.querySelector("#minimal-price");
+  var maxPriceInput = document.querySelector("#maximum-price");
+  var formatForSliders = {
+    from: function from(formattedValue) {
+      return Number(formattedValue);
+    },
+    to: function to(numericValue) {
+      return Math.round(numericValue);
+    }
+  };
+  noUiSlider.create(rangeSlider, {
+    start: [50, 200],
+    format: formatForSliders,
+    connect: true,
+    tooltips: {
+      to: function to(numericValue) {
+        return numericValue.toFixed(0);
+      }
+    },
+    range: {
+      'min': [0],
+      'max': [250]
+    }
+  });
+  var formatValues = [minPriceInput, maxPriceInput];
+  rangeSlider.noUiSlider.on('update', function (values, handle) {
+    formatValues[handle].value = values[handle];
+  });
+}
+;
+var filtersAccordion = document.querySelectorAll(".filters-accordion");
+if (filtersAccordion) {
+  var filtersAccordionButtons = document.querySelectorAll(".filters-accordion__button");
+  var filterAccordionPannels = document.querySelectorAll(".filters-accordion__panel");
+  filtersAccordionButtons.forEach(function (button, index) {
+    button.addEventListener("click", function (e) {
+      var expandButton = e.target.getAttribute("aria-expanded");
+      e.target.classList.toggle("filters-accordion__button--active");
+      if (expandButton === "true") {
+        e.target.setAttribute("aria-expanded", "false");
+      } else {
+        e.target.setAttribute("aria-expanded", "true");
+      }
+      if (!filterAccordionPannels[index].classList.contains("filters-accordion__panel--hidden")) {
+        filterAccordionPannels[index].classList.add("filters-accordion__panel--hidden");
+      } else {
+        filterAccordionPannels[index].classList.remove("filters-accordion__panel--hidden");
+      }
+    });
+  });
+}
 ;

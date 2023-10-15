@@ -1,0 +1,72 @@
+.filters-accordion--inner .filters-accordion__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.filters-accordion--inner {
+  width: 100%;
+}
+
+.filters-accordion__button {
+  border: none;
+  padding: 2px 0;
+  width: 100%;
+  text-align: left;
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+.filters-accordion__button span {
+  position: relative;
+  display: block;
+  padding-right: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-scorpion);
+  pointer-events: none;
+  user-select: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/breadcrumbs-arrow.svg");
+    background-position: center;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.filters-form__legend .filters-accordion__button span {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-black);
+}
+
+.filters-accordion__button--active span::after {
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.filters-accordion__panel {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.filters-accordion--inner .filters-accordion__panel {
+  padding-top: 0;
+}
+
+.filters-accordion__panel--column {
+  flex-direction: column;
+}
+
+.filters-accordion__panel--hidden {
+  display: none;
+}
