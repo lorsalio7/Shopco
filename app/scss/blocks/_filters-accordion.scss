@@ -1,7 +1,3 @@
-.filters-accordion--inner .filters-accordion__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
 .filters-accordion--inner {
   width: 100%;
 }
@@ -55,12 +51,7 @@
 .filters-accordion__panel {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.filters-accordion--inner .filters-accordion__panel {
-  padding-top: 0;
 }
 
 .filters-accordion__panel--column {
@@ -69,4 +60,8 @@
 
 .filters-accordion__panel--hidden {
   display: none;
+}
+
+.filters-accordion__item {
+  margin-bottom: 20px;
 }

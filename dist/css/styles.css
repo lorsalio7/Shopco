@@ -1986,6 +1986,36 @@ body {
   background-color: var(--color-white);
 }
 
+.catalog__filters {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 86px;
+  bottom: 0;
+  z-index: var(--z-index-active-elements);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.catalog__filters--active {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .catalog-filters {
   border: 1px solid var(--color-alto);
   border-radius: 20px;
@@ -2040,17 +2070,21 @@ body {
   fill: var(--color-gray);
 }
 
+.catalog-filters__form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
 .filters-form__group {
   margin: 0;
-  margin-bottom: 24px;
   border: none;
   border-top: 1px solid var(--color-alto);
   padding: 0;
-  padding-top: 24px;
-}
-
-.filters-form__group:last-of-type .filters-accordion__panel {
-  padding-bottom: 0;
+  padding-top: 20px;
 }
 
 .filters-form__fieldset {
@@ -2065,7 +2099,7 @@ body {
 }
 
 .filters-form__price-range {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .filters-form__custom-checkbox:not(:last-of-type) {
@@ -2178,10 +2212,6 @@ body {
   right: -1px;
 }
 
-.filters-accordion--inner .filters-accordion__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
 .filters-accordion--inner {
   width: 100%;
 }
@@ -2248,12 +2278,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.filters-accordion--inner .filters-accordion__panel {
-  padding-top: 0;
 }
 
 .filters-accordion__panel--column {
@@ -2265,6 +2290,10 @@ body {
 
 .filters-accordion__panel--hidden {
   display: none;
+}
+
+.filters-accordion__item {
+  margin-bottom: 20px;
 }
 
 .color-checkboxes__item {

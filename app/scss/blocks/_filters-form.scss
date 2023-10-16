@@ -1,14 +1,9 @@
 .filters-form__group {
   margin: 0;
-  margin-bottom: 24px;
   border: none;
   border-top: 1px solid var(--color-alto);
   padding: 0;
-  padding-top: 24px;
-}
-
-.filters-form__group:last-of-type .filters-accordion__panel {
-  padding-bottom: 0;
+  padding-top: 20px;
 }
 
 .filters-form__fieldset {
@@ -23,7 +18,7 @@
 }
 
 .filters-form__price-range {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .filters-form__custom-checkbox:not(:last-of-type) {

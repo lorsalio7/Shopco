@@ -6,3 +6,4 @@
 @@include("parts/sliders.js");
 @@include("parts/products-range-price.js");
 @@include("parts/filters-accordion.js");
+@@include("parts/filters-active.js");

@@ -45,3 +45,10 @@
 .catalog-filters__close-button .close-button__icon {
   fill: var(--color-gray);
 }
+
+.catalog-filters__form {
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}

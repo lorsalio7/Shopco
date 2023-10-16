@@ -1,0 +1,17 @@
+.catalog__filters {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 86px;
+  bottom: 0;
+  z-index: var(--z-index-active-elements);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.catalog__filters--active {
+  transform: translateY(0);
+}
