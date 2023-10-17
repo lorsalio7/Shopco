@@ -1,0 +1,21 @@
+extends ../layout/main-template.pug
+
+block vars
+  - var pageName = "card";
+  - var pageTitle = "Card | SHOP.CO";
+  - var pageDescription = "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur";
+  - var htmlClass = "page";
+  - var additionalClasses = " full-height";
+  - var bodyClass = "page__body";
+
+block prepend styles
+  link(rel="stylesheet", href="/libs/css/splide.min.css")
+
+block content
+  include ../sections/_quick-registration.pug
+  include ../sections/_header.pug
+  include ../sections/_card-main.pug
+  include ../sections/_footer.pug
+
+block prepend scripts
+  script(src="/libs/js/splide.min.js" defer)
