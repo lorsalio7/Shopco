@@ -1,61 +1,162 @@
 article.card
-  .card__gallery
-    .card__big-slider.splide
-      .splide__track
-        ul.splide__list
-          li.splide__slide
-            img(src="/img/product-card-image-1.jpg" width="444" height="530", alt="Product image 1")
-          li.splide__slide
-            img(src="/img/product-card-image-2.jpg" width="444" height="530", alt="Product image 2")
-          li.splide__slide
-            img(src="/img/product-card-image-3.jpg" width="444" height="530", alt="Product image 3")
-    .card__thumbs-slider
-      .splide__track
-        ul.splide__list
-          li.splide__slide
-            img(src="/img/product-card-preview-1.jpg" width="152" height="167", alt="Preview image photo 1")
-          li.splide__slide
-            img(src="/img/product-card-preview-2.jpg" width="152" height="167", alt="Preview image photo 2")
-          li.splide__slide
-            img(src="/img/product-card-preview-3.jpg" width="152" height="167", alt="Preview image photo 3")
-  .card__description
-    form(action="#" method="post").card__form.card-form
-      h1.card__title One Life Graphic T-shirt
-      .rating
-        div(role="img" aria-label="Rating 4.5 out of 5").rating__image
-          img(src="/img/star-ic.svg" width="18" height="18").rating__star
-        p.rating__text 4.5/5
-      p.prices
-        span.prices__current-price $260
-        s.prices__old-price $300
-        span.prices__discount -40%
-      p.card__info-text This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.
-      fieldset.card-form__fieldset
-        legend.card-form__legend Select Colors
-        .color-checkboxes
-          label(for="color_1").visually-hidden Green
-          input(type="radio" name="color" id="color_1" style="background-color: rgb(79, 70, 49);" checked="checked").color-checkboxes__item
-          label(for="color_2").visually-hidden Red
-          input(type="radio" name="color" id="color_2" style="background-color: rgb(49, 79, 74);").color-checkboxes__item
-          label(for="color_3").visually-hidden Yellow
-          input(type="radio" name="color" id="color_3" style="background-color: rgb(49, 52, 79);").color-checkboxes__item
-      fieldset.card-form__fieldset
-        legend.card-form__legend Choose Size
-        .size-checkboxes
-          input(type="radio" name="size" id="small-size").visually-hidden.size-checkboxes__checkbox
-          label(for="small-size").size-checkboxes__item Small
-          input(type="radio" name="size" id="medium-size").visually-hidden.size-checkboxes__checkbox
-          label(for="medium-size").size-checkboxes__item Medium
-          input(type="radio" name="size" id="large-size").visually-hidden.size-checkboxes__checkbox
-          label(for="large-size").size-checkboxes__item Large
-          input(type="radio" name="size" id="x-large-size" checked="checked").visually-hidden.size-checkboxes__checkbox
-          label(for="x-large-size").size-checkboxes__item X-Large
-      .card-form__row
-        .quantity
-          label(for="quantity-input").visually-hidden
-          input(type="text" id="quantity-input" value="1").quantity__input
-          button(type="button").quantity__button.quantity__button--minus
-            +svg("", "minus-ic", 24, 24)
-          button(type="button").quantity__button.quantity__button--plus
-            +svg("", "plus-ic", 24, 24)
-        button(type="submit").button Add to Cart
+  .container
+    .card__main-content
+      .card__gallery
+        .card__big-slider.splide
+          .splide__track
+            ul.splide__list
+              li.splide__slide
+                img(src="/img/product-card-image-1.jpg" width="444" height="530", alt="Product image 1")
+              li.splide__slide
+                img(src="/img/product-card-image-2.jpg" width="444" height="530", alt="Product image 2")
+              li.splide__slide
+                img(src="/img/product-card-image-3.jpg" width="444" height="530", alt="Product image 3")
+        .card__thumbs-slider
+          .splide__track
+            ul.splide__list
+              li.splide__slide
+                img(src="/img/product-card-preview-1.jpg" width="152" height="167", alt="Preview image photo 1")
+              li.splide__slide
+                img(src="/img/product-card-preview-2.jpg" width="152" height="167", alt="Preview image photo 2")
+              li.splide__slide
+                img(src="/img/product-card-preview-3.jpg" width="152" height="167", alt="Preview image photo 3")
+      .card__description
+        form(action="#" method="post").card__form.card-form
+          h1.card__title One Life Graphic T-shirt
+          .rating
+            div(role="img" aria-label="Rating 4.5 out of 5").rating__image
+              img(src="/img/star-ic.svg" width="18" height="18").rating__star
+              img(src="/img/star-ic.svg" width="18" height="18").rating__star
+              img(src="/img/star-ic.svg" width="18" height="18").rating__star
+              img(src="/img/star-ic.svg" width="18" height="18").rating__star
+              img(src="/img/half-star-ic.svg" width="18" height="18").rating__star
+            p.rating__text 4.5/5
+          p.prices
+            span.prices__current-price $260
+            s.prices__old-price $300
+            span.prices__discount -40%
+          p.card__info-text This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.
+          fieldset.card-form__fieldset
+            legend.card-form__legend Select Colors
+            .color-checkboxes
+              label(for="color_1").visually-hidden Green
+              input(type="radio" name="color" id="color_1" style="background-color: rgb(79, 70, 49);" checked="checked").color-checkboxes__item
+              label(for="color_2").visually-hidden Red
+              input(type="radio" name="color" id="color_2" style="background-color: rgb(49, 79, 74);").color-checkboxes__item
+              label(for="color_3").visually-hidden Yellow
+              input(type="radio" name="color" id="color_3" style="background-color: rgb(49, 52, 79);").color-checkboxes__item
+          fieldset.card-form__fieldset
+            legend.card-form__legend Choose Size
+            .size-checkboxes
+              input(type="radio" name="size" id="small-size").visually-hidden.size-checkboxes__checkbox
+              label(for="small-size").size-checkboxes__item Small
+              input(type="radio" name="size" id="medium-size").visually-hidden.size-checkboxes__checkbox
+              label(for="medium-size").size-checkboxes__item Medium
+              input(type="radio" name="size" id="large-size").visually-hidden.size-checkboxes__checkbox
+              label(for="large-size").size-checkboxes__item Large
+              input(type="radio" name="size" id="x-large-size" checked="checked").visually-hidden.size-checkboxes__checkbox
+              label(for="x-large-size").size-checkboxes__item X-Large
+          .card-form__row
+            .quantity
+              label(for="quantity-input").visually-hidden
+              input(type="text" id="quantity-input" value="1").quantity__input
+              button(type="button").quantity__button.quantity__button--minus
+                +svg("", "minus-ic", 24, 24)
+              button(type="button").quantity__button.quantity__button--plus
+                +svg("", "plus-ic", 24, 24)
+            button(type="submit").button Add to Cart
+    .card__extra-content
+      .card__tabs.card-tabs
+        header.card-tabs__header
+          ul.card-tabs__control-list
+            li.card-tabs__item
+              a(href="#card-tab-1").card-tabs__button Product Details
+            li.card-tabs__item
+              a(href="#card-tab-2").card-tabs__button Rating & Reviews
+            li.card-tabs__item
+              a(href="#card-tab-3").card-tabs__button FAQs
+        .card-tabs__panel#card-tab-1
+          h2.card-tabs__title Product details
+          dl.card-tabs__characteristics-list.characteristics-list
+            .characteristics-list__row
+              dt.characteristics-list__title Season
+              dd.characteristics-list__description For any season
+            .characteristics-list__row
+              dt.characteristics-list__title Material
+              dd.characteristics-list__description Cotton
+            .characteristics-list__row
+              dt.characteristics-list__title Collection
+              dd.characteristics-list__description Basic collection
+            .characteristics-list__row
+              dt.characteristics-list__title Style
+              dd.characteristics-list__description Sports
+            .characteristics-list__row
+              dt.characteristics-list__title Type
+              dd.characteristics-list__description T-shirt
+            .characteristics-list__row
+              dt.characteristics-list__title Clasp type
+              dd.characteristics-list__description Without clasp
+            .characteristics-list__row
+              dt.characteristics-list__title Packing type
+              dd.characteristics-list__description Package
+            .characteristics-list__row
+              dt.characteristics-list__title Quantity per package
+              dd.characteristics-list__description 1
+            .characteristics-list__row
+              dt.characteristics-list__title Gender
+              dd.characteristics-list__description Male
+            .characteristics-list__row
+              dt.characteristics-list__title Country
+              dd.characteristics-list__description Italy
+        .card-tabs__panel#card-tab-2
+          section.product-reviews
+            header.product-reviews__header
+              h2.product-reviews__title
+                | All Reviews
+                span.product-reviews__count (451)
+              .product-reviews__controls
+                button(type="button").product-reviews__settings-button
+                  +svg("", "settings-ic", 20, 20)
+                form(action="#" method="POST").product-reviews__sorting-form
+                  .sorting-reviews
+                    select(name="sort-reviews").sorting-reviews__select
+                      option(value="by-date-latest-to-oldest") Latest
+                      option(value="by-date-oldest-to-latest") Oldest
+                      option(value="by-rating-low-to-high") Low rating
+                      option(value="by-rating-high-to-low") High rating
+                button(type="button").button.product-reviews__new-review-button Write a Review
+            ul.product-reviews__list
+              each item in pugData.card_reviews
+                li.product-reviews__item
+                  blockquote.review
+                    .review__top
+                      .review__rating.rating
+                        div(role="img" aria-label= item.review_rating).rating__image
+                          each item_star in item.stars
+                            img(src= item_star.star, width="18" height="18" alt="Star").rating__star
+                      button(type="button").review__button
+                        +svg("", "dots-ic", 24, 24)
+                    cite.review__name.review__name--verified= item.review_name
+                    p.review__text= item.review_text
+                    p.review__date
+                      | Posted on
+                      time(datetime= item.review_datetime)= item.review_date
+            button(type="button").button.button--outline.product-reviews__load-more-button Load More Reviews
+        .card-tabs__panel#card-tab-3
+          h2.card-tabs__title FAQs
+          dl.card-tabs__faq-list.faq-list
+            .faq-list__row
+              dt.faq-list__title Lorem ipsum dolor sit amet, consectetur adipisicing?
+              dd.faq-list__description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ducimus veniam pariatur, eaque qui earum aspernatur maxime voluptatum, itaque provident quas quae consequuntur sapiente voluptates mollitia rerum aperiam esse perferendis.
+            .faq-list__row
+              dt.faq-list__title Lorem ipsum dolor sit amet consectetur?
+              dd.faq-list__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique porro repellat sunt cupiditate culpa fugit, asperiores accusantium? Facere, nihil obcaecati.
+            .faq-list__row
+              dt.faq-list__title Lorem ipsum, dolor sit amet consectetur adipisicing elit?
+              dd.faq-list__description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ad, impedit minima itaque libero possimus provident ullam optio sequi blanditiis, vel nihil odio porro cum.
+            .faq-list__row
+              dt.faq-list__title Lorem ipsum dolor sit amet consectetur adipisicing elit asperiore?
+              dd.faq-list__description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam velit, animi temporibus exercitationem ea quia ut ad dolor nostrum est. Reprehenderit accusamus earum, voluptatibus distinctio nulla aliquid voluptates vel.
+            .faq-list__row
+              dt.faq-list__title Lorem ipsum dolor sit amet consectetur adipisicing elit?
+              dd.faq-list__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, hic necessitatibus. Eveniet exercitationem quia magni modi!

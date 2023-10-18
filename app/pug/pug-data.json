@@ -758,5 +758,241 @@
       "card_old_price": "",
       "card_discount": ""
     }
+  ],
+  "card_reviews": [
+    {
+      "review_name": "Samantha D.",
+      "review_text": "\"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.\"",
+      "review_date": "August 14, 2023",
+      "review_datetime": "2023-08-14",
+      "stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ]
+    },
+    {
+      "review_name": "Alex M.",
+      "review_text": "\"The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.\"",
+      "review_date": "August 15, 2023",
+      "review_datetime": "2023-08-15",
+      "stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ]
+    },
+    {
+      "review_name": "Alex M.",
+      "review_text": "\"This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.\"",
+      "review_date": "August 16, 2023",
+      "review_datetime": "2023-08-16",
+      "stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ]
+    },
+    {
+      "review_name": "Olivia P.",
+      "review_text": "\"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.\"",
+      "review_date": "August 17, 2023",
+      "review_datetime": "2023-08-17",
+      "stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ]
+    },
+    {
+      "review_name": "Liam K.",
+      "review_text": "\"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.\"",
+      "review_date": "August 18, 2023",
+      "review_datetime": "2023-08-18",
+      "stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ]
+    },
+    {
+      "review_name": "Ava H.",
+      "review_text": "\"I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.\"",
+      "review_date": "August 19, 2023",
+      "review_datetime": "2023-08-19",
+      "stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ]
+    }
+  ],
+  "see_also_cards": [
+    {
+      "card_link": "#",
+      "card_image": "/img/see-also-image-1.jpg",
+      "card_id": "uwbdzq",
+      "card_title": "Polo with Contrast Trims",
+      "card_rating": "Rating 4 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ],
+      "card_rating_text": "4.0/5",
+      "card_current_price": "$212",
+      "card_old_price": "$242",
+      "card_discount": "-20%"
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/see-also-image-2.jpg",
+      "card_id": "i9uzq3",
+      "card_title": "Gradient Graphic T-shirt",
+      "card_rating": "Rating 3.5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ],
+      "card_rating_text": "3.5/5",
+      "card_current_price": "$145",
+      "card_old_price": "",
+      "card_discount": ""
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/see-also-image-3.jpg",
+      "card_id": "qz4rZG",
+      "card_title": "Polo with Tipping Details",
+      "card_rating": "Rating 4.5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/half-star-ic.svg"
+        }
+      ],
+      "card_rating_text": "4.5/5",
+      "card_current_price": "$180",
+      "card_old_price": "",
+      "card_discount": ""
+    },
+    {
+      "card_link": "#",
+      "card_image": "/img/see-also-image-4.jpg",
+      "card_id": "aPrUhO",
+      "card_title": "Black Striped T-shirt",
+      "card_rating": "Rating 5 out of 5",
+      "card_stars": [
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        },
+        {
+          "star": "/img/star-ic.svg"
+        }
+      ],
+      "card_rating_text": "5.0/5",
+      "card_current_price": "$120",
+      "card_old_price": "$150",
+      "card_discount": "-30%"
+    }
   ]
 }

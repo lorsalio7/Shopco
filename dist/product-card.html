@@ -101,81 +101,374 @@
           </div>
         </div>
         <article class="card">
-          <div class="card__gallery">
-            <div class="card__big-slider splide">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide"><img src="/img/product-card-image-1.jpg" width="444" height="530" alt="Product image 1"></li>
-                  <li class="splide__slide"><img src="/img/product-card-image-2.jpg" width="444" height="530" alt="Product image 2"></li>
-                  <li class="splide__slide"><img src="/img/product-card-image-3.jpg" width="444" height="530" alt="Product image 3"></li>
-                </ul>
+          <div class="container">
+            <div class="card__main-content">
+              <div class="card__gallery">
+                <div class="card__big-slider splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="/img/product-card-image-1.jpg" width="444" height="530" alt="Product image 1"></li>
+                      <li class="splide__slide"><img src="/img/product-card-image-2.jpg" width="444" height="530" alt="Product image 2"></li>
+                      <li class="splide__slide"><img src="/img/product-card-image-3.jpg" width="444" height="530" alt="Product image 3"></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card__thumbs-slider">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="/img/product-card-preview-1.jpg" width="152" height="167" alt="Preview image photo 1"></li>
+                      <li class="splide__slide"><img src="/img/product-card-preview-2.jpg" width="152" height="167" alt="Preview image photo 2"></li>
+                      <li class="splide__slide"><img src="/img/product-card-preview-3.jpg" width="152" height="167" alt="Preview image photo 3"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card__description">
+                <form class="card__form card-form" action="#" method="post">
+                  <h1 class="card__title">One Life Graphic T-shirt</h1>
+                  <div class="rating">
+                    <div class="rating__image" role="img" aria-label="Rating 4.5 out of 5"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18"><img class="rating__star" src="/img/half-star-ic.svg" width="18" height="18"></div>
+                    <p class="rating__text">4.5/5</p>
+                  </div>
+                  <p class="prices"><span class="prices__current-price">$260</span>
+                    <s class="prices__old-price">$300</s><span class="prices__discount">-40%</span>
+                  </p>
+                  <p class="card__info-text">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
+                  <fieldset class="card-form__fieldset">
+                    <legend class="card-form__legend">Select Colors</legend>
+                    <div class="color-checkboxes">
+                      <label class="visually-hidden" for="color_1">Green</label>
+                      <input class="color-checkboxes__item" type="radio" name="color" id="color_1" style="background-color: rgb(79, 70, 49);" checked="checked">
+                      <label class="visually-hidden" for="color_2">Red</label>
+                      <input class="color-checkboxes__item" type="radio" name="color" id="color_2" style="background-color: rgb(49, 79, 74);">
+                      <label class="visually-hidden" for="color_3">Yellow</label>
+                      <input class="color-checkboxes__item" type="radio" name="color" id="color_3" style="background-color: rgb(49, 52, 79);">
+                    </div>
+                  </fieldset>
+                  <fieldset class="card-form__fieldset">
+                    <legend class="card-form__legend">Choose Size</legend>
+                    <div class="size-checkboxes">
+                      <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" id="small-size">
+                      <label class="size-checkboxes__item" for="small-size">Small</label>
+                      <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" id="medium-size">
+                      <label class="size-checkboxes__item" for="medium-size">Medium</label>
+                      <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" id="large-size">
+                      <label class="size-checkboxes__item" for="large-size">Large</label>
+                      <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" id="x-large-size" checked="checked">
+                      <label class="size-checkboxes__item" for="x-large-size">X-Large</label>
+                    </div>
+                  </fieldset>
+                  <div class="card-form__row">
+                    <div class="quantity">
+                      <label class="visually-hidden" for="quantity-input"></label>
+                      <input class="quantity__input" type="text" id="quantity-input" value="1">
+                      <button class="quantity__button quantity__button--minus" type="button">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/sprite.svg#minus-ic"></use>
+                        </svg>
+                      </button>
+                      <button class="quantity__button quantity__button--plus" type="button">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/sprite.svg#plus-ic"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <button class="button" type="submit">Add to Cart</button>
+                  </div>
+                </form>
               </div>
             </div>
-            <div class="card__thumbs-slider">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide"><img src="/img/product-card-preview-1.jpg" width="152" height="167" alt="Preview image photo 1"></li>
-                  <li class="splide__slide"><img src="/img/product-card-preview-2.jpg" width="152" height="167" alt="Preview image photo 2"></li>
-                  <li class="splide__slide"><img src="/img/product-card-preview-3.jpg" width="152" height="167" alt="Preview image photo 3"></li>
-                </ul>
+            <div class="card__extra-content">
+              <div class="card__tabs card-tabs">
+                <header class="card-tabs__header">
+                  <ul class="card-tabs__control-list">
+                    <li class="card-tabs__item"><a class="card-tabs__button" href="#card-tab-1">Product Details</a></li>
+                    <li class="card-tabs__item"><a class="card-tabs__button" href="#card-tab-2">Rating & Reviews</a></li>
+                    <li class="card-tabs__item"><a class="card-tabs__button" href="#card-tab-3">FAQs</a></li>
+                  </ul>
+                </header>
+                <div class="card-tabs__panel" id="card-tab-1">
+                  <h2 class="card-tabs__title">Product details</h2>
+                  <dl class="card-tabs__characteristics-list characteristics-list">
+                    <div class="characteristics-list__row">
+                      <dt class="characteristics-list__title">Season</dt>
+                      <dd class="characteristics-list__description">For any season</dd>
+                    </div>
+                    <div class="characteristics-list__row">
+                      <dt class="characteristics-list__title">Material</dt>
+                      <dd class="characteristics-list__description">Cotton</dd>
+                    </div>
+                    <div class="characteristics-list__row">
+                      <dt class="characteristics-list__title">Collection</dt>
+                      <dd class="characteristics-list__description">Basic collection</dd>
+                    </div>
+                    <div class="characteristics-list__row">
+                      <dt class="characteristics-list__title">Style</dt>
+                      <dd class="characteristics-list__description">Sports</dd>
+                    </div>
+                    <div class="characteristics-list__row">
+                      <dt class="characteristics-list__title">Type</dt>
+                      <dd class="characteristics-list__description">T-shirt</dd>
+                    </div>
+                    <div class="characteristics-list__row">
+                      <dt class="characteristics-list__title">Clasp type</dt>
+                      <dd class="characteristics-list__description">Without clasp</dd>
+                    </div>
+                    <div class="characteristics-list__row">
+                      <dt class="characteristics-list__title">Packing type</dt>
+                      <dd class="characteristics-list__description">Package</dd>
+                    </div>
+                    <div class="characteristics-list__row">
+                      <dt class="characteristics-list__title">Quantity per package</dt>
+                      <dd class="characteristics-list__description">1</dd>
+                    </div>
+                    <div class="characteristics-list__row">
+                      <dt class="characteristics-list__title">Gender</dt>
+                      <dd class="characteristics-list__description">Male</dd>
+                    </div>
+                    <div class="characteristics-list__row">
+                      <dt class="characteristics-list__title">Country</dt>
+                      <dd class="characteristics-list__description">Italy</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="card-tabs__panel" id="card-tab-2">
+                  <section class="product-reviews">
+                    <header class="product-reviews__header">
+                      <h2 class="product-reviews__title">All Reviews<span class="product-reviews__count">(451)</span></h2>
+                      <div class="product-reviews__controls">
+                        <button class="product-reviews__settings-button" type="button">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#settings-ic"></use>
+                          </svg>
+                        </button>
+                        <form class="product-reviews__sorting-form" action="#" method="POST">
+                          <div class="sorting-reviews">
+                            <select class="sorting-reviews__select" name="sort-reviews">
+                              <option value="by-date-latest-to-oldest">Latest</option>
+                              <option value="by-date-oldest-to-latest">Oldest</option>
+                              <option value="by-rating-low-to-high">Low rating</option>
+                              <option value="by-rating-high-to-low">High rating</option>
+                            </select>
+                          </div>
+                        </form>
+                        <button class="button product-reviews__new-review-button" type="button">Write a Review</button>
+                      </div>
+                    </header>
+                    <ul class="product-reviews__list">
+                      <li class="product-reviews__item">
+                        <blockquote class="review">
+                          <div class="review__top">
+                            <div class="review__rating rating">
+                              <div class="rating__image" role="img"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/half-star-ic.svg" width="18" height="18" alt="Star">
+                              </div>
+                            </div>
+                            <button class="review__button" type="button">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/sprite.svg#dots-ic"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <cite class="review__name review__name--verified">Samantha D.</cite>
+                          <p class="review__text">&quot;I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.&quot;</p>
+                          <p class="review__date">Posted on
+                            <time datetime="2023-08-14">August 14, 2023</time>
+                          </p>
+                        </blockquote>
+                      </li>
+                      <li class="product-reviews__item">
+                        <blockquote class="review">
+                          <div class="review__top">
+                            <div class="review__rating rating">
+                              <div class="rating__image" role="img"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star">
+                              </div>
+                            </div>
+                            <button class="review__button" type="button">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/sprite.svg#dots-ic"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <cite class="review__name review__name--verified">Alex M.</cite>
+                          <p class="review__text">&quot;The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.&quot;</p>
+                          <p class="review__date">Posted on
+                            <time datetime="2023-08-15">August 15, 2023</time>
+                          </p>
+                        </blockquote>
+                      </li>
+                      <li class="product-reviews__item">
+                        <blockquote class="review">
+                          <div class="review__top">
+                            <div class="review__rating rating">
+                              <div class="rating__image" role="img"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/half-star-ic.svg" width="18" height="18" alt="Star">
+                              </div>
+                            </div>
+                            <button class="review__button" type="button">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/sprite.svg#dots-ic"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <cite class="review__name review__name--verified">Alex M.</cite>
+                          <p class="review__text">&quot;This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.&quot;</p>
+                          <p class="review__date">Posted on
+                            <time datetime="2023-08-16">August 16, 2023</time>
+                          </p>
+                        </blockquote>
+                      </li>
+                      <li class="product-reviews__item">
+                        <blockquote class="review">
+                          <div class="review__top">
+                            <div class="review__rating rating">
+                              <div class="rating__image" role="img"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star">
+                              </div>
+                            </div>
+                            <button class="review__button" type="button">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/sprite.svg#dots-ic"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <cite class="review__name review__name--verified">Olivia P.</cite>
+                          <p class="review__text">&quot;As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.&quot;</p>
+                          <p class="review__date">Posted on
+                            <time datetime="2023-08-17">August 17, 2023</time>
+                          </p>
+                        </blockquote>
+                      </li>
+                      <li class="product-reviews__item">
+                        <blockquote class="review">
+                          <div class="review__top">
+                            <div class="review__rating rating">
+                              <div class="rating__image" role="img"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star">
+                              </div>
+                            </div>
+                            <button class="review__button" type="button">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/sprite.svg#dots-ic"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <cite class="review__name review__name--verified">Liam K.</cite>
+                          <p class="review__text">&quot;This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.&quot;</p>
+                          <p class="review__date">Posted on
+                            <time datetime="2023-08-18">August 18, 2023</time>
+                          </p>
+                        </blockquote>
+                      </li>
+                      <li class="product-reviews__item">
+                        <blockquote class="review">
+                          <div class="review__top">
+                            <div class="review__rating rating">
+                              <div class="rating__image" role="img"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="Star"><img class="rating__star" src="/img/half-star-ic.svg" width="18" height="18" alt="Star">
+                              </div>
+                            </div>
+                            <button class="review__button" type="button">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/sprite.svg#dots-ic"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <cite class="review__name review__name--verified">Ava H.</cite>
+                          <p class="review__text">&quot;I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.&quot;</p>
+                          <p class="review__date">Posted on
+                            <time datetime="2023-08-19">August 19, 2023</time>
+                          </p>
+                        </blockquote>
+                      </li>
+                    </ul>
+                    <button class="button button--outline product-reviews__load-more-button" type="button">Load More Reviews</button>
+                  </section>
+                </div>
+                <div class="card-tabs__panel" id="card-tab-3">
+                  <h2 class="card-tabs__title">FAQs</h2>
+                  <dl class="card-tabs__faq-list faq-list">
+                    <div class="faq-list__row">
+                      <dt class="faq-list__title">Lorem ipsum dolor sit amet, consectetur adipisicing?</dt>
+                      <dd class="faq-list__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ducimus veniam pariatur, eaque qui earum aspernatur maxime voluptatum, itaque provident quas quae consequuntur sapiente voluptates mollitia rerum aperiam esse perferendis.</dd>
+                    </div>
+                    <div class="faq-list__row">
+                      <dt class="faq-list__title">Lorem ipsum dolor sit amet consectetur?</dt>
+                      <dd class="faq-list__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique porro repellat sunt cupiditate culpa fugit, asperiores accusantium? Facere, nihil obcaecati.</dd>
+                    </div>
+                    <div class="faq-list__row">
+                      <dt class="faq-list__title">Lorem ipsum, dolor sit amet consectetur adipisicing elit?</dt>
+                      <dd class="faq-list__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ad, impedit minima itaque libero possimus provident ullam optio sequi blanditiis, vel nihil odio porro cum.</dd>
+                    </div>
+                    <div class="faq-list__row">
+                      <dt class="faq-list__title">Lorem ipsum dolor sit amet consectetur adipisicing elit asperiore?</dt>
+                      <dd class="faq-list__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam velit, animi temporibus exercitationem ea quia ut ad dolor nostrum est. Reprehenderit accusamus earum, voluptatibus distinctio nulla aliquid voluptates vel.</dd>
+                    </div>
+                    <div class="faq-list__row">
+                      <dt class="faq-list__title">Lorem ipsum dolor sit amet consectetur adipisicing elit?</dt>
+                      <dd class="faq-list__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, hic necessitatibus. Eveniet exercitationem quia magni modi!</dd>
+                    </div>
+                  </dl>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card__description">
-            <form class="card__form card-form" action="#" method="post">
-              <h1 class="card__title">One Life Graphic T-shirt</h1>
-              <div class="rating">
-                <div class="rating__image" role="img" aria-label="Rating 4.5 out of 5"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18"></div>
-                <p class="rating__text">4.5/5</p>
-              </div>
-              <p class="prices"><span class="prices__current-price">$260</span>
-                <s class="prices__old-price">$300</s><span class="prices__discount">-40%</span>
-              </p>
-              <p class="card__info-text">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
-              <fieldset class="card-form__fieldset">
-                <legend class="card-form__legend">Select Colors</legend>
-                <div class="color-checkboxes">
-                  <label class="visually-hidden" for="color_1">Green</label>
-                  <input class="color-checkboxes__item" type="radio" name="color" id="color_1" style="background-color: rgb(79, 70, 49);" checked="checked">
-                  <label class="visually-hidden" for="color_2">Red</label>
-                  <input class="color-checkboxes__item" type="radio" name="color" id="color_2" style="background-color: rgb(49, 79, 74);">
-                  <label class="visually-hidden" for="color_3">Yellow</label>
-                  <input class="color-checkboxes__item" type="radio" name="color" id="color_3" style="background-color: rgb(49, 52, 79);">
-                </div>
-              </fieldset>
-              <fieldset class="card-form__fieldset">
-                <legend class="card-form__legend">Choose Size</legend>
-                <div class="size-checkboxes">
-                  <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" id="small-size">
-                  <label class="size-checkboxes__item" for="small-size">Small</label>
-                  <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" id="medium-size">
-                  <label class="size-checkboxes__item" for="medium-size">Medium</label>
-                  <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" id="large-size">
-                  <label class="size-checkboxes__item" for="large-size">Large</label>
-                  <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" id="x-large-size" checked="checked">
-                  <label class="size-checkboxes__item" for="x-large-size">X-Large</label>
-                </div>
-              </fieldset>
-              <div class="card-form__row">
-                <div class="quantity">
-                  <label class="visually-hidden" for="quantity-input"></label>
-                  <input class="quantity__input" type="text" id="quantity-input" value="1">
-                  <button class="quantity__button quantity__button--minus" type="button">
-                    <svg width="24" height="24">
-                      <use xlink:href="img/sprite.svg#minus-ic"></use>
-                    </svg>
-                  </button>
-                  <button class="quantity__button quantity__button--plus" type="button">
-                    <svg width="24" height="24">
-                      <use xlink:href="img/sprite.svg#plus-ic"></use>
-                    </svg>
-                  </button>
-                </div>
-                <button class="button" type="submit">Add to Cart</button>
-              </div>
-            </form>
           </div>
         </article>
+        <section class="page__assortment assortment">
+          <div class="assortment__container container">
+            <h2 class="section-title">You might also like</h2>
+            <div class="assortment__slider see-also-slider splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <article class="product-card"><a class="product-card__link" href="#"><img class="product-card__image" src="/img/top-selling-img-1.jpg" width="295" height="298" aria-labelledby="k6PUVf" alt="Vertical Striped Shirt"></a>
+                      <h3 class="product-card__title" id="k6PUVf">Vertical Striped Shirt</h3>
+                      <div class="product-card__rating rating">
+                        <div class="rating__image" role="img" aria-label="Rating 5 out of 5"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="">
+                        </div>
+                        <p class="rating__text">5/5</p>
+                      </div>
+                      <p class="product-card__prices"><span class="product-card__current-price">$212</span>
+                        <s class="product-card__old-price">$232</s><span class="product-card__discount">-20%</span>
+                      </p>
+                    </article>
+                  </li>
+                  <li class="splide__slide">
+                    <article class="product-card"><a class="product-card__link" href="#"><img class="product-card__image" src="/img/top-selling-img-2.jpg" width="295" height="298" aria-labelledby="QyqODO" alt="Courage Graphic T-shirt"></a>
+                      <h3 class="product-card__title" id="QyqODO">Courage Graphic T-shirt</h3>
+                      <div class="product-card__rating rating">
+                        <div class="rating__image" role="img" aria-label="Rating 4 out of 5"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="">
+                        </div>
+                        <p class="rating__text">4.0/5</p>
+                      </div>
+                      <p class="product-card__prices"><span class="product-card__current-price">$145</span>
+                      </p>
+                    </article>
+                  </li>
+                  <li class="splide__slide">
+                    <article class="product-card"><a class="product-card__link" href="#"><img class="product-card__image" src="/img/top-selling-img-3.jpg" width="295" height="298" aria-labelledby="dmO6J0" alt="Loose Fit Bermuda Shorts"></a>
+                      <h3 class="product-card__title" id="dmO6J0">Loose Fit Bermuda Shorts</h3>
+                      <div class="product-card__rating rating">
+                        <div class="rating__image" role="img" aria-label="Rating 3 out of 5"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt="">
+                        </div>
+                        <p class="rating__text">3.0/5</p>
+                      </div>
+                      <p class="product-card__prices"><span class="product-card__current-price">$80</span>
+                      </p>
+                    </article>
+                  </li>
+                  <li class="splide__slide">
+                    <article class="product-card"><a class="product-card__link" href="#"><img class="product-card__image" src="/img/top-selling-img-4.jpg" width="295" height="298" aria-labelledby="tTe3In" alt="Faded Skinny Jeans"></a>
+                      <h3 class="product-card__title" id="tTe3In">Faded Skinny Jeans</h3>
+                      <div class="product-card__rating rating">
+                        <div class="rating__image" role="img" aria-label="Rating 4.5 out of 5"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/star-ic.svg" width="18" height="18" alt=""><img class="rating__star" src="/img/half-star-ic.svg" width="18" height="18" alt="">
+                        </div>
+                        <p class="rating__text">4.5/5</p>
+                      </div>
+                      <p class="product-card__prices"><span class="product-card__current-price">$210</span>
+                      </p>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="site-footer">
         <section class="site-footer__subscribe subscribe">
