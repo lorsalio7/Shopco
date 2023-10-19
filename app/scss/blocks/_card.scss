@@ -1,0 +1,56 @@
+.card__gallery {
+  margin-bottom: 20px;
+}
+
+.card__big-slider {
+  margin-bottom: 12px;
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: "Anybody", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.card__rating {
+  margin-bottom: 12px;
+}
+
+.card__rating .rating__star {
+  width: 18px;
+  height: 18px;
+}
+
+.card__rating .rating__text {
+  font-size: 14px;
+}
+
+.card__prices {
+  margin-bottom: 20px;
+}
+
+.card__prices .prices__current-price {
+  font-size: 24px;
+}
+
+.card__prices .prices__old-price {
+  font-size: 24px;
+}
+
+.card__prices .prices__discount {
+  padding: 7px 12px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.card__info-text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-scorpion);
+}

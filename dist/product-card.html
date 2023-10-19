@@ -104,33 +104,35 @@
           <div class="container">
             <div class="card__main-content">
               <div class="card__gallery">
-                <div class="card__big-slider splide">
+                <div class="card__big-slider card-big-slider splide">
                   <div class="splide__track">
                     <ul class="splide__list">
-                      <li class="splide__slide"><img src="/img/product-card-image-1.jpg" width="444" height="530" alt="Product image 1"></li>
-                      <li class="splide__slide"><img src="/img/product-card-image-2.jpg" width="444" height="530" alt="Product image 2"></li>
-                      <li class="splide__slide"><img src="/img/product-card-image-3.jpg" width="444" height="530" alt="Product image 3"></li>
+                      <li class="splide__slide"><img class="card-big-slider__image" src="/img/product-card-image-1.jpg" width="444" height="530" alt="Product image 1"></li>
+                      <li class="splide__slide"><img class="card-big-slider__image" src="/img/product-card-image-2.jpg" width="444" height="530" alt="Product image 2"></li>
+                      <li class="splide__slide"><img class="card-big-slider__image" src="/img/product-card-image-3.jpg" width="444" height="530" alt="Product image 3"></li>
                     </ul>
                   </div>
                 </div>
-                <div class="card__thumbs-slider">
+                <div class="card-thumbs-slider splide">
                   <div class="splide__track">
                     <ul class="splide__list">
-                      <li class="splide__slide"><img src="/img/product-card-preview-1.jpg" width="152" height="167" alt="Preview image photo 1"></li>
-                      <li class="splide__slide"><img src="/img/product-card-preview-2.jpg" width="152" height="167" alt="Preview image photo 2"></li>
-                      <li class="splide__slide"><img src="/img/product-card-preview-3.jpg" width="152" height="167" alt="Preview image photo 3"></li>
+                      <li class="splide__slide"><img class="card-thumbs-slider__image" src="/img/product-card-preview-1.jpg" width="152" height="167" alt="Preview image photo 1"></li>
+                      <li class="splide__slide"><img class="card-thumbs-slider__image" src="/img/product-card-preview-2.jpg" width="152" height="167" alt="Preview image photo 2"></li>
+                      <li class="splide__slide"><img class="card-thumbs-slider__image" src="/img/product-card-preview-3.jpg" width="152" height="167" alt="Preview image photo 3"></li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div class="card__description">
-                <form class="card__form card-form" action="#" method="post">
-                  <h1 class="card__title">One Life Graphic T-shirt</h1>
-                  <div class="rating">
+                <form class="card__form card-form" action="#" method="POST">
+                  <h1 class="card__title">One Life Graphic
+                    <nobr>T-shirt</nobr>
+                  </h1>
+                  <div class="card__rating rating">
                     <div class="rating__image" role="img" aria-label="Rating 4.5 out of 5"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18"><img class="rating__star" src="/img/star-ic.svg" width="18" height="18"><img class="rating__star" src="/img/half-star-ic.svg" width="18" height="18"></div>
                     <p class="rating__text">4.5/5</p>
                   </div>
-                  <p class="prices"><span class="prices__current-price">$260</span>
+                  <p class="card__prices prices"><span class="prices__current-price">$260</span>
                     <s class="prices__old-price">$300</s><span class="prices__discount">-40%</span>
                   </p>
                   <p class="card__info-text">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
@@ -138,30 +140,30 @@
                     <legend class="card-form__legend">Select Colors</legend>
                     <div class="color-checkboxes">
                       <label class="visually-hidden" for="color_1">Green</label>
-                      <input class="color-checkboxes__item" type="radio" name="color" id="color_1" style="background-color: rgb(79, 70, 49);" checked="checked">
+                      <input class="color-checkboxes__item" type="radio" name="color" value="color_1" id="color_1" style="background-color: rgb(79, 70, 49);" checked="checked">
                       <label class="visually-hidden" for="color_2">Red</label>
-                      <input class="color-checkboxes__item" type="radio" name="color" id="color_2" style="background-color: rgb(49, 79, 74);">
+                      <input class="color-checkboxes__item" type="radio" name="color" value="color_2" id="color_2" style="background-color: rgb(49, 79, 74);">
                       <label class="visually-hidden" for="color_3">Yellow</label>
-                      <input class="color-checkboxes__item" type="radio" name="color" id="color_3" style="background-color: rgb(49, 52, 79);">
+                      <input class="color-checkboxes__item" type="radio" name="color" value="color_3" id="color_3" style="background-color: rgb(49, 52, 79);">
                     </div>
                   </fieldset>
                   <fieldset class="card-form__fieldset">
                     <legend class="card-form__legend">Choose Size</legend>
                     <div class="size-checkboxes">
-                      <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" id="small-size">
+                      <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" value="small-size" id="small-size">
                       <label class="size-checkboxes__item" for="small-size">Small</label>
-                      <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" id="medium-size">
+                      <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" value="medium-size" id="medium-size">
                       <label class="size-checkboxes__item" for="medium-size">Medium</label>
-                      <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" id="large-size">
+                      <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" value="large-size" id="large-size">
                       <label class="size-checkboxes__item" for="large-size">Large</label>
-                      <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" id="x-large-size" checked="checked">
+                      <input class="visually-hidden size-checkboxes__checkbox" type="radio" name="size" value="x-large-size" id="x-large-size" checked="checked">
                       <label class="size-checkboxes__item" for="x-large-size">X-Large</label>
                     </div>
                   </fieldset>
                   <div class="card-form__row">
                     <div class="quantity">
                       <label class="visually-hidden" for="quantity-input"></label>
-                      <input class="quantity__input" type="text" id="quantity-input" value="1">
+                      <input class="quantity__input" type="text" name="quantity" id="quantity-input" pattern="[0-9]*" value="1">
                       <button class="quantity__button quantity__button--minus" type="button">
                         <svg width="24" height="24">
                           <use xlink:href="img/sprite.svg#minus-ic"></use>
@@ -173,7 +175,7 @@
                         </svg>
                       </button>
                     </div>
-                    <button class="button" type="submit">Add to Cart</button>
+                    <button class="card-form__button button" type="submit">Add to Cart</button>
                   </div>
                 </form>
               </div>

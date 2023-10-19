@@ -2,6 +2,8 @@ document.addEventListener( 'DOMContentLoaded', function() {
   let newArrivalsSlider = document.querySelector(".new-arrivals-slider");
   let topSellingSlider = document.querySelector(".top-selling-slider");
   let storeReviewsSlider = document.querySelector(".store-reviews-slider");
+  let productCardSlider = document.querySelector(".card-big-slider");
+  let productCardSliderThumbs = document.querySelector(".card-thumbs-slider");
 
   if(newArrivalsSlider) {
     new Splide(newArrivalsSlider, {
@@ -60,5 +62,24 @@ document.addEventListener( 'DOMContentLoaded', function() {
     storeReviewsSliderNextButton.addEventListener("click", (e) => {
       storeReviewsSlider.go("+1");
     });
+  }
+
+  if(productCardSlider) {
+    productCardSlider = new Splide(productCardSlider, {
+      gap: 30,
+      arrows: false,
+      pagination: false
+    }).mount();
+
+    productCardSliderThumbs = new Splide(productCardSliderThumbs, {
+      mediaQuery: 'min',
+      gap: 12,
+      perPage: 3,
+      arrows: false,
+      pagination: false,
+      isNavigation: true
+    }).mount();
+
+    productCardSlider.sync(productCardSliderThumbs);
   }
 });

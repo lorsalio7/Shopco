@@ -98,6 +98,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var newArrivalsSlider = document.querySelector(".new-arrivals-slider");
   var topSellingSlider = document.querySelector(".top-selling-slider");
   var storeReviewsSlider = document.querySelector(".store-reviews-slider");
+  var productCardSlider = document.querySelector(".card-big-slider");
+  var productCardSliderThumbs = document.querySelector(".card-thumbs-slider");
   if (newArrivalsSlider) {
     new Splide(newArrivalsSlider, {
       perMove: 1,
@@ -151,6 +153,22 @@ document.addEventListener('DOMContentLoaded', function () {
     storeReviewsSliderNextButton.addEventListener("click", function (e) {
       storeReviewsSlider.go("+1");
     });
+  }
+  if (productCardSlider) {
+    productCardSlider = new Splide(productCardSlider, {
+      gap: 30,
+      arrows: false,
+      pagination: false
+    }).mount();
+    productCardSliderThumbs = new Splide(productCardSliderThumbs, {
+      mediaQuery: 'min',
+      gap: 12,
+      perPage: 3,
+      arrows: false,
+      pagination: false,
+      isNavigation: true
+    }).mount();
+    productCardSlider.sync(productCardSliderThumbs);
   }
 });
 ;
@@ -222,5 +240,27 @@ if (filtersActiveButton) {
   var filtersCloseButton = document.querySelector(".catalog-filters__close-button");
   filtersActiveButton.addEventListener("click", openCatalogFilters);
   filtersCloseButton.addEventListener("click", closeCatalogFilters);
+}
+;
+var quantity = document.querySelector(".quantity");
+if (quantity) {
+  var plusProduct = function plusProduct() {
+    productCount++;
+    quantityInput.value = productCount;
+  };
+  var minusProduct = function minusProduct() {
+    if (productCount < 2) {
+      return;
+    } else {
+      productCount--;
+      quantityInput.value = productCount;
+    }
+  };
+  var quantityInput = quantity.querySelector(".quantity__input");
+  var quantityPlusButton = quantity.querySelector(".quantity__button--plus");
+  var quantityMinusButton = quantity.querySelector(".quantity__button--minus");
+  var productCount = 1;
+  quantityPlusButton.addEventListener("click", plusProduct);
+  quantityMinusButton.addEventListener("click", minusProduct);
 }
 ;
