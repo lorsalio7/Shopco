@@ -1,0 +1,17 @@
+.faq-list__row:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.faq-list__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-black);
+}
+
+.faq-list__description {
+  margin-left: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-scorpion);
+}

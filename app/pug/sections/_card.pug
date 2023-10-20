@@ -74,43 +74,54 @@ article.card
             li.card-tabs__item
               a(href="#card-tab-1").card-tabs__button Product Details
             li.card-tabs__item
-              a(href="#card-tab-2").card-tabs__button Rating & Reviews
+              a(href="#card-tab-2").card-tabs__button.card-tabs__button--active Rating & Reviews
             li.card-tabs__item
               a(href="#card-tab-3").card-tabs__button FAQs
+          span.card-tabs__line
         .card-tabs__panel#card-tab-1
           h2.card-tabs__title Product details
           dl.card-tabs__characteristics-list.characteristics-list
             .characteristics-list__row
-              dt.characteristics-list__title Season
+              dt.characteristics-list__title
+                span Season
               dd.characteristics-list__description For any season
             .characteristics-list__row
-              dt.characteristics-list__title Material
+              dt.characteristics-list__title
+                span Material
               dd.characteristics-list__description Cotton
             .characteristics-list__row
-              dt.characteristics-list__title Collection
+              dt.characteristics-list__title
+                span Collection
               dd.characteristics-list__description Basic collection
             .characteristics-list__row
-              dt.characteristics-list__title Style
+              dt.characteristics-list__title
+                span Style
               dd.characteristics-list__description Sports
             .characteristics-list__row
-              dt.characteristics-list__title Type
+              dt.characteristics-list__title
+                span Type
               dd.characteristics-list__description T-shirt
             .characteristics-list__row
-              dt.characteristics-list__title Clasp type
+              dt.characteristics-list__title
+                span Clasp type
               dd.characteristics-list__description Without clasp
             .characteristics-list__row
-              dt.characteristics-list__title Packing type
+              dt.characteristics-list__title
+                span Packing type
               dd.characteristics-list__description Package
             .characteristics-list__row
-              dt.characteristics-list__title Quantity per package
+              dt.characteristics-list__title
+                span Quantity per package
               dd.characteristics-list__description 1
             .characteristics-list__row
-              dt.characteristics-list__title Gender
+              dt.characteristics-list__title
+                span Gender
               dd.characteristics-list__description Male
             .characteristics-list__row
-              dt.characteristics-list__title Country
+              dt.characteristics-list__title
+                span Country
               dd.characteristics-list__description Italy
-        .card-tabs__panel#card-tab-2
+        .card-tabs__panel.card-tabs__panel--active#card-tab-2
           section.product-reviews
             header.product-reviews__header
               h2.product-reviews__title

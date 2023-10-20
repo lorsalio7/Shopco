@@ -264,3 +264,39 @@ if (quantity) {
   quantityMinusButton.addEventListener("click", minusProduct);
 }
 ;
+var cardTabs = document.querySelector(".card-tabs");
+if (cardTabs) {
+  var highlightTab = function highlightTab() {
+    for (var j = 0; j < tabButtons.length; j++) {
+      if (tabButtons[j].classList.contains("card-tabs__button--active")) {
+        var buttonWidth = tabButtons[j].offsetWidth;
+        var buttonOffsetLeft = tabButtons[j].offsetLeft;
+        line.style.width = "".concat(buttonWidth, "px");
+        line.style.left = "".concat(buttonOffsetLeft, "px");
+      }
+    }
+  };
+  var removeActiveClass = function removeActiveClass(elements, class_name) {
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].classList.remove(class_name);
+    }
+  };
+  var tabButtons = cardTabs.querySelectorAll(".card-tabs__button");
+  var tabPanels = cardTabs.querySelectorAll(".card-tabs__panel");
+  var line = cardTabs.querySelector(".card-tabs__line");
+  tabButtons.forEach(function (button, index) {
+    button.addEventListener("click", function (e) {
+      removeActiveClass(tabButtons, "card-tabs__button--active");
+      e.preventDefault();
+      button.classList.add("card-tabs__button--active");
+      highlightTab();
+      removeActiveClass(tabPanels, "card-tabs__panel--active");
+      tabPanels[index].classList.add("card-tabs__panel--active");
+    });
+  });
+  highlightTab();
+  window.addEventListener("resize", debounce(function () {
+    highlightTab();
+  }, 200));
+}
+;

@@ -8,3 +8,4 @@
 @@include("parts/filters-accordion.js");
 @@include("parts/filters-active.js");
 @@include("parts/product-counter.js");
+@@include("parts/product-tabs.js");

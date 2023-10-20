@@ -1,3 +1,7 @@
+.card__main-content {
+  margin-bottom: 50px;
+}
+
 .card__gallery {
   margin-bottom: 20px;
 }
@@ -53,4 +57,8 @@
   font-size: 14px;
   line-height: 20px;
   color: var(--color-scorpion);
+}
+
+.card__tabs {
+  margin-bottom: 50px;
 }
