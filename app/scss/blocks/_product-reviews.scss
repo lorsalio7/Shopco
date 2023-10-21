@@ -61,3 +61,12 @@
 .product-reviews__item .review__rating {
   margin-bottom: 0;
 }
+
+.product-reviews__load-more-button {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 14px 35px;
+  max-width: 196px;
+  font-size: 14px;
+}

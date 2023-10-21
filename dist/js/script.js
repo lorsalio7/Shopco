@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var storeReviewsSlider = document.querySelector(".store-reviews-slider");
   var productCardSlider = document.querySelector(".card-big-slider");
   var productCardSliderThumbs = document.querySelector(".card-thumbs-slider");
+  var seeAlsoSlider = document.querySelector(".see-also-slider");
   if (newArrivalsSlider) {
     new Splide(newArrivalsSlider, {
       perMove: 1,
@@ -169,6 +170,25 @@ document.addEventListener('DOMContentLoaded', function () {
       isNavigation: true
     }).mount();
     productCardSlider.sync(productCardSliderThumbs);
+  }
+  if (seeAlsoSlider) {
+    new Splide(seeAlsoSlider, {
+      perMove: 1,
+      padding: {
+        right: 120
+      },
+      gap: 16,
+      mediaQuery: 'min',
+      arrows: false,
+      pagination: false,
+      breakpoints: {
+        390: {
+          padding: {
+            right: 158
+          }
+        }
+      }
+    }).mount();
   }
 });
 ;
