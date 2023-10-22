@@ -2537,7 +2537,8 @@ body {
   border: none;
   border-radius: 40px;
   padding: 14px 36px;
-  max-width: 110px;
+  width: 100%;
+  min-width: 110px;
   font-weight: 500;
   font-size: 14px;
   text-align: center;

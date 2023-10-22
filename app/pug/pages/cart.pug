@@ -1,0 +1,17 @@
+extends ../layout/main-template.pug
+
+block vars
+  - var pageName = "cart";
+  - var pageTitle = "Cart | SHOP.CO";
+  - var pageDescription = "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur";
+  - var htmlClass = "page";
+  - var additionalClasses = " full-height";
+  - var bodyClass = "page__body";
+
+
+block content
+  include ../sections/_quick-registration.pug
+  include ../sections/_header.pug
+  include ../sections/_cart-main.pug
+  include ../sections/_footer.pug
+

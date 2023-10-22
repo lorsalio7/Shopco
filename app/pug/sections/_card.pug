@@ -60,12 +60,12 @@ article.card
               label(for="x-large-size").size-checkboxes__item X-Large
           .card-form__row
             .quantity
-              label(for="quantity-input").visually-hidden
-              input(type="text" name="quantity" id="quantity-input" pattern="[0-9]*" value="1").quantity__input
+              label(for="quantity-input").visually-hidden Quantity product
               button(type="button").quantity__button.quantity__button--minus
                 +svg("", "minus-ic", 24, 24)
               button(type="button").quantity__button.quantity__button--plus
                 +svg("", "plus-ic", 24, 24)
+              input(type="text" name="quantity" id="quantity-input" pattern="[0-9]*" value="1").quantity__input
             button(type="submit").card-form__button.button Add to Cart
     .card__extra-content
       .card__tabs.card-tabs

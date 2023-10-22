@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="page full-height" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | SHOP.CO</title>
+    <meta name="description" content="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur">
+    <link rel="shortcut icon" type="image/svg+xml" href="/img/favicon.svg">
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f=satoshi@700,500,400&amp;display=swap">
+    <link rel="stylesheet" href="/css/styles.min.css">
+  </head>
+  <body class="page__body full-height">
+    <div class="wrapper">
+      <div class="quick-registration">
+        <div class="container">
+          <p class="quick-registration__text">Sign up and get 20% off to your first order.<a class="quick-registration__link" href="#">Sign Up Now</a></p>
+          <button class="quick-registration__close-button close-button" type="button" aria-label="Close offer content">
+            <svg class="close-button__icon" width="20" height="20">
+              <use xlink:href="img/sprite.svg#close-ic"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <header class="site-header">
+        <div class="site-header__container container">
+          <button class="site-header__burger-button burger-button" type="button" aria-label="Open site navigation">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#burger-ic"></use>
+            </svg>
+          </button><a class="logo" href="#"><img class="logo__image" src="img/site-logo.svg" width="122" height="18" alt="Logo Shop.co"></a>
+          <nav class="site-header__site-navigation site-navigation">
+            <button class="site-navigation__close-button" type="button" aria-label="Close site navigation">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#close-ic"></use>
+              </svg>
+            </button>
+            <ul class="site-navigation__list">
+              <li class="site-navigation__item"><span class="site-navigation__link site-navigation__link--dropdown">Shop</span>
+                <ul class="site-navigation__submenu-list submenu-list">
+                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Shirts</a></li>
+                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Jeans</a></li>
+                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">T-shirts</a></li>
+                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Shorts</a></li>
+                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Hoodie</a></li>
+                </ul>
+              </li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">On Sale</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">New Arrivals</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Brands</a></li>
+            </ul>
+          </nav>
+          <div class="site-header__product-search product-search">
+            <button class="product-search__close-button" type="button" aria-label="Close search">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#close-ic"></use>
+              </svg>
+            </button>
+            <form class="product-search__form" action="#">
+              <label class="visually-hidden" for="product-search-input">Search for products</label>
+              <div class="product-search__wrapper">
+                <input class="product-search__input" type="text" placeholder="Search for products..." id="product-search-input">
+                <button class="product-search__button" type="submit" aria-label="Search">
+                  <svg width="24" height="24">
+                    <use xlink:href="img/sprite.svg#search-ic"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="user-navigation">
+            <button class="user-navigation__open-search-button user-navigation__item" type="button" aria-label="Open search products">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#search-ic"></use>
+              </svg>
+            </button><a class="user-navigation__item" href="#" aria-label="Cart">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#cart-ic"></use>
+              </svg></a><a class="user-navigation__item" href="#" aria-label="User account">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#user-accaunt-ic"></use>
+              </svg></a>
+          </div>
+        </div>
+      </header>
+      <main class="page__main main">
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a>
+              </li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current">Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="cart">
+          <div class="container">
+            <h1 class="cart__title section-title">Your cart</h1>
+            <div class="cart__content">
+              <div class="cart__products">
+                <form class="cart-products-form" action="#" method="POST">
+                  <div class="cart-products-form__list">
+                    <div class="cart-products-form__item cart-products-item"><img class="cart-products-item__image" src="/img/cart-product-1.jpg" width="124" height="124" alt="Gradient Graphic T-shirt">
+                      <div class="cart-products-item__text-content">
+                        <div class="cart-products-item__row">
+                          <h2 class="cart-products-item__title"><a class="cart-products-item__link" href="#">Gradient Graphic T-shirt</a></h2>
+                          <button class="cart-products-item__delete-button" type="button" aria-label="Remove product from cart">
+                            <svg width="24" height="24">
+                              <use xlink:href="img/sprite.svg#delete-ic"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="cart-products-item__row">
+                          <dl class="cart-products-item__list">
+                            <div class="cart-products-item__specification-row">
+                              <dt>Size:</dt>
+                              <dd>Large</dd>
+                            </div>
+                            <div class="cart-products-item__specification-row">
+                              <dt>Color:</dt>
+                              <dd>White</dd>
+                            </div>
+                          </dl>
+                        </div>
+                        <div class="cart-products-item__row">
+                          <p class="prices"><span class="prices__current-price">$145</span></p>
+                          <div class="quantity">
+                            <button class="quantity__button quantity__button--minus" type="button" aria-label="Decrease quantity">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/sprite.svg#minus-ic"></use>
+                              </svg>
+                            </button>
+                            <button class="quantity__button quantity__button--plus" type="button" aria-label="Increase quantity">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/sprite.svg#plus-ic"></use>
+                              </svg>
+                            </button>
+                            <label class="visually-hidden" for="quantity-input__4448754">Quantity product</label>
+                            <input class="quantity__input" type="text" name="quantity" id="quantity-input__4448754" pattern="[0-9]*" value="1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-products-form__item cart-products-item"><img class="cart-products-item__image" src="/img/cart-product-2.jpg" width="124" height="124" alt="Gradient Graphic T-shirt">
+                      <div class="cart-products-item__text-content">
+                        <div class="cart-products-item__row">
+                          <h2 class="cart-products-item__title"><a class="cart-products-item__link" href="#">Checkered Shirt</a></h2>
+                          <button class="cart-products-item__delete-button" type="button" aria-label="Remove product from cart">
+                            <svg width="24" height="24">
+                              <use xlink:href="img/sprite.svg#delete-ic"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="cart-products-item__row">
+                          <dl class="cart-products-item__list">
+                            <div class="cart-products-item__specification-row">
+                              <dt>Size:</dt>
+                              <dd>Medium</dd>
+                            </div>
+                            <div class="cart-products-item__specification-row">
+                              <dt>Color:</dt>
+                              <dd>Red</dd>
+                            </div>
+                          </dl>
+                        </div>
+                        <div class="cart-products-item__row">
+                          <p class="prices"><span class="prices__current-price">$180</span></p>
+                          <div class="quantity">
+                            <button class="quantity__button quantity__button--minus" type="button" aria-label="Decrease quantity">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/sprite.svg#minus-ic"></use>
+                              </svg>
+                            </button>
+                            <button class="quantity__button quantity__button--plus" type="button" aria-label="Increase quantity">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/sprite.svg#plus-ic"></use>
+                              </svg>
+                            </button>
+                            <label class="visually-hidden" for="quantity-input__45832499">Quantity product</label>
+                            <input class="quantity__input" type="text" name="quantity" id="quantity-input__45832499" pattern="[0-9]*" value="1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-products-form__item cart-products-item"><img class="cart-products-item__image" src="/img/cart-product-3.jpg" width="124" height="124" alt="Gradient Graphic T-shirt">
+                      <div class="cart-products-item__text-content">
+                        <div class="cart-products-item__row">
+                          <h2 class="cart-products-item__title"><a class="cart-products-item__link" href="#">Skinny Fit Jeans</a></h2>
+                          <button class="cart-products-item__delete-button" type="button" aria-label="Remove product from cart">
+                            <svg width="24" height="24">
+                              <use xlink:href="img/sprite.svg#delete-ic"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="cart-products-item__row">
+                          <dl class="cart-products-item__list">
+                            <div class="cart-products-item__specification-row">
+                              <dt>Size:</dt>
+                              <dd>Large</dd>
+                            </div>
+                            <div class="cart-products-item__specification-row">
+                              <dt>Color:</dt>
+                              <dd>Blue</dd>
+                            </div>
+                          </dl>
+                        </div>
+                        <div class="cart-products-item__row">
+                          <p class="prices"><span class="prices__current-price">$240</span></p>
+                          <div class="quantity">
+                            <button class="quantity__button quantity__button--minus" type="button" aria-label="Decrease quantity">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/sprite.svg#minus-ic"></use>
+                              </svg>
+                            </button>
+                            <button class="quantity__button quantity__button--plus" type="button" aria-label="Increase quantity">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/sprite.svg#plus-ic"></use>
+                              </svg>
+                            </button>
+                            <label class="visually-hidden" for="quantity-input__23347384">Quantity product</label>
+                            <input class="quantity__input" type="text" name="quantity" id="quantity-input__23347384" pattern="[0-9]*" value="1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="cart__info">
+                <form class="cart-info-form" action="#" method="POST">
+                  <h2 class="cart-info-form__title">Order Summary</h2>
+                  <dl class="order-info">
+                    <div class="order-info__row">
+                      <dt class="order-info__subject">Subtotal</dt>
+                      <dd class="order-info__amount">$565</dd>
+                    </div>
+                    <div class="order-info__row">
+                      <dt class="order-info__subject">Discount<span class="order-info__discount-size">(-20%)</span></dt>
+                      <dd class="order-info__amount order-info__amount--discount-amount">-$113</dd>
+                    </div>
+                    <div class="order-info__row">
+                      <dt class="order-info__subject">Delivery Fee</dt>
+                      <dd class="order-info__amount">$15</dd>
+                    </div>
+                    <div class="order-info__row">
+                      <dt class="order-info__subject order-info__subject--total">Total</dt>
+                      <dd class="order-info__amount order-info__amount--total">$565</dd>
+                    </div>
+                  </dl>
+                  <div class="cart-info-form__row">
+                    <div class="promocode">
+                      <input class="promocode__input" type="text" id="promocode-input">
+                      <label class="visually-hidden" for="promocode-input">Enter promocode</label>
+                    </div>
+                    <button class="button" type="submit" method="POST">Apply</button>
+                  </div>
+                </form><a class="button" href="#"><span class="button__text">Go to Checkout</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <section class="site-footer__subscribe subscribe">
+          <div class="container">
+            <div class="subscribe__container">
+              <h2 class="subscribe__title section-title">Stay upto date about our latest offers</h2>
+              <form class="subscribe__form subscribe-form" action="#">
+                <div class="subscribe-form__wrapper">
+                  <label class="visually-hidden" for="subscribe-input">Enter your email</label>
+                  <input class="subscribe-form__input" type="email" required placeholder="Enter your email address" id="subscribe-input">
+                </div>
+                <button class="subscribe-form__button button button--secondary" type="submit">Subscribe to Newsletter</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="site-footer__content">
+          <div class="container">
+            <div class="site-footer__extra"><a class="site-footer__logo logo" href="#"><img class="logo__image" src="img/site-logo.svg" width="122" height="18" alt="Logo Shop.co"></a>
+              <p class="site-footer__description">We&nbsp;have clothes that suits your style and which you’re&nbsp;proud to&nbsp;wear. From women to&nbsp;men.</p>
+              <ul class="site-footer__socials socials">
+                <li class="socials__item"><a class="socials__link" href="#" aria-label="We on X">
+                    <svg class="socials__icon" width="30" height="30">
+                      <use xlink:href="img/sprite.svg#x-ic"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="#" aria-label="We on YouTube">
+                    <svg class="socials__icon" width="30" height="30">
+                      <use xlink:href="img/sprite.svg#yt-ic"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="#" aria-label="We on VK">
+                    <svg class="socials__icon" width="30" height="30">
+                      <use xlink:href="img/sprite.svg#vk-ic"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="#" aria-label="We on VK">
+                    <svg class="socials__icon" width="30" height="30">
+                      <use xlink:href="img/sprite.svg#github-ic"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="site-footer__store-navigation store-navigation">
+              <div class="store-navigation__column">
+                <h2 class="store-navigation__title">Company</h2>
+                <ul class="store-navigation__list">
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">About</a></li>
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Features</a></li>
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Works</a></li>
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Career</a></li>
+                </ul>
+              </div>
+              <div class="store-navigation__column">
+                <h2 class="store-navigation__title">Help</h2>
+                <ul class="store-navigation__list">
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Customer Support</a></li>
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Delivery Details</a></li>
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Terms &amp; Conditions</a></li>
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="store-navigation__column">
+                <h2 class="store-navigation__title">Faq</h2>
+                <ul class="store-navigation__list">
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Account</a></li>
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Manage Deliveries</a></li>
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Orders</a></li>
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Payments</a></li>
+                </ul>
+              </div>
+              <div class="store-navigation__column">
+                <h2 class="store-navigation__title">Resources</h2>
+                <ul class="store-navigation__list">
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Free eBooks</a></li>
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Development Tutorial</a></li>
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">How to - Blog</a></li>
+                  <li class="store-navigation__item"><a class="store-navigation__link" href="#">Youtube Playlist</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="site-footer__bottom">
+              <ul class="payment">
+                <li class="payment__item"><img class="payment__logo" src="img/visa-ic.svg" width="40" height="26" alt="Visa payment"></li>
+                <li class="payment__item"><img class="payment__logo" src="img/mastercard-ic.svg" width="40" height="26" alt="Mastercard payment"></li>
+                <li class="payment__item"><img class="payment__logo" src="img/paypal-ic.svg" width="40" height="26" alt="PayPal payment"></li>
+                <li class="payment__item"><img class="payment__logo" src="img/apple-pay-ic.svg" width="40" height="26" alt="Apple Pay payment"></li>
+                <li class="payment__item"><img class="payment__logo" src="img/google-pay-ic.svg" width="40" height="26" alt="Google Pay payment"></li>
+              </ul>
+              <p class="site-footer__copyright">Shop.co &copy; 2000-2023, All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer><span class="overlay"></span>
+    </div>
+    <script src="/js/script.min.js" defer></script>
+  </body>
+</html>

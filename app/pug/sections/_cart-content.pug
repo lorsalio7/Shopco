@@ -1,0 +1,109 @@
+section.cart
+  .container
+    h1.cart__title.section-title Your cart
+    .cart__content
+      .cart__products
+        form(action="#" method="POST").cart-products-form
+          .cart-products-form__list
+            .cart-products-form__item.cart-products-item
+              img(src="/img/cart-product-1.jpg" width="124" height="124", alt="Gradient Graphic T-shirt").cart-products-item__image
+              .cart-products-item__text-content
+                .cart-products-item__row
+                  h2.cart-products-item__title
+                    a(href="#").cart-products-item__link Gradient Graphic T-shirt
+                  button(type="button" aria-label="Remove product from cart").cart-products-item__delete-button
+                    +svg("", "delete-ic", 24, 24)
+                .cart-products-item__row
+                  dl.cart-products-item__list
+                    div.cart-products-item__specification-row
+                      dt Size:
+                      dd Large
+                    div.cart-products-item__specification-row
+                      dt Color:
+                      dd White
+                .cart-products-item__row
+                  p.prices
+                    span.prices__current-price $145
+                  .quantity
+                    button(type="button" aria-label="Decrease quantity").quantity__button.quantity__button--minus
+                      +svg("", "minus-ic", 24, 24)
+                    button(type="button" aria-label="Increase quantity").quantity__button.quantity__button--plus
+                      +svg("", "plus-ic", 24, 24)
+                    label(for="quantity-input__4448754").visually-hidden Quantity product
+                    input(type="text" name="quantity" id="quantity-input__4448754" pattern="[0-9]*" value="1").quantity__input
+            .cart-products-form__item.cart-products-item
+              img(src="/img/cart-product-2.jpg" width="124" height="124", alt="Gradient Graphic T-shirt").cart-products-item__image
+              .cart-products-item__text-content
+                .cart-products-item__row
+                  h2.cart-products-item__title
+                    a(href="#").cart-products-item__link Checkered Shirt
+                  button(type="button" aria-label="Remove product from cart").cart-products-item__delete-button
+                    +svg("", "delete-ic", 24, 24)
+                .cart-products-item__row
+                  dl.cart-products-item__list
+                    div.cart-products-item__specification-row
+                      dt Size:
+                      dd Medium
+                    div.cart-products-item__specification-row
+                      dt Color:
+                      dd Red
+                .cart-products-item__row
+                  p.prices
+                    span.prices__current-price $180
+                  .quantity
+                    button(type="button" aria-label="Decrease quantity").quantity__button.quantity__button--minus
+                      +svg("", "minus-ic", 24, 24)
+                    button(type="button" aria-label="Increase quantity").quantity__button.quantity__button--plus
+                      +svg("", "plus-ic", 24, 24)
+                    label(for="quantity-input__45832499").visually-hidden Quantity product
+                    input(type="text" name="quantity" id="quantity-input__45832499" pattern="[0-9]*" value="1").quantity__input
+            .cart-products-form__item.cart-products-item
+              img(src="/img/cart-product-3.jpg" width="124" height="124", alt="Gradient Graphic T-shirt").cart-products-item__image
+              .cart-products-item__text-content
+                .cart-products-item__row
+                  h2.cart-products-item__title
+                    a(href="#").cart-products-item__link Skinny Fit Jeans
+                  button(type="button" aria-label="Remove product from cart").cart-products-item__delete-button
+                    +svg("", "delete-ic", 24, 24)
+                .cart-products-item__row
+                  dl.cart-products-item__list
+                    div.cart-products-item__specification-row
+                      dt Size:
+                      dd Large
+                    div.cart-products-item__specification-row
+                      dt Color:
+                      dd Blue
+                .cart-products-item__row
+                  p.prices
+                    span.prices__current-price $240
+                  .quantity
+                    button(type="button" aria-label="Decrease quantity").quantity__button.quantity__button--minus
+                      +svg("", "minus-ic", 24, 24)
+                    button(type="button" aria-label="Increase quantity").quantity__button.quantity__button--plus
+                      +svg("", "plus-ic", 24, 24)
+                    label(for="quantity-input__23347384").visually-hidden Quantity product
+                    input(type="text" name="quantity" id="quantity-input__23347384" pattern="[0-9]*" value="1").quantity__input
+      .cart__info
+        form(action="#" method="POST").cart-info-form
+          h2.cart-info-form__title Order Summary
+          dl.order-info
+            .order-info__row
+              dt.order-info__subject Subtotal
+              dd.order-info__amount $565
+            .order-info__row
+              dt.order-info__subject Discount
+                span.order-info__discount-size (-20%)
+              dd.order-info__amount.order-info__amount--discount-amount -$113
+            .order-info__row
+              dt.order-info__subject Delivery Fee
+              dd.order-info__amount $15
+            .order-info__row
+              dt.order-info__subject.order-info__subject--total Total
+              dd.order-info__amount.order-info__amount--total $565
+          .cart-info-form__row
+            .promocode
+              input(type="text" id="promocode-input").promocode__input
+              label(for="promocode-input").visually-hidden Enter promocode
+            button(type="submit" method="POST").button Apply
+        a(href="#").button
+          span.button__text Go to Checkout
