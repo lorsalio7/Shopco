@@ -1,27 +1,29 @@
-let quantity = document.querySelector(".quantity");
+let quantities = document.querySelectorAll(".quantity");
 
-if(quantity) {
-  let quantityInput = quantity.querySelector(".quantity__input");
-  let quantityPlusButton = quantity.querySelector(".quantity__button--plus");
-  let quantityMinusButton = quantity.querySelector(".quantity__button--minus");
+if(quantities) {
+  quantities.forEach(el => {
+    let quantityInput = el.querySelector(".quantity__input");
+    let quantityPlusButton = el.querySelector(".quantity__button--plus");
+    let quantityMinusButton = el.querySelector(".quantity__button--minus");
 
-  let productCount = 1;
+    let productCount = 1;
 
-  quantityPlusButton.addEventListener("click", plusProduct);
+    quantityPlusButton.addEventListener("click", plusProduct);
 
-  quantityMinusButton.addEventListener("click", minusProduct);
+    quantityMinusButton.addEventListener("click", minusProduct);
 
-  function plusProduct() {
-    productCount++;
-    quantityInput.value = productCount;
-  }
-
-  function minusProduct() {
-    if(productCount < 2) {
-      return
-    } else {
-      productCount--;
+    function plusProduct() {
+      productCount++;
       quantityInput.value = productCount;
     }
-  }
+
+    function minusProduct() {
+      if(productCount < 2) {
+        return
+      } else {
+        productCount--;
+        quantityInput.value = productCount;
+      }
+    }
+  });
 }

@@ -1,0 +1,46 @@
+.order-info {
+  margin: 0;
+}
+
+.order-info__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.order-info__row--total {
+  border-top: 1px solid var(--color-alto);
+  padding-top: 20px;
+}
+
+.order-info__row:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.order-info__subject {
+  width: 50%;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-scorpion);
+}
+
+.order-info__row--total .order-info__subject {
+  color: var(--color-black);
+}
+
+.order-info__amount {
+  margin-left: 0;
+  width: 50%;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
+  color: var(--color-black);
+}
+
+.order-info__row--total .order-info__amount {
+  font-size: 20px;
+}
+
+.order-info__amount--discount-amount {
+  color: var(--color-red-orange);
+}

@@ -1,0 +1,27 @@
+.cart-info-form__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-black);
+}
+
+.cart-info-form__order-info {
+  margin-bottom: 16px;
+}
+
+.cart-info-form__row {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.cart-info-form__promocode {
+  flex-basis: 71.5%;
+}
+
+.cart-info-form__promo-button {
+  flex-basis: 28.5%;
+  margin-left: 12px;
+  padding: 12px 16px;
+  font-size: 14px;
+}

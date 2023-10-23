@@ -262,26 +262,28 @@ if (filtersActiveButton) {
   filtersCloseButton.addEventListener("click", closeCatalogFilters);
 }
 ;
-var quantity = document.querySelector(".quantity");
-if (quantity) {
-  var plusProduct = function plusProduct() {
-    productCount++;
-    quantityInput.value = productCount;
-  };
-  var minusProduct = function minusProduct() {
-    if (productCount < 2) {
-      return;
-    } else {
-      productCount--;
+var quantities = document.querySelectorAll(".quantity");
+if (quantities) {
+  quantities.forEach(function (el) {
+    var quantityInput = el.querySelector(".quantity__input");
+    var quantityPlusButton = el.querySelector(".quantity__button--plus");
+    var quantityMinusButton = el.querySelector(".quantity__button--minus");
+    var productCount = 1;
+    quantityPlusButton.addEventListener("click", plusProduct);
+    quantityMinusButton.addEventListener("click", minusProduct);
+    function plusProduct() {
+      productCount++;
       quantityInput.value = productCount;
     }
-  };
-  var quantityInput = quantity.querySelector(".quantity__input");
-  var quantityPlusButton = quantity.querySelector(".quantity__button--plus");
-  var quantityMinusButton = quantity.querySelector(".quantity__button--minus");
-  var productCount = 1;
-  quantityPlusButton.addEventListener("click", plusProduct);
-  quantityMinusButton.addEventListener("click", minusProduct);
+    function minusProduct() {
+      if (productCount < 2) {
+        return;
+      } else {
+        productCount--;
+        quantityInput.value = productCount;
+      }
+    }
+  });
 }
 ;
 var cardTabs = document.querySelector(".card-tabs");
