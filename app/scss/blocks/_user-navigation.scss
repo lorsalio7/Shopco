@@ -19,4 +19,8 @@
 
 .user-navigation__open-search-button {
   cursor: pointer;
+
+  @include px1025 {
+    display: none;
+  }
 }

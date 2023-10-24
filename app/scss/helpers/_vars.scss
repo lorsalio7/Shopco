@@ -13,6 +13,8 @@
   --color-red-orange: rgb(255, 51, 51); /* #ff3333 */
 
   /* custom properties: */
+  --z-index-default: 1;
+  --z-index-fixed: 5;
   --z-index-overlay: 10;
   --z-index-active-elements: 15;
 }

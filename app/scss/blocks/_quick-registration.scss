@@ -4,6 +4,28 @@
   background-color: var(--color-black);
 }
 
+.quick-registration__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+
+    @include px769 {
+      display: block;
+    }
+  }
+
+  @include px769 {
+    justify-content: space-between;
+  }
+}
+
 .quick-registration__text {
   margin-top: 0;
   margin-bottom: 0;
@@ -22,4 +44,9 @@
 
 .quick-registration__close-button {
   display: none;
+  margin-left: 20px;
+
+  @include px769 {
+    display: block;
+  }
 }

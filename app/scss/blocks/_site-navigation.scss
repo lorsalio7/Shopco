@@ -1,6 +1,10 @@
 .site-navigation {
   padding: 20px;
   background-color: var(--color-white);
+
+  @include px769 {
+    padding: 0;
+  }
 }
 
 .site-navigation__list {
@@ -10,10 +14,19 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @include px769 {
+    flex-direction: row;
+  }
 }
 
 .site-navigation__item:not(:last-of-type) {
   margin-bottom: 20px;
+
+  @include px769 {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
 }
 
 .site-navigation__link {
@@ -71,4 +84,8 @@
   height: 24px;
   background-color: transparent;
   cursor: pointer;
+
+  @include px769 {
+    display: none;
+  }
 }

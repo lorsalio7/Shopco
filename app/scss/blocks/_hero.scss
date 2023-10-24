@@ -1,11 +1,11 @@
 .hero {
+  padding-top: 40px;
   background-color: var(--color-bon-jour);
 }
 
 .hero__container {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
 }
 
 .hero__slogan {

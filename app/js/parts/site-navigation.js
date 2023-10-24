@@ -7,12 +7,12 @@ if(burgerButton) {
   closeSiteNavButton.addEventListener("click", closeSiteMenu);
 
   function openSiteMenu() {
-    document.querySelector(".overlay").classList.add("overlay--active");
+    document.querySelector(".site-header__overlay").classList.add("site-header__overlay--active");
     siteNavigation.classList.add("site-header__site-navigation--active");
   }
 
   function closeSiteMenu() {
-    document.querySelector(".overlay").classList.remove("overlay--active");
+    document.querySelector(".site-header__overlay").classList.remove("site-header__overlay--active");
     siteNavigation.classList.remove("site-header__site-navigation--active");
   }
 }

@@ -42,3 +42,35 @@
 }
 
 /* @include px390 {} */
+
+@mixin px426 {
+  @media (min-width: 426px) {
+    @content;
+  }
+}
+
+/* @include px426 {} */
+
+@mixin px550 {
+  @media (min-width: 550px) {
+    @content;
+  }
+}
+
+/* @include px550 {} */
+
+@mixin px769 {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+/* @include px769 {} */
+
+@mixin px1025 {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+/* @include px1025 {} */

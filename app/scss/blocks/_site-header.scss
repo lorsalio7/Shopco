@@ -1,11 +1,22 @@
 .site-header {
-  padding: 15px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: var(--z-index-fixed);
+  display: flex;
+  flex-direction: column;
   text-align: center;
   color: #fff;
   background-color: var(--color-white);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .site-header__container {
+  padding: 15px 0;
+}
+
+.site-header__container .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,6 +24,18 @@
 
 .site-header__burger-button {
   margin-right: 16px;
+
+  @include px769 {
+    display: none;
+  }
+}
+
+.site-header__logo {
+  margin-right: auto;
+
+  @include px769 {
+    margin-right: 0;
+  }
 }
 
 .site-header__site-navigation {
@@ -25,6 +48,16 @@
   width: 80%;
   transform: translateX(-101%);
   transition: transform 0.3s ease-in-out;
+
+  @include px769 {
+    position: static;
+    overflow-y: unset;
+    margin-right: auto;
+    margin-left: 40px;
+    width: auto;
+    transform: none;
+    transition: none;
+  }
 }
 
 .site-header__site-navigation--active {
@@ -42,8 +75,34 @@
   background-color: var(--color-white);
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
+
+  @include px1025 {
+    position: static;
+    flex-grow: 1;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 0;
+    transform: none;
+    transition: none;
+  }
 }
 
 .site-header__product-search--active {
   transform: translateY(0);
+}
+
+.site-header__overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: var(--z-index-overlay);
+  display: none;
+  background-color: var(--color-black);
+  opacity: 0.2;
+}
+
+.site-header__overlay--active {
+  display: block;
 }

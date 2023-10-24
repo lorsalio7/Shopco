@@ -4,4 +4,12 @@
   margin: 0 auto;
   padding: 0 15px;
   max-width: var(--container-width);
+
+  @include px426 {
+    padding: 0 45px;
+  }
+
+  @include px769 {
+    padding: 0 15px;
+  }
 }

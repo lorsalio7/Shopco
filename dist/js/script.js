@@ -25,14 +25,41 @@ function debounce(func, delay) {
   };
 }
 ;
+var siteHeader = document.querySelector(".site-header");
+var siteMain = document.querySelector(".main");
+var quickRegistrationButton = siteHeader.querySelector(".quick-registration__close-button");
+function updateMarginTop() {
+  siteMain.style.marginTop = siteHeader.offsetHeight + "px";
+}
+window.addEventListener("load", updateMarginTop);
+window.addEventListener("resize", debounce(function () {
+  updateMarginTop();
+}, 200));
+window.addEventListener("scroll", debounce(addShadow, 150));
+function addShadow() {
+  var offsetTop = window.pageYOffset;
+  if (offsetTop > 0) {
+    siteHeader.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
+  } else {
+    siteHeader.style.boxShadow = "0 2px 6px rgba(0,0,0,0)";
+  }
+}
+if (quickRegistrationButton) {
+  var quickRegistration = document.querySelector(".quick-registration");
+  quickRegistrationButton.addEventListener("click", function () {
+    quickRegistration.style.display = "none";
+    updateMarginTop();
+  });
+}
+;
 var burgerButton = document.querySelector(".burger-button");
 if (burgerButton) {
   var openSiteMenu = function openSiteMenu() {
-    document.querySelector(".overlay").classList.add("overlay--active");
+    document.querySelector(".site-header__overlay").classList.add("site-header__overlay--active");
     siteNavigation.classList.add("site-header__site-navigation--active");
   };
   var closeSiteMenu = function closeSiteMenu() {
-    document.querySelector(".overlay").classList.remove("overlay--active");
+    document.querySelector(".site-header__overlay").classList.remove("site-header__overlay--active");
     siteNavigation.classList.remove("site-header__site-navigation--active");
   };
   var siteNavigation = document.querySelector(".site-header__site-navigation");
@@ -41,15 +68,31 @@ if (burgerButton) {
   closeSiteNavButton.addEventListener("click", closeSiteMenu);
 }
 ;
+var dropdown = document.querySelectorAll("dropdown");
+if (dropdown) {
+  var dropdownButtons = document.querySelectorAll(".dropdown__toggle");
+  dropdownButtons.forEach(function (button) {
+    button.addEventListener("click", function (e) {
+      if (e.target.classList.contains("dropdown__toggle")) {
+        e.target.classList.toggle("dropdown__toggle--active");
+        e.target.nextElementSibling.classList.toggle("dropdown__list--active");
+      }
+    });
+  });
+}
+;
 var openProductSearchButton = document.querySelector(".user-navigation__open-search-button");
 if (openProductSearchButton) {
   var openProductSearch = function openProductSearch() {
     productSearchWindow.classList.add("site-header__product-search--active");
+    productSearchInput.focus();
   };
   var closeProductSearch = function closeProductSearch() {
     productSearchWindow.classList.remove("site-header__product-search--active");
+    productSearchInput.blur();
   };
   var productSearchWindow = document.querySelector(".site-header__product-search");
+  var productSearchInput = productSearchWindow.querySelector(".product-search__input");
   var closeProductSearchButton = productSearchWindow.querySelector(".product-search__close-button");
   openProductSearchButton.addEventListener("click", openProductSearch);
   closeProductSearchButton.addEventListener("click", closeProductSearch);
