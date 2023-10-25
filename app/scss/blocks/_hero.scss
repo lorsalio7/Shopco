@@ -1,11 +1,26 @@
 .hero {
-  padding-top: 40px;
   background-color: var(--color-bon-jour);
 }
 
 .hero__container {
   display: flex;
   flex-direction: column;
+
+  @include px769 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hero__text-content {
+  padding-top: 40px;
+
+  @include px769 {
+    flex: 1 1 50%;
+    align-self: center;
+    padding-bottom: 40px;
+  }
 }
 
 .hero__slogan {
@@ -16,6 +31,18 @@
   font-size: 36px;
   line-height: 34px;
   text-transform: uppercase;
+
+  @include px550 {
+    margin-bottom: 20px;
+    font-size: 44px;
+    line-height: 38px;
+  }
+
+  @include px1025 {
+    margin-bottom: 32px;
+    font-size: 64px;
+    line-height: 58px;
+  }
 }
 
 .hero__description {
@@ -24,10 +51,35 @@
   font-size: 14px;
   line-height: 20px;
   color: var(--color-scorpion);
+
+  @include px550 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @include px1025 {
+    margin-bottom: 32px;
+  }
 }
 
 .hero__button {
   margin-bottom: 20px;
+
+  @include px550 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 210px;
+  }
+
+  @include px769 {
+    margin-right: unset;
+    margin-left: unset;
+  }
+
+  @include px1025 {
+    margin-bottom: 48px;
+  }
 }
 
 .hero__media-content {
@@ -60,6 +112,12 @@
     background-position: center;
     background-size: 76px;
     background-repeat: no-repeat;
+  }
+
+  @include px769 {
+    flex: 1 1 50%;
+    align-self: flex-end;
+    margin-left: 30px;
   }
 }
 
