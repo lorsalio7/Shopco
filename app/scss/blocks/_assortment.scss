@@ -11,13 +11,52 @@
     width: auto;
     height: 1px;
     background-color: var(--color-alto);
+
+    @include px426 {
+      left: 45px;
+      right: 45px;
+    }
+
+    @include px769 {
+      left: 15px;
+      right: 15px;
+    }
   }
 }
 
 .assortment__slider {
   margin-bottom: 24px;
+
+  @include px550 {
+    margin-bottom: 36px;
+  }
 }
 
 .assortment__slider .splide__track {
   overflow: visible;
+}
+
+.assortment .assortment__slider .splide__track .splide__list {
+  display: flex;
+}
+
+.assortment__slider .splide__track .splide__slide {
+  @include px1025 {
+    flex-basis: calc((100% - 20px * 3) / 4);
+  }
+}
+
+.assortment__slider .splide__track .splide__slide:not(:last-child) {
+  @include px1025 {
+    margin-right: 20px;
+  }
+}
+
+.assortment__button {
+  @include px550 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 210px;
+  }
 }

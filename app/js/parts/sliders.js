@@ -21,6 +21,21 @@ document.addEventListener( 'DOMContentLoaded', function() {
           padding: {
             right: 158
           }
+        },
+        550: {
+          perPage: 2,
+          padding: {
+            right: 70
+          }
+        },
+        769: {
+          perPage: 2,
+          padding: {
+            right: 350
+          }
+        },
+        1025: {
+          destroy: true
         }
       }
     }).mount();

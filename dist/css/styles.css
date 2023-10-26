@@ -503,6 +503,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  -webkit-transition: margin-top 0.3s ease-in-out;
+  transition: margin-top 0.3s ease-in-out;
 }
 
 .page__brands {
@@ -550,6 +552,7 @@ body {
 
 .quick-registration__container::before {
   content: "";
+  display: none;
   margin-right: 20px;
   width: 20px;
   height: 20px;
@@ -1559,6 +1562,12 @@ body {
 
 .assortment__slider .splide__track {
   overflow: visible;
+}
+
+.assortment .assortment__slider .splide__track .splide__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .product-card__link {
@@ -3378,6 +3387,11 @@ body {
   .container {
     padding: 0 45px;
   }
+
+  .assortment:not(:last-child) .assortment__container::before {
+    left: 45px;
+    right: 45px;
+  }
 }
 
 @media (min-width: 550px) {
@@ -3398,6 +3412,21 @@ body {
   }
 
   .hero__button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 210px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .assortment__slider {
+    margin-bottom: 36px;
+  }
+
+  .assortment__button {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -3529,6 +3558,15 @@ body {
   .advantages-list__title {
     font-size: 14px;
   }
+
+  .section-title {
+    font-size: 42px;
+  }
+
+  .assortment:not(:last-child) .assortment__container::before {
+    left: 15px;
+    right: 15px;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -3605,6 +3643,19 @@ body {
 
   .advantages-list__title {
     font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 42px;
+  }
+
+  .assortment__slider .splide__track .splide__slide {
+    -ms-flex-preferred-size: calc((100% - 60px) / 4);
+        flex-basis: calc((100% - 60px) / 4);
+  }
+
+  .assortment__slider .splide__track .splide__slide:not(:last-child) {
+    margin-right: 20px;
   }
 }
 
