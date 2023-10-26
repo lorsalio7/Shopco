@@ -1540,12 +1540,12 @@ body {
      object-fit: contain;
 }
 
-.assortment:not(:last-child) .assortment__container {
+.assortment__container--border {
   position: relative;
   padding-bottom: 40px;
 }
 
-.assortment:not(:last-child) .assortment__container::before {
+.assortment__container--border::before {
   content: "";
   position: absolute;
   left: 15px;
@@ -3388,9 +3388,13 @@ body {
     padding: 0 45px;
   }
 
-  .assortment:not(:last-child) .assortment__container::before {
+  .assortment__container--border::before {
     left: 45px;
     right: 45px;
+  }
+
+  .assortment__container--border {
+    padding-bottom: 40px;
   }
 }
 
@@ -3563,9 +3567,13 @@ body {
     font-size: 42px;
   }
 
-  .assortment:not(:last-child) .assortment__container::before {
+  .assortment__container--border::before {
     left: 15px;
     right: 15px;
+  }
+
+  .assortment__container--border {
+    padding-bottom: 40px;
   }
 }
 

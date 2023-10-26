@@ -1,4 +1,4 @@
-.assortment:not(:last-child) .assortment__container {
+.assortment__container--border {
   position: relative;
   padding-bottom: 40px;
 
@@ -21,6 +21,14 @@
       left: 15px;
       right: 15px;
     }
+  }
+
+  @include px426 {
+    padding-bottom: 40px;
+  }
+
+  @include px769 {
+    padding-bottom: 40px;
   }
 }
 
