@@ -343,6 +343,7 @@
   ],
   "dress_style": [
     {
+      "additional_class": "dress-style__item--small",
       "card_url": "#",
       "card_name": "Casual",
       "card_image": "/img/casual-style-img.jpg",
@@ -367,6 +368,7 @@
       "card_image_alt": "Party dress style"
     },
     {
+      "additional_class": "dress-style__item--small",
       "card_url": "#",
       "card_name": "Gym",
       "card_image": "/img/gym-style-img.jpg",
