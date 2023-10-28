@@ -39,6 +39,10 @@
   font-size: 16px;
   line-height: 22px;
   color: var(--color-black);
+
+  @include px1025 {
+    font-size: 20px;
+  }
 }
 
 .review__name--verified {
@@ -50,12 +54,17 @@
     content: "";
     display: block;
     margin-left: 4px;
-    width: 24px;
-    height: 24px;
+    width: 19px;
+    height: 19px;
     background-image: url("../img/verified-ic.svg");
     background-position: center;
     background-size: 24px 24px;
     background-repeat: no-repeat;
+
+    @include px1025 {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 
@@ -65,6 +74,11 @@
   font-size: 14px;
   line-height: 20px;
   color: var(--color-scorpion);
+
+  @include px1025 {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .review__date {

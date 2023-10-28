@@ -83,7 +83,25 @@ document.addEventListener( 'DOMContentLoaded', function() {
       arrows: false,
       pagination: false,
       gap: 15,
-      type: "loop"
+      mediaQuery: 'min',
+      type: "loop",
+      breakpoints: {
+        550: {
+          padding: {
+            right: 100
+          }
+        },
+        769: {
+          gap: 20,
+          perPage: 2,
+          padding: {
+            right: 0
+          }
+        },
+        1025: {
+          perPage: 3
+        }
+      }
     }).mount();
 
     storeReviewsSliderPrevButton.addEventListener("click", (e) => {

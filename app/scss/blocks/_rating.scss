@@ -21,8 +21,17 @@
   width: 15px;
   height: 15px;
   object-fit: contain;
+
+  @include px1025 {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 .rating__star:not(:last-of-type) {
   margin-right: 4px;
+
+  @include px1025 {
+    margin-right: 6px;
+  }
 }
