@@ -18,6 +18,16 @@
   border-radius: 20px;
   padding: 30px 24px;
   background-color: var(--color-black);
+
+  @include px769 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include px1025 {
+    padding: 36px 64px;
+  }
 }
 
 .subscribe__title {
@@ -28,8 +38,24 @@
   text-align: left;
   text-transform: uppercase;
   color: var(--color-white);
+
+  @include px769 {
+    flex-basis: 550px;
+    margin-right: 30px;
+    margin-bottom: 0;
+    line-height: 45px;
+  }
 }
 
 .subscribe__form {
-  max-width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 450px;
+
+  @include px769 {
+    flex-basis: 350px;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: none;
+  }
 }
