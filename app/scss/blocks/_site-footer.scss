@@ -3,6 +3,32 @@
   background-color: var(--color-gallery);
 }
 
+.site-footer__container {
+  @include px769 {
+    display: flex;
+  }
+
+  @include px1025 {
+    justify-content: space-between;
+  }
+}
+
+.site-footer__extra {
+  @include px550 {
+    max-width: 280px;
+  }
+
+  @include px769 {
+    flex-basis: 33.33%;
+    margin-right: 16px;
+    max-width: none;
+  }
+
+  @include px1025 {
+    flex-basis: 20%;
+  }
+}
+
 .site-footer__logo {
   margin-bottom: 14px;
 }
@@ -22,14 +48,29 @@
 .site-footer__store-navigation {
   margin-right: -16px;
   margin-bottom: 24px;
+
+  @include px769 {
+    flex-basis: 66.67%;
+    margin-bottom: 26px;
+  }
+
+  @include px1025 {
+    flex-basis: 71%;
+  }
 }
 
 .site-footer__bottom {
+  position: relative;
   display: flex;
   flex-direction: column;
   border-top: 1px solid var(--color-alto);
   padding: 16px 0 77px;
   width: 100%;
+
+  @include px769 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .site-footer__copyright {

@@ -3,7 +3,12 @@
   padding: 40px 16px 19px;
   background-color: var(--color-gallery);
 
+  @include px769 {
+    border-radius: 30px;
+  }
+
   @include px1025 {
+    border-radius: 40px;
     padding: 70px 64px 66px;
   }
 }

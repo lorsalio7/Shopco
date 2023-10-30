@@ -3,12 +3,24 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
+
+  @include px769 {
+    justify-content: flex-end;
+  }
+
+  @include px1025 {
+    justify-content: space-between;
+  }
 }
 
 .store-navigation__column {
   flex-basis: 44%;
   margin-right: 16px;
   margin-bottom: 24px;
+
+  @include px1025 {
+    flex-basis: calc(20% - 16px);
+  }
 }
 
 .store-navigation__title {

@@ -10,7 +10,7 @@ footer.site-footer
           button(type="submit").subscribe-form__button.button.button--secondary Subscribe to Newsletter
 
   .site-footer__content
-    .container
+    .site-footer__container.container
       .site-footer__extra
         if pageName !== "main"
           a(href="#").site-footer__logo.logo
@@ -40,6 +40,7 @@ footer.site-footer
               each item_link in item.links
                 li.store-navigation__item
                   a(href= item_link.link_url class="store-navigation__link")= item_link.link_name
+    .container
       .site-footer__bottom
         ul.payment
           li.payment__item

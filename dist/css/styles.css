@@ -3304,6 +3304,7 @@ body {
 }
 
 .site-footer__bottom {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3443,6 +3444,10 @@ body {
     margin-right: auto;
     margin-left: auto;
     max-width: 210px;
+  }
+
+  .site-footer__extra {
+    max-width: 280px;
   }
 }
 
@@ -3607,6 +3612,12 @@ body {
     margin-bottom: 14px;
   }
 
+  .store-navigation {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
   .assortment__container--border::before {
     left: 15px;
     right: 15px;
@@ -3614,6 +3625,10 @@ body {
 
   .assortment__container--border {
     padding-bottom: 40px;
+  }
+
+  .dress-style__container {
+    border-radius: 30px;
   }
 
   .dress-style__item {
@@ -3631,6 +3646,35 @@ body {
 
   .dress-style__image {
     height: 240px;
+  }
+
+  .site-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .site-footer__extra {
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+    margin-right: 16px;
+    max-width: none;
+  }
+
+  .site-footer__store-navigation {
+    -ms-flex-preferred-size: 66.67%;
+        flex-basis: 66.67%;
+    margin-bottom: 26px;
+  }
+
+  .site-footer__bottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -3718,6 +3762,17 @@ body {
     padding: 36px 64px;
   }
 
+  .store-navigation {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .store-navigation__column {
+    -ms-flex-preferred-size: calc(20% - 16px);
+        flex-basis: calc(20% - 16px);
+  }
+
   .assortment__slider .splide__track .splide__slide {
     -ms-flex-preferred-size: calc((100% - 60px) / 4);
         flex-basis: calc((100% - 60px) / 4);
@@ -3737,6 +3792,7 @@ body {
   }
 
   .dress-style__container {
+    border-radius: 40px;
     padding: 70px 64px 66px;
   }
 
@@ -3782,6 +3838,22 @@ body {
   .review__text {
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .site-footer__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .site-footer__extra {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+
+  .site-footer__store-navigation {
+    -ms-flex-preferred-size: 71%;
+        flex-basis: 71%;
   }
 }
 
