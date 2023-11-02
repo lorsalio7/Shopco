@@ -1,0 +1,27 @@
+.sorting-form {
+  position: relative;
+  min-width: 100px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/dropdown-ic.svg");
+    background-position: center;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}
+
+.sorting-form__select {
+  appearance: none;
+  border: none;
+  padding: 5px 20px 5px 5px;
+  width: 100%;
+  cursor: pointer;
+}

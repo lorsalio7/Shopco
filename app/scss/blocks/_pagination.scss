@@ -58,6 +58,11 @@
   width: 16px;
   height: 16px;
   object-fit: contain;
+
+  @include px1025 {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .pagination__control span {
@@ -70,6 +75,10 @@
 
   @include px390 {
     display: block;
+  }
+
+  @include px1025 {
+    font-size: 14px;
   }
 }
 
@@ -87,6 +96,14 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.pagination__item--hidden {
+  display: none;
+
+  @include px769 {
+    display: list-item;
+  }
 }
 
 .pagination__link {
@@ -109,6 +126,12 @@
   @include hover-focus {
     color: var(--color-black);
     background-color: var(--color-gallery);
+  }
+
+  @include px1025 {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
   }
 }
 

@@ -1,7 +1,8 @@
 .color-checkboxes__item {
   appearance: none;
   position: relative;
-  margin: 8px;
+  margin-right: 15px;
+  margin-bottom: 15px;
   border: 1px solid rgba(0, 0, 0, 20%);
   border-radius: 50%;
   width: 37px;
@@ -12,6 +13,10 @@
   background-repeat: no-repeat;
   background-color: var(--color-black);
   cursor: pointer;
+
+  @include px1025 {
+    margin: 7px;
+  }
 }
 
 .color-checkboxes__item:checked {

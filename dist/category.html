@@ -8,6 +8,7 @@
     <meta name="description" content="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur">
     <link rel="shortcut icon" type="image/svg+xml" href="/img/favicon.svg">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+    <link rel="stylesheet" href="/libs/css/simplebar.min.css">
     <link rel="stylesheet" href="/libs/css/nouislider.min.css">
     <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f=satoshi@700,500,400&amp;display=swap">
     <link rel="stylesheet" href="/css/styles.min.css">
@@ -99,8 +100,8 @@
             </ul>
           </div>
         </div>
-        <section class="catalog">
-          <div class="container">
+        <section class="page__catalog catalog">
+          <div class="catalog__container container">
             <div class="catalog__cards catalog-cards">
               <div class="catalog-cards__header">
                 <h1 class="catalog-cards__title">Casual</h1>
@@ -132,7 +133,7 @@
                       </div>
                       <p class="rating__text">3.5/5</p>
                     </div>
-                    <p class="product-card__prices"><span class="product-card__current-price">$145</span>
+                    <p class="product-card__prices prices"><span class="prices__current-price">$145</span>
                     </p>
                   </article>
                 </li>
@@ -144,7 +145,7 @@
                       </div>
                       <p class="rating__text">4.5/5</p>
                     </div>
-                    <p class="product-card__prices"><span class="product-card__current-price">$180</span>
+                    <p class="product-card__prices prices"><span class="prices__current-price">$180</span>
                     </p>
                   </article>
                 </li>
@@ -156,8 +157,8 @@
                       </div>
                       <p class="rating__text">5.0/5</p>
                     </div>
-                    <p class="product-card__prices"><span class="product-card__current-price">$120</span>
-                      <s class="product-card__old-price">$150</s><span class="product-card__discount">-30%</span>
+                    <p class="product-card__prices prices"><span class="prices__current-price">$120</span>
+                      <s class="prices__old-price">$150</s><span class="prices__discount">-30%</span>
                     </p>
                   </article>
                 </li>
@@ -169,8 +170,8 @@
                       </div>
                       <p class="rating__text">3.5/5</p>
                     </div>
-                    <p class="product-card__prices"><span class="product-card__current-price">$240</span>
-                      <s class="product-card__old-price">$260</s><span class="product-card__discount">-20%</span>
+                    <p class="product-card__prices prices"><span class="prices__current-price">$240</span>
+                      <s class="prices__old-price">$260</s><span class="prices__discount">-20%</span>
                     </p>
                   </article>
                 </li>
@@ -182,7 +183,7 @@
                       </div>
                       <p class="rating__text">4.5/5</p>
                     </div>
-                    <p class="product-card__prices"><span class="product-card__current-price">$180</span>
+                    <p class="product-card__prices prices"><span class="prices__current-price">$180</span>
                     </p>
                   </article>
                 </li>
@@ -194,8 +195,8 @@
                       </div>
                       <p class="rating__text">4.5/5</p>
                     </div>
-                    <p class="product-card__prices"><span class="product-card__current-price">$130</span>
-                      <s class="product-card__old-price">$160</s><span class="product-card__discount">-30%</span>
+                    <p class="product-card__prices prices"><span class="prices__current-price">$130</span>
+                      <s class="prices__old-price">$160</s><span class="prices__discount">-30%</span>
                     </p>
                   </article>
                 </li>
@@ -207,8 +208,8 @@
                       </div>
                       <p class="rating__text">5/5</p>
                     </div>
-                    <p class="product-card__prices"><span class="product-card__current-price">$212</span>
-                      <s class="product-card__old-price">$232</s><span class="product-card__discount">-20%</span>
+                    <p class="product-card__prices prices"><span class="prices__current-price">$212</span>
+                      <s class="prices__old-price">$232</s><span class="prices__discount">-20%</span>
                     </p>
                   </article>
                 </li>
@@ -220,7 +221,7 @@
                       </div>
                       <p class="rating__text">4.0/5</p>
                     </div>
-                    <p class="product-card__prices"><span class="product-card__current-price">$145</span>
+                    <p class="product-card__prices prices"><span class="prices__current-price">$145</span>
                     </p>
                   </article>
                 </li>
@@ -232,12 +233,12 @@
                       </div>
                       <p class="rating__text">3.0/5</p>
                     </div>
-                    <p class="product-card__prices"><span class="product-card__current-price">$80</span>
+                    <p class="product-card__prices prices"><span class="prices__current-price">$80</span>
                     </p>
                   </article>
                 </li>
               </ul>
-              <div class="page__pagination pagination">
+              <div class="pagination">
                 <div class="pagination__container"><a class="pagination__control pagination__control--prev" title="Previous page">
                     <svg width="16" height="16">
                       <use xlink:href="img/sprite.svg#arrow-left-pagination"></use>
@@ -245,7 +246,9 @@
                   <ul class="pagination__list">
                     <li class="pagination__item"><a class="pagination__link pagination__link--current" href="#" title="Page 1">1</a></li>
                     <li class="pagination__item"><a class="pagination__link" href="#" title="Page 2">2</a></li>
+                    <li class="pagination__item pagination__item--hidden"><a class="pagination__link" href="#" title="Page 3">3</a></li>
                     <li class="pagination__item"><span class="pagination__link--disabled">...</span></li>
+                    <li class="pagination__item pagination__item--hidden"><a class="pagination__link" href="#" title="Page 8">8</a></li>
                     <li class="pagination__item"><a class="pagination__link" href="#" title="Page 9">9</a></li>
                     <li class="pagination__item"><a class="pagination__link" href="#" title="Page 10">10</a></li>
                   </ul><a class="pagination__control pagination__control--next" href="#" title="Next page">
@@ -265,283 +268,285 @@
                 </button>
               </header>
               <form class="catalog-filters__form filters-form" action="#" method="GET">
-                <div class="filters-form__group">
-                  <fieldset class="filters-form__fieldset">
-                    <legend class="visually-hidden">Clothes</legend>
-                    <div class="filters-form__content">
-                      <div class="filters-accordion filters-accordion--inner">
-                        <div class="filters-accordion__item">
-                          <button class="filters-accordion__button" type="button" aria-expanded="false"><span>T-shirts</span></button>
-                        </div>
-                        <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
-                          <label class="filters-form__custom-checkbox" for="t-shirts_prada">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="t-shirts_prada" name="t-shirts_prada"><span class="filters-form__custom-box"></span>Prada
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="t-shirts_zara">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="t-shirts_zara" name="t-shirts_zara"><span class="filters-form__custom-box"></span>Zara
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="t-shirts_gucci">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="t-shirts_gucci" name="t-shirts_gucci"><span class="filters-form__custom-box"></span>Gucci
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="t-shirts_versace">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="t-shirts_versace" name="t-shirts_versace"><span class="filters-form__custom-box"></span>Versace
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="t-shirts_calvin-klein">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="t-shirts_calvin-klein" name="t-shirts_calvin-klein"><span class="filters-form__custom-box"></span>Calvin Klein
-                          </label>
-                        </div>
-                        <div class="filters-accordion__item">
-                          <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Shorts</span></button>
-                        </div>
-                        <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
-                          <label class="filters-form__custom-checkbox" for="shorts_prada">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shorts_prada" name="shorts_prada"><span class="filters-form__custom-box"></span>Prada
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="shorts_zara">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shorts_zara" name="shorts_zara"><span class="filters-form__custom-box"></span>Zara
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="shorts_gucci">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shorts_gucci" name="shorts_gucci"><span class="filters-form__custom-box"></span>Gucci
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="shorts_versace">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shorts_versace" name="shorts_versace"><span class="filters-form__custom-box"></span>Versace
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="shorts_calvin-klein">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shorts_calvin-klein" name="shorts_calvin-klein"><span class="filters-form__custom-box"></span>Calvin Klein
-                          </label>
-                        </div>
-                        <div class="filters-accordion__item">
-                          <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Shirts</span></button>
-                        </div>
-                        <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
-                          <label class="filters-form__custom-checkbox" for="shirts_prada">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shirts_prada" name="shirts_prada"><span class="filters-form__custom-box"></span>Prada
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="shirts_zara">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shirts_zara" name="shirts_zara"><span class="filters-form__custom-box"></span>Zara
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="shirts_gucci">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shirts_gucci" name="shirts_gucci"><span class="filters-form__custom-box"></span>Gucci
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="shirts_versace">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shirts_versace" name="shirts_versace"><span class="filters-form__custom-box"></span>Versace
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="shirts_calvin-klein">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shirts_calvin-klein" name="shirts_calvin-klein"><span class="filters-form__custom-box"></span>Calvin Klein
-                          </label>
-                        </div>
-                        <div class="filters-accordion__item">
-                          <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Hoodie</span></button>
-                        </div>
-                        <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
-                          <label class="filters-form__custom-checkbox" for="hoodie_prada">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="hoodie_prada" name="hoodie_prada"><span class="filters-form__custom-box"></span>Prada
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="hoodie_zara">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="hoodie_zara" name="hoodie_zara"><span class="filters-form__custom-box"></span>Zara
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="hoodie_gucci">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="hoodie_gucci" name="hoodie_gucci"><span class="filters-form__custom-box"></span>Gucci
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="hoodie_versace">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="hoodie_versace" name="hoodie_versace"><span class="filters-form__custom-box"></span>Versace
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="hoodie_calvin-klein">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="hoodie_calvin-klein" name="hoodie_calvin-klein"><span class="filters-form__custom-box"></span>Calvin Klein
-                          </label>
-                        </div>
-                        <div class="filters-accordion__item">
-                          <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Jeans</span></button>
-                        </div>
-                        <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
-                          <label class="filters-form__custom-checkbox" for="jeans_prada">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="jeans_prada" name="jeans_prada"><span class="filters-form__custom-box"></span>Prada
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="jeans_zara">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="jeans_zara" name="jeans_zara"><span class="filters-form__custom-box"></span>Zara
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="jeans_gucci">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="jeans_gucci" name="jeans_gucci"><span class="filters-form__custom-box"></span>Gucci
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="jeans_versace">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="jeans_versace" name="jeans_versace"><span class="filters-form__custom-box"></span>Versace
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="jeans_calvin-klein">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="jeans_calvin-klein" name="jeans_calvin-klein"><span class="filters-form__custom-box"></span>Calvin Klein
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </fieldset>
-                </div>
-                <div class="filters-form__group">
-                  <fieldset class="filters-form__fieldset filters-accordion">
-                    <legend class="filters-form__legend filters-accordion__item">
-                      <button class="filters-accordion__button filters-accordion__button--active" type="button" aria-expanded="true"><span>Price</span></button>
-                    </legend>
-                    <div class="filters-accordion__panel" aria-hidden="false">
-                      <div class="filters-form__price-range price-range"></div>
-                      <label class="visually-hidden" for="minimal-price">
-                        <input type="text" placeholder="Minimal price" id="minimal-price" name="minimal-price"><span class="visually-hidden">Price from</span>
-                      </label>
-                      <label class="visually-hidden" for="maximum-price">
-                        <input type="text" placeholder="Maximum price" id="maximum-price" name="maximum-price"><span class="visually-hidden">Price to</span>
-                      </label>
-                    </div>
-                  </fieldset>
-                </div>
-                <div class="filters-form__group">
-                  <fieldset class="filters-form__fieldset filters-accordion">
-                    <legend class="filters-form__legend filters-accordion__item">
-                      <button class="filters-accordion__button filters-accordion__button--active" type="button" aria-expanded="true"><span>Colors</span></button>
-                    </legend>
-                    <div class="filters-accordion__panel" aria-hidden="false">
-                      <div class="filters-form__color-checkboxes color-checkboxes">
-                        <label class="visually-hidden" for="color_1">Green</label>
-                        <input class="color-checkboxes__item" type="checkbox" name="color_1" id="color_1" style="background-color: rgb(0, 193, 43);">
-                        <label class="visually-hidden" for="color_2">Red</label>
-                        <input class="color-checkboxes__item" type="checkbox" name="color_2" id="color_2" style="background-color: rgb(245, 6, 6);">
-                        <label class="visually-hidden" for="color_3">Yellow</label>
-                        <input class="color-checkboxes__item" type="checkbox" name="color_3" id="color_3" style="background-color: rgb(245, 221, 6);">
-                        <label class="visually-hidden" for="color_4">Orange</label>
-                        <input class="color-checkboxes__item" type="checkbox" name="color_4" id="color_4" style="background-color: rgb(245, 121, 6);">
-                        <label class="visually-hidden" for="color_5">Turquoise</label>
-                        <input class="color-checkboxes__item" type="checkbox" name="color_5" id="color_5" style="background-color: rgb(6, 202, 245);">
-                        <label class="visually-hidden" for="color_6">Blue</label>
-                        <input class="color-checkboxes__item" type="checkbox" name="color_6" id="color_6" style="background-color: rgb(6, 58, 245);">
-                        <label class="visually-hidden" for="color_7">Violet</label>
-                        <input class="color-checkboxes__item" type="checkbox" name="color_7" id="color_7" style="background-color: rgb(125, 6, 245);">
-                        <label class="visually-hidden" for="color_8">Pink</label>
-                        <input class="color-checkboxes__item" type="checkbox" name="color_8" id="color_8" style="background-color: rgb(245, 6, 164);">
-                        <label class="visually-hidden" for="color_9">White</label>
-                        <input class="color-checkboxes__item color-checkboxes__item--white" type="checkbox" name="color_9" id="color_9" style="background-color: rgb(255, 255, 255);">
-                        <label class="visually-hidden" for="color_10">Black</label>
-                        <input class="color-checkboxes__item" type="checkbox" name="color_10" id="color_10" style="background-color: rgb(0, 0, 0);">
-                      </div>
-                    </div>
-                  </fieldset>
-                </div>
-                <div class="filters-form__group">
-                  <fieldset class="filters-form__fieldset filters-accordion">
-                    <legend class="filters-form__legend filters-accordion__item">
-                      <button class="filters-accordion__button filters-accordion__button--active" type="button" aria-expanded="true"><span>Size</span></button>
-                    </legend>
-                    <div class="filters-accordion__panel" aria-hidden="false">
-                      <div class="filters-form__size-checkboxes size-checkboxes">
-                        <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="xx-small-size" id="xx-small-size">
-                        <label class="size-checkboxes__item" for="xx-small-size">XX-Small</label>
-                        <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="x-small-size" id="x-small-size">
-                        <label class="size-checkboxes__item" for="x-small-size">X-Small</label>
-                        <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="small-size" id="small-size">
-                        <label class="size-checkboxes__item" for="small-size">Small</label>
-                        <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="medium-size" id="medium-size">
-                        <label class="size-checkboxes__item" for="medium-size">Medium</label>
-                        <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="large-size" id="large-size">
-                        <label class="size-checkboxes__item" for="large-size">Large</label>
-                        <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="x-large-size" id="x-large-size">
-                        <label class="size-checkboxes__item" for="x-large-size">X-Large</label>
-                        <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="xx-large-size" id="xx-large-size">
-                        <label class="size-checkboxes__item" for="xx-large-size">XX-Large</label>
-                        <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="xxx-large-size" id="xxx-large-size">
-                        <label class="size-checkboxes__item" for="xxx-large-size">3X-Large</label>
-                        <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="xxxx-large-size" id="xxxx-large-size">
-                        <label class="size-checkboxes__item" for="xxxx-large-size">4X-Large</label>
-                      </div>
-                    </div>
-                  </fieldset>
-                </div>
-                <div class="filters-form__group">
-                  <fieldset class="filters-form__fieldset filters-accordion">
-                    <legend class="filters-form__legend filters-accordion__item">
-                      <button class="filters-accordion__button filters-accordion__button--active" type="button" aria-expanded="true"><span>Dress Style</span></button>
-                    </legend>
-                    <div class="filters-accordion__panel" aria-hidden="false">
-                      <div class="filters-accordion filters-accordion--inner">
-                        <div class="filters-accordion__item">
-                          <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Casual</span></button>
-                        </div>
-                        <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
-                          <label class="filters-form__custom-checkbox" for="casual-t-shirts">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="casual-t-shirts" name="casual-t-shirts"><span class="filters-form__custom-box"></span>T-shirts
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="casual-shorts">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="casual-shorts" name="casual-shorts"><span class="filters-form__custom-box"></span>Shorts
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="casual-shirts">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="casual-shirts" name="casual-shirts"><span class="filters-form__custom-box"></span>Shirts
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="casual-hoodie">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="casual-hoodie" name="casual-hoodie"><span class="filters-form__custom-box"></span>Hoodie
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="casual-jeans">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="casual-jeans" name="casual-jeans"><span class="filters-form__custom-box"></span>Jeans
-                          </label>
-                        </div>
-                        <div class="filters-accordion__item">
-                          <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Formal</span></button>
-                        </div>
-                        <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
-                          <label class="filters-form__custom-checkbox" for="formal-t-shirts">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="formal-t-shirts" name="formal-t-shirts"><span class="filters-form__custom-box"></span>T-shirts
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="formal-shorts">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="formal-shorts" name="formal-shorts"><span class="filters-form__custom-box"></span>Shorts
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="formal-shirts">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="formal-shirts" name="formal-shirts"><span class="filters-form__custom-box"></span>Shirts
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="formal-hoodie">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="formal-hoodie" name="formal-hoodie"><span class="filters-form__custom-box"></span>Hoodie
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="formal-jeans">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="formal-jeans" name="formal-jeans"><span class="filters-form__custom-box"></span>Jeans
-                          </label>
-                        </div>
-                        <div class="filters-accordion__item">
-                          <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Party</span></button>
-                        </div>
-                        <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
-                          <label class="filters-form__custom-checkbox" for="party-t-shirts">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="party-t-shirts" name="party-t-shirts"><span class="filters-form__custom-box"></span>T-shirts
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="party-shorts">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="party-shorts" name="party-shorts"><span class="filters-form__custom-box"></span>Shorts
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="party-shirts">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="party-shirts" name="party-shirts"><span class="filters-form__custom-box"></span>Shirts
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="party-hoodie">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="party-hoodie" name="party-hoodie"><span class="filters-form__custom-box"></span>Hoodie
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="party-jeans">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="party-jeans" name="party-jeans"><span class="filters-form__custom-box"></span>Jeans
-                          </label>
-                        </div>
-                        <div class="filters-accordion__item">
-                          <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Gym</span></button>
-                        </div>
-                        <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
-                          <label class="filters-form__custom-checkbox" for="gym-t-shirts">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="gym-t-shirts" name="gym-t-shirts"><span class="filters-form__custom-box"></span>T-shirts
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="gym-shorts">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="gym-shorts" name="gym-shorts"><span class="filters-form__custom-box"></span>Shorts
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="gym-shirts">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="gym-shirts" name="gym-shirts"><span class="filters-form__custom-box"></span>Shirts
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="gym-hoodie">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="gym-hoodie" name="gym-hoodie"><span class="filters-form__custom-box"></span>Hoodie
-                          </label>
-                          <label class="filters-form__custom-checkbox" for="gym-jeans">
-                            <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="gym-jeans" name="gym-jeans"><span class="filters-form__custom-box"></span>Jeans
-                          </label>
+                <div class="filters-form__wrapper" data-simplebar>
+                  <div class="filters-form__group">
+                    <fieldset class="filters-form__fieldset">
+                      <legend class="visually-hidden">Clothes</legend>
+                      <div class="filters-form__content">
+                        <div class="filters-accordion filters-accordion--inner">
+                          <div class="filters-accordion__item">
+                            <button class="filters-accordion__button" type="button" aria-expanded="false"><span>T-shirts</span></button>
+                          </div>
+                          <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
+                            <label class="filters-form__custom-checkbox" for="t-shirts_prada">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="t-shirts_prada" name="t-shirts_prada"><span class="filters-form__custom-box"></span>Prada
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="t-shirts_zara">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="t-shirts_zara" name="t-shirts_zara"><span class="filters-form__custom-box"></span>Zara
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="t-shirts_gucci">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="t-shirts_gucci" name="t-shirts_gucci"><span class="filters-form__custom-box"></span>Gucci
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="t-shirts_versace">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="t-shirts_versace" name="t-shirts_versace"><span class="filters-form__custom-box"></span>Versace
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="t-shirts_calvin-klein">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="t-shirts_calvin-klein" name="t-shirts_calvin-klein"><span class="filters-form__custom-box"></span>Calvin Klein
+                            </label>
+                          </div>
+                          <div class="filters-accordion__item">
+                            <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Shorts</span></button>
+                          </div>
+                          <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
+                            <label class="filters-form__custom-checkbox" for="shorts_prada">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shorts_prada" name="shorts_prada"><span class="filters-form__custom-box"></span>Prada
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="shorts_zara">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shorts_zara" name="shorts_zara"><span class="filters-form__custom-box"></span>Zara
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="shorts_gucci">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shorts_gucci" name="shorts_gucci"><span class="filters-form__custom-box"></span>Gucci
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="shorts_versace">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shorts_versace" name="shorts_versace"><span class="filters-form__custom-box"></span>Versace
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="shorts_calvin-klein">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shorts_calvin-klein" name="shorts_calvin-klein"><span class="filters-form__custom-box"></span>Calvin Klein
+                            </label>
+                          </div>
+                          <div class="filters-accordion__item">
+                            <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Shirts</span></button>
+                          </div>
+                          <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
+                            <label class="filters-form__custom-checkbox" for="shirts_prada">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shirts_prada" name="shirts_prada"><span class="filters-form__custom-box"></span>Prada
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="shirts_zara">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shirts_zara" name="shirts_zara"><span class="filters-form__custom-box"></span>Zara
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="shirts_gucci">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shirts_gucci" name="shirts_gucci"><span class="filters-form__custom-box"></span>Gucci
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="shirts_versace">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shirts_versace" name="shirts_versace"><span class="filters-form__custom-box"></span>Versace
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="shirts_calvin-klein">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="shirts_calvin-klein" name="shirts_calvin-klein"><span class="filters-form__custom-box"></span>Calvin Klein
+                            </label>
+                          </div>
+                          <div class="filters-accordion__item">
+                            <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Hoodie</span></button>
+                          </div>
+                          <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
+                            <label class="filters-form__custom-checkbox" for="hoodie_prada">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="hoodie_prada" name="hoodie_prada"><span class="filters-form__custom-box"></span>Prada
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="hoodie_zara">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="hoodie_zara" name="hoodie_zara"><span class="filters-form__custom-box"></span>Zara
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="hoodie_gucci">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="hoodie_gucci" name="hoodie_gucci"><span class="filters-form__custom-box"></span>Gucci
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="hoodie_versace">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="hoodie_versace" name="hoodie_versace"><span class="filters-form__custom-box"></span>Versace
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="hoodie_calvin-klein">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="hoodie_calvin-klein" name="hoodie_calvin-klein"><span class="filters-form__custom-box"></span>Calvin Klein
+                            </label>
+                          </div>
+                          <div class="filters-accordion__item">
+                            <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Jeans</span></button>
+                          </div>
+                          <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
+                            <label class="filters-form__custom-checkbox" for="jeans_prada">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="jeans_prada" name="jeans_prada"><span class="filters-form__custom-box"></span>Prada
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="jeans_zara">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="jeans_zara" name="jeans_zara"><span class="filters-form__custom-box"></span>Zara
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="jeans_gucci">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="jeans_gucci" name="jeans_gucci"><span class="filters-form__custom-box"></span>Gucci
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="jeans_versace">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="jeans_versace" name="jeans_versace"><span class="filters-form__custom-box"></span>Versace
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="jeans_calvin-klein">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="jeans_calvin-klein" name="jeans_calvin-klein"><span class="filters-form__custom-box"></span>Calvin Klein
+                            </label>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </fieldset>
+                    </fieldset>
+                  </div>
+                  <div class="filters-form__group">
+                    <fieldset class="filters-form__fieldset filters-accordion">
+                      <legend class="filters-form__legend filters-accordion__item">
+                        <button class="filters-accordion__button filters-accordion__button--active" type="button" aria-expanded="true"><span>Price</span></button>
+                      </legend>
+                      <div class="filters-accordion__panel" aria-hidden="false">
+                        <div class="filters-form__price-range price-range" data-min-price="0" data-max-price="250"></div>
+                        <label class="visually-hidden" for="minimal-price">
+                          <input type="text" placeholder="Minimal price" id="minimal-price" name="minimal-price" value="50"><span class="visually-hidden">Price from</span>
+                        </label>
+                        <label class="visually-hidden" for="maximum-price">
+                          <input type="text" placeholder="Maximum price" id="maximum-price" name="maximum-price" value="200"><span class="visually-hidden">Price to</span>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="filters-form__group filters-form__group--overflow-hidden">
+                    <fieldset class="filters-form__fieldset filters-accordion">
+                      <legend class="filters-form__legend filters-accordion__item">
+                        <button class="filters-accordion__button filters-accordion__button--active" type="button" aria-expanded="true"><span>Colors</span></button>
+                      </legend>
+                      <div class="filters-accordion__panel" aria-hidden="false">
+                        <div class="filters-form__color-checkboxes color-checkboxes">
+                          <label class="visually-hidden" for="color_1">Green</label>
+                          <input class="color-checkboxes__item" type="checkbox" name="color_1" id="color_1" style="background-color: rgb(0, 193, 43);">
+                          <label class="visually-hidden" for="color_2">Red</label>
+                          <input class="color-checkboxes__item" type="checkbox" name="color_2" id="color_2" style="background-color: rgb(245, 6, 6);">
+                          <label class="visually-hidden" for="color_3">Yellow</label>
+                          <input class="color-checkboxes__item" type="checkbox" name="color_3" id="color_3" style="background-color: rgb(245, 221, 6);">
+                          <label class="visually-hidden" for="color_4">Orange</label>
+                          <input class="color-checkboxes__item" type="checkbox" name="color_4" id="color_4" style="background-color: rgb(245, 121, 6);">
+                          <label class="visually-hidden" for="color_5">Turquoise</label>
+                          <input class="color-checkboxes__item" type="checkbox" name="color_5" id="color_5" style="background-color: rgb(6, 202, 245);">
+                          <label class="visually-hidden" for="color_6">Blue</label>
+                          <input class="color-checkboxes__item" type="checkbox" name="color_6" id="color_6" style="background-color: rgb(6, 58, 245);">
+                          <label class="visually-hidden" for="color_7">Violet</label>
+                          <input class="color-checkboxes__item" type="checkbox" name="color_7" id="color_7" style="background-color: rgb(125, 6, 245);">
+                          <label class="visually-hidden" for="color_8">Pink</label>
+                          <input class="color-checkboxes__item" type="checkbox" name="color_8" id="color_8" style="background-color: rgb(245, 6, 164);">
+                          <label class="visually-hidden" for="color_9">White</label>
+                          <input class="color-checkboxes__item color-checkboxes__item--white" type="checkbox" name="color_9" id="color_9" style="background-color: rgb(255, 255, 255);">
+                          <label class="visually-hidden" for="color_10">Black</label>
+                          <input class="color-checkboxes__item" type="checkbox" name="color_10" id="color_10" style="background-color: rgb(0, 0, 0);">
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="filters-form__group">
+                    <fieldset class="filters-form__fieldset filters-accordion">
+                      <legend class="filters-form__legend filters-accordion__item">
+                        <button class="filters-accordion__button filters-accordion__button--active" type="button" aria-expanded="true"><span>Size</span></button>
+                      </legend>
+                      <div class="filters-accordion__panel" aria-hidden="false">
+                        <div class="filters-form__size-checkboxes size-checkboxes">
+                          <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="xx-small-size" id="xx-small-size">
+                          <label class="size-checkboxes__item" for="xx-small-size">XX-Small</label>
+                          <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="x-small-size" id="x-small-size">
+                          <label class="size-checkboxes__item" for="x-small-size">X-Small</label>
+                          <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="small-size" id="small-size">
+                          <label class="size-checkboxes__item" for="small-size">Small</label>
+                          <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="medium-size" id="medium-size">
+                          <label class="size-checkboxes__item" for="medium-size">Medium</label>
+                          <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="large-size" id="large-size">
+                          <label class="size-checkboxes__item" for="large-size">Large</label>
+                          <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="x-large-size" id="x-large-size">
+                          <label class="size-checkboxes__item" for="x-large-size">X-Large</label>
+                          <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="xx-large-size" id="xx-large-size">
+                          <label class="size-checkboxes__item" for="xx-large-size">XX-Large</label>
+                          <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="xxx-large-size" id="xxx-large-size">
+                          <label class="size-checkboxes__item" for="xxx-large-size">3X-Large</label>
+                          <input class="visually-hidden size-checkboxes__checkbox" type="checkbox" name="xxxx-large-size" id="xxxx-large-size">
+                          <label class="size-checkboxes__item" for="xxxx-large-size">4X-Large</label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="filters-form__group">
+                    <fieldset class="filters-form__fieldset filters-accordion">
+                      <legend class="filters-form__legend filters-accordion__item">
+                        <button class="filters-accordion__button filters-accordion__button--active" type="button" aria-expanded="true"><span>Dress Style</span></button>
+                      </legend>
+                      <div class="filters-accordion__panel" aria-hidden="false">
+                        <div class="filters-accordion filters-accordion--inner">
+                          <div class="filters-accordion__item">
+                            <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Casual</span></button>
+                          </div>
+                          <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
+                            <label class="filters-form__custom-checkbox" for="casual-t-shirts">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="casual-t-shirts" name="casual-t-shirts"><span class="filters-form__custom-box"></span>T-shirts
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="casual-shorts">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="casual-shorts" name="casual-shorts"><span class="filters-form__custom-box"></span>Shorts
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="casual-shirts">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="casual-shirts" name="casual-shirts"><span class="filters-form__custom-box"></span>Shirts
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="casual-hoodie">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="casual-hoodie" name="casual-hoodie"><span class="filters-form__custom-box"></span>Hoodie
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="casual-jeans">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="casual-jeans" name="casual-jeans"><span class="filters-form__custom-box"></span>Jeans
+                            </label>
+                          </div>
+                          <div class="filters-accordion__item">
+                            <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Formal</span></button>
+                          </div>
+                          <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
+                            <label class="filters-form__custom-checkbox" for="formal-t-shirts">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="formal-t-shirts" name="formal-t-shirts"><span class="filters-form__custom-box"></span>T-shirts
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="formal-shorts">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="formal-shorts" name="formal-shorts"><span class="filters-form__custom-box"></span>Shorts
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="formal-shirts">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="formal-shirts" name="formal-shirts"><span class="filters-form__custom-box"></span>Shirts
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="formal-hoodie">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="formal-hoodie" name="formal-hoodie"><span class="filters-form__custom-box"></span>Hoodie
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="formal-jeans">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="formal-jeans" name="formal-jeans"><span class="filters-form__custom-box"></span>Jeans
+                            </label>
+                          </div>
+                          <div class="filters-accordion__item">
+                            <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Party</span></button>
+                          </div>
+                          <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
+                            <label class="filters-form__custom-checkbox" for="party-t-shirts">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="party-t-shirts" name="party-t-shirts"><span class="filters-form__custom-box"></span>T-shirts
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="party-shorts">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="party-shorts" name="party-shorts"><span class="filters-form__custom-box"></span>Shorts
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="party-shirts">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="party-shirts" name="party-shirts"><span class="filters-form__custom-box"></span>Shirts
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="party-hoodie">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="party-hoodie" name="party-hoodie"><span class="filters-form__custom-box"></span>Hoodie
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="party-jeans">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="party-jeans" name="party-jeans"><span class="filters-form__custom-box"></span>Jeans
+                            </label>
+                          </div>
+                          <div class="filters-accordion__item">
+                            <button class="filters-accordion__button" type="button" aria-expanded="false"><span>Gym</span></button>
+                          </div>
+                          <div class="filters-accordion__panel filters-accordion__panel--hidden filters-accordion__panel--column" aria-hidden="true">
+                            <label class="filters-form__custom-checkbox" for="gym-t-shirts">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="gym-t-shirts" name="gym-t-shirts"><span class="filters-form__custom-box"></span>T-shirts
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="gym-shorts">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="gym-shorts" name="gym-shorts"><span class="filters-form__custom-box"></span>Shorts
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="gym-shirts">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="gym-shirts" name="gym-shirts"><span class="filters-form__custom-box"></span>Shirts
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="gym-hoodie">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="gym-hoodie" name="gym-hoodie"><span class="filters-form__custom-box"></span>Hoodie
+                            </label>
+                            <label class="filters-form__custom-checkbox" for="gym-jeans">
+                              <input class="visually-hidden filters-form__checkbox-input" type="checkbox" id="gym-jeans" name="gym-jeans"><span class="filters-form__custom-box"></span>Jeans
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <button class="filters-form__apply-button button" type="submit" aria-label="Apply filter">Apply Filter</button>
                 </div>
-                <button class="filters-form__aplly-button button" type="submit" aria-label="Apply filter">Apply Filter</button>
               </form>
             </div>
           </div>
@@ -640,6 +645,7 @@
       </footer><span class="overlay"></span>
     </div>
     <script src="/libs/js/nouislider.min.js" defer></script>
+    <script src="/libs/js/simplebar.min.js" defer></script>
     <script src="/js/script.min.js" defer></script>
   </body>
 </html>

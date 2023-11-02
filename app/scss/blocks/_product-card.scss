@@ -9,6 +9,14 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+
+  @include px769 {
+    border-radius: 17px;
+  }
+
+  @include px1025 {
+    border-radius: 20px;
+  }
 }
 
 .product-card__title {

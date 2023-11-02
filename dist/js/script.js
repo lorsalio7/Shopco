@@ -24,7 +24,36 @@ function debounce(func, delay) {
     }, delay);
   };
 }
-;
+
+// =========================== Фикс скачка браузерного скролла и плавной прокрутки ==========================================
+
+var scrollController = {
+  scrollPosition: 0,
+  disabledScroll: function disabledScroll(fixedElement) {
+    if (fixedElement) {
+      var fixedElements = document.querySelectorAll(fixedElement);
+      fixedElements.forEach(function (element) {
+        element.style.paddingRight = "".concat(parseInt(window.innerWidth - document.body.offsetWidth), "px");
+      });
+    }
+    scrollController.scrollPosition = window.scrollY;
+    document.body.style.cssText = "\n      overflow: hidden;\n      position: fixed;\n      top: -".concat(scrollController.scrollPosition, "px;\n      left: 0;\n      height: 100vh;\n      width: 100vw;\n      padding-right: ").concat(parseInt(window.innerWidth - document.body.offsetWidth), "px;\n    ");
+    document.documentElement.style.scrollBehavior = "unset";
+  },
+  enabledScrool: function enabledScrool(fixedElement) {
+    document.body.style.cssText = "";
+    window.scroll({
+      top: scrollController.scrollPosition
+    });
+    document.documentElement.style.scrollBehavior = "";
+    if (fixedElement) {
+      var fixedElements = document.querySelectorAll(fixedElement);
+      fixedElements.forEach(function (element) {
+        element.style.paddingRight = "0";
+      });
+    }
+  }
+};
 var siteHeader = document.querySelector(".site-header");
 var siteMain = document.querySelector(".main");
 var quickRegistrationButton = siteHeader.querySelector(".quick-registration__close-button");
@@ -287,26 +316,29 @@ var rangeSlider = document.querySelector(".price-range");
 if (rangeSlider) {
   var minPriceInput = document.querySelector("#minimal-price");
   var maxPriceInput = document.querySelector("#maximum-price");
+  var minPrice = parseInt(rangeSlider.dataset.minPrice);
+  var maxPrice = parseInt(rangeSlider.dataset.maxPrice);
   var formatForSliders = {
     from: function from(formattedValue) {
-      return Number(formattedValue);
+      return Number(formattedValue.replace(',-', ''));
     },
     to: function to(numericValue) {
-      return Math.round(numericValue);
+      return Math.abs(Math.round(numericValue));
     }
   };
   noUiSlider.create(rangeSlider, {
     start: [50, 200],
+    padding: [20, 20],
     format: formatForSliders,
     connect: true,
     tooltips: {
       to: function to(numericValue) {
-        return numericValue.toFixed(0);
+        return Math.abs(numericValue.toFixed(0));
       }
     },
     range: {
-      'min': [0],
-      'max': [250]
+      'min': [minPrice - 20],
+      'max': [maxPrice + 20]
     }
   });
   var formatValues = [minPriceInput, maxPriceInput];
@@ -340,12 +372,14 @@ if (filtersAccordion) {
 var filtersActiveButton = document.querySelector(".catalog-cards__filters-button");
 if (filtersActiveButton) {
   var openCatalogFilters = function openCatalogFilters() {
+    scrollController.disabledScroll();
     document.querySelector(".overlay").classList.add("overlay--active");
     catalogFilters.classList.add("catalog__filters--active");
   };
   var closeCatalogFilters = function closeCatalogFilters() {
     document.querySelector(".overlay").classList.remove("overlay--active");
     catalogFilters.classList.remove("catalog__filters--active");
+    scrollController.enabledScrool();
   };
   var catalogFilters = document.querySelector(".catalog__filters");
   var filtersCloseButton = document.querySelector(".catalog-filters__close-button");

@@ -4,4 +4,9 @@
   font-weight: 400;
   font-size: 14px;
   color: var(--color-scorpion);
+
+  @include px1025 {
+    padding-top: 0;
+    font-size: 16px;
+  }
 }

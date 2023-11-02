@@ -5,6 +5,10 @@
   justify-content: space-between;
   margin-bottom: 30px;
   width: 100%;
+
+  @include px1025 {
+    margin-bottom: 16px;
+  }
 }
 
 .catalog-cards__title {
@@ -14,6 +18,10 @@
   font-weight: 700;
   font-size: 24px;
   color: var(--color-black);
+
+  @include px1025 {
+    font-size: 32px;
+  }
 }
 
 .catalog-cards__wrapper {
@@ -22,10 +30,23 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
+  @include px1025 {
+    justify-content: flex-end;
+  }
 }
 
 .catalog-cards__sorting {
   display: none;
+
+  @include px1025 {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-scorpion);
+  }
 }
 
 .catalog-cards__filters-button {
@@ -38,6 +59,10 @@
   height: 32px;
   background-color: var(--color-gallery);
   cursor: pointer;
+
+  @include px1025 {
+    display: none;
+  }
 }
 
 .catalog-cards__list {
@@ -47,10 +72,19 @@
   margin: 0;
   margin-right: -14px;
   padding: 0;
+
+  @include px769 {
+    margin-right: -20px;
+  }
 }
 
 .catalog-cards__item {
   flex-basis: calc((100% - 14px * 2) / 2);
   margin-right: 14px;
   margin-bottom: 24px;
+
+  @include px769 {
+    flex-basis: calc((100% - 20px * 3) / 3);
+    margin-right: 20px;
+  }
 }

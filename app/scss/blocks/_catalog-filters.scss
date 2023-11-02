@@ -1,8 +1,15 @@
 .catalog-filters {
   border: 1px solid var(--color-alto);
-  border-radius: 20px;
-  padding: 20px 18px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px 0 20px 18px;
   background-color: var(--color-white);
+
+  @include px1025 {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px 24px 29px;
+  }
 }
 
 .catalog-filters__header {
@@ -11,6 +18,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
+  padding-right: 18px;
 
   &::after {
     content: "";
@@ -24,6 +32,14 @@
     background-position: center;
     background-size: 24px 24px;
     background-repeat: no-repeat;
+
+    @include px1025 {
+      display: block;
+    }
+  }
+
+  @include px1025 {
+    padding-right: 0;
   }
 }
 
@@ -40,6 +56,10 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
+
+  @include px1025 {
+    display: none;
+  }
 }
 
 .catalog-filters__close-button .close-button__icon {
@@ -48,7 +68,13 @@
 
 .catalog-filters__form {
   flex: 1 1 auto;
-  overflow-x: hidden;
-  overflow-y: auto;
+  padding-right: 18px;
+  padding-bottom: 40px;
   height: 100%;
+
+  @include px1025 {
+    padding-right: 0;
+    padding-bottom: 0;
+    height: unset;
+  }
 }
