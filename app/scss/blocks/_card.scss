@@ -1,13 +1,69 @@
 .card__main-content {
-  margin-bottom: 50px;
+  margin-bottom: 26px;
+
+  @include px769 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 55px;
+  }
+
+  @include px1025 {
+    margin-bottom: 80px;
+  }
 }
 
 .card__gallery {
   margin-bottom: 20px;
+
+  @include px550 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @include px769 {
+    flex-grow: 1;
+    flex-basis: calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  @include px1025 {
+    flex-shrink: 1;
+    flex-basis: 610px;
+    margin-right: 40px;
+  }
 }
 
 .card__big-slider {
   margin-bottom: 12px;
+
+  @include px550 {
+    flex-shrink: 1;
+    margin-bottom: 0;
+  }
+}
+
+.card__thumbs-slider {
+  @include px550 {
+    flex-shrink: 0;
+    flex-basis: 100px;
+    margin-right: 14px;
+  }
+
+  @include px1025 {
+    flex-basis: 152px;
+  }
+}
+
+.card__description {
+  @include px769 {
+    flex-basis: calc(50% - 20px);
+  }
+
+  @include px1025 {
+    flex-grow: 1;
+    flex-basis: 590px;
+  }
 }
 
 .card__title {
@@ -17,6 +73,19 @@
   font-weight: 800;
   font-size: 24px;
   text-transform: uppercase;
+
+  @include px550 {
+    font-size: 27px;
+  }
+
+  @include px769 {
+    font-size: 30px;
+  }
+
+  @include px1025 {
+    margin-bottom: 14px;
+    font-size: 40px;
+  }
 }
 
 .card__rating {
@@ -26,10 +95,24 @@
 .card__rating .rating__star {
   width: 18px;
   height: 18px;
+
+  @include px769 {
+    width: 20px;
+    height: 20px;
+  }
+
+  @include px1025 {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .card__rating .rating__text {
   font-size: 14px;
+
+  @include px1025 {
+    font-size: 16px;
+  }
 }
 
 .card__prices {
@@ -38,16 +121,37 @@
 
 .card__prices .prices__current-price {
   font-size: 24px;
+
+  @include px769 {
+    font-size: 28px;
+  }
+
+  @include px1025 {
+    font-size: 32px;
+  }
 }
 
 .card__prices .prices__old-price {
   font-size: 24px;
+
+  @include px769 {
+    font-size: 28px;
+  }
+
+  @include px1025 {
+    font-size: 32px;
+  }
 }
 
 .card__prices .prices__discount {
   padding: 7px 12px;
   font-size: 14px;
   text-align: center;
+
+  @include px1025 {
+    padding: 6px 14px;
+    font-size: 16px;
+  }
 }
 
 .card__info-text {
@@ -57,6 +161,11 @@
   font-size: 14px;
   line-height: 20px;
   color: var(--color-scorpion);
+
+  @include px1025 {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .card__tabs {

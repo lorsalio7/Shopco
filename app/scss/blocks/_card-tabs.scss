@@ -1,7 +1,11 @@
 .card-tabs__header {
   position: relative;
   border-bottom: 1px solid var(--color-alto);
-  padding-bottom: 20px;
+  padding-bottom: 14px;
+
+  @include px390 {
+    padding-bottom: 20px;
+  }
 }
 
 .card-tabs__control-list {
@@ -15,14 +19,38 @@
 
 .card-tabs__item:not(:last-of-type) {
   margin-right: 15px;
+
+  @include px550 {
+    margin-right: 0;
+  }
+}
+
+.card-tabs__item {
+  @include px550 {
+    flex-basis: calc(100% / 3);
+  }
 }
 
 .card-tabs__button {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 20px;
   text-decoration: none;
   color: var(--color-scorpion);
+
+  @include px390 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @include px550 {
+    display: block;
+    text-align: center;
+  }
+
+  @include px769 {
+    font-size: 20px;
+  }
 }
 
 .card-tabs__button--active {

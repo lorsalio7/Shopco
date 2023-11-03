@@ -13,10 +13,6 @@
   background-repeat: no-repeat;
   background-color: var(--color-black);
   cursor: pointer;
-
-  @include px1025 {
-    margin: 7px;
-  }
 }
 
 .color-checkboxes__item:checked {

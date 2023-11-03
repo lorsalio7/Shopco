@@ -4,4 +4,20 @@
   width: 100%;
   height: 290px;
   object-fit: cover;
+
+  @include px390 {
+    height: 320px;
+  }
+
+  @include px550 {
+    height: 400px;
+  }
+
+  @include px769 {
+    height: 350px;
+  }
+
+  @include px1025 {
+    height: 530px;
+  }
 }

@@ -115,9 +115,15 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
   if(productCardSlider) {
     productCardSlider = new Splide(productCardSlider, {
+      mediaQuery: 'min',
       gap: 30,
       arrows: false,
-      pagination: false
+      pagination: false,
+      breakpoints: {
+        1025: {
+          gap: 40,
+        }
+      }
     }).mount();
 
     productCardSliderThumbs = new Splide(productCardSliderThumbs, {
@@ -126,7 +132,20 @@ document.addEventListener( 'DOMContentLoaded', function() {
       perPage: 3,
       arrows: false,
       pagination: false,
-      isNavigation: true
+      isNavigation: true,
+      breakpoints: {
+        550: {
+          gap: 14,
+          height: 400,
+          direction: 'ttb'
+        },
+        769: {
+          height: 350,
+        },
+        1025: {
+          height: 530,
+        }
+      }
     }).mount();
 
     productCardSlider.sync(productCardSliderThumbs);
@@ -147,6 +166,21 @@ document.addEventListener( 'DOMContentLoaded', function() {
           padding: {
             right: 158
           }
+        },
+        550: {
+          perPage: 2,
+          padding: {
+            right: 70
+          }
+        },
+        769: {
+          perPage: 2,
+          padding: {
+            right: 350
+          }
+        },
+        1025: {
+          destroy: true
         }
       }
     }).mount();

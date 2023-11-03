@@ -18,6 +18,11 @@
     height: 1px;
     background-color: var(--color-alto);
   }
+
+  @include px1025 {
+    padding-top: 24px;
+    padding-bottom: 36px;
+  }
 }
 
 .breadcrumbs__item:not(:last-of-type) {
@@ -27,6 +32,10 @@
   background-position: right top 50%;
   background-size: 14px 14px;
   background-repeat: no-repeat;
+
+  @include px1025 {
+    background-size: 16px 16px;
+  }
 }
 
 .breadcrumbs__link {
@@ -34,6 +43,10 @@
   font-size: 14px;
   text-decoration: none;
   color: var(--color-scorpion);
+
+  @include px1025 {
+    font-size: 16px;
+  }
 }
 
 .breadcrumbs__link[href] {
