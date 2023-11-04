@@ -1,10 +1,18 @@
 .cart__title {
   text-align: left;
+
+  @include px769 {
+    margin-bottom: 24px;
+  }
 }
 
 .cart__content {
   display: flex;
   flex-direction: column;
+
+  @include px769 {
+    flex-direction: row;
+  }
 }
 
 .cart__products {
@@ -12,10 +20,36 @@
   border: 1px solid var(--color-alto);
   border-radius: 20px;
   padding: 14px;
+
+  @include px769 {
+    flex-basis: calc(59.27% - 20px);
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  @include px1025 {
+    padding: 20px 24px;
+  }
 }
 
 .cart__info {
   border: 1px solid var(--color-alto);
   border-radius: 20px;
   padding: 20px;
+
+  @include px769 {
+    flex-basis: 40.73%;
+    align-self: flex-start;
+  }
+
+  @include px1025 {
+    padding: 20px 24px 33px 24px;
+  }
+}
+
+.cart__button {
+  @include px1025 {
+    border-radius: 40px;
+    padding: 16px 50px;
+  }
 }

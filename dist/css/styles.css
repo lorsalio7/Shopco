@@ -3156,6 +3156,11 @@ body {
   width: 20px;
   height: 20px;
   background-color: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .cart-item__delete-button svg {
@@ -3523,7 +3528,7 @@ body {
 
 @media (min-width: 550px) {
   .logo__image {
-    width: 140px;
+    width: 134px;
     height: 20px;
   }
 
@@ -3657,7 +3662,7 @@ body {
   }
 
   .logo__image {
-    width: 160px;
+    width: 152px;
     height: 22px;
   }
 
@@ -3796,6 +3801,14 @@ body {
     border-radius: 17px;
   }
 
+  .prices__current-price {
+    font-size: 24px;
+  }
+
+  .prices__old-price {
+    font-size: 24px;
+  }
+
   .dress-style__container {
     border-radius: 30px;
   }
@@ -3913,6 +3926,59 @@ body {
     margin-bottom: 20px;
   }
 
+  .cart__title {
+    margin-bottom: 24px;
+  }
+
+  .cart__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .cart__products {
+    -ms-flex-preferred-size: calc(59.27% - 20px);
+        flex-basis: calc(59.27% - 20px);
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .cart__info {
+    -ms-flex-preferred-size: 40.73%;
+        flex-basis: 40.73%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+
+  .cart-item__title {
+    font-size: 18px;
+  }
+
+  .cart-item__specification-row dt {
+    font-size: 14px;
+  }
+
+  .cart-item__specification-row dd {
+    font-size: 14px;
+  }
+
+  .cart-info-form__order-info {
+    margin-bottom: 20px;
+  }
+
+  .order-info__subject {
+    font-size: 18px;
+  }
+
+  .order-info__amount {
+    font-size: 18px;
+  }
+
+  .order-info__row--total .order-info__amount {
+    font-size: 22px;
+  }
+
   .site-footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3944,6 +4010,10 @@ body {
 }
 
 @media (min-width: 1025px) {
+  .page__cart {
+    margin-bottom: 80px;
+  }
+
   .site-header__container {
     padding: 25px 0;
   }
@@ -4005,6 +4075,11 @@ body {
 
   .hero__button {
     margin-bottom: 48px;
+  }
+
+  .button__icon {
+    width: 24px;
+    height: 24px;
   }
 
   .advantages-list__item:last-of-type {
@@ -4320,6 +4395,122 @@ body {
 
   .quantity__input {
     padding: 16px 20px;
+    font-size: 16px;
+  }
+
+  .cart__products {
+    padding: 20px 24px;
+  }
+
+  .cart__info {
+    padding: 20px 24px 33px 24px;
+  }
+
+  .cart__button {
+    border-radius: 40px;
+    padding: 16px 50px;
+  }
+
+  .cart-products-form__item:not(:last-child) {
+    margin-bottom: 24px;
+    padding-bottom: 23px;
+  }
+
+  .cart-item__image {
+    width: 124px;
+    height: 124px;
+  }
+
+  .cart-item__row:nth-child(2) {
+    margin-bottom: 15px;
+  }
+
+  .cart-item__row:nth-child(3) {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .cart-item__text-content {
+    margin-left: 16px;
+  }
+
+  .cart-item__title {
+    font-size: 20px;
+  }
+
+  .cart-item__delete-button {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cart-item__specification-row {
+    margin-bottom: 4px;
+  }
+
+  .cart-item__quantity .quantity__input {
+    padding: 12px 20px;
+    min-width: 126px;
+    max-width: 126px;
+  }
+
+  .cart-item__quantity .quantity__button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cart-info-form__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+
+  .cart-info-form__order-info {
+    margin-bottom: 24px;
+  }
+
+  .cart-info-form__row {
+    margin-bottom: 24px;
+  }
+
+  .order-info__subject {
+    font-size: 20px;
+  }
+
+  .order-info__amount {
+    font-size: 20px;
+  }
+
+  .order-info__row--total .order-info__amount {
+    font-size: 24px;
+  }
+
+  .promocode::before {
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+  }
+
+  .promocode__input {
+    padding: 15px 16px 14px 52px;
+  }
+
+  .promocode__input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  .promocode__input::-moz-placeholder {
+    font-size: 16px;
+  }
+
+  .promocode__input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .promocode__input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .promocode__input::placeholder {
     font-size: 16px;
   }
 

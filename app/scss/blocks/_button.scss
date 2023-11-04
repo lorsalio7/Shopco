@@ -41,4 +41,9 @@
   fill: currentcolor;
   pointer-events: none;
   user-select: none;
+
+  @include px1025 {
+    width: 24px;
+    height: 24px;
+  }
 }

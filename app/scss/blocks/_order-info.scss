@@ -22,6 +22,14 @@
   font-weight: 400;
   font-size: 16px;
   color: var(--color-scorpion);
+
+  @include px769 {
+    font-size: 18px;
+  }
+
+  @include px1025 {
+    font-size: 20px;
+  }
 }
 
 .order-info__row--total .order-info__subject {
@@ -35,10 +43,26 @@
   font-size: 16px;
   text-align: right;
   color: var(--color-black);
+
+  @include px769 {
+    font-size: 18px;
+  }
+
+  @include px1025 {
+    font-size: 20px;
+  }
 }
 
 .order-info__row--total .order-info__amount {
   font-size: 20px;
+
+  @include px769 {
+    font-size: 22px;
+  }
+
+  @include px1025 {
+    font-size: 24px;
+  }
 }
 
 .order-info__amount--discount-amount {

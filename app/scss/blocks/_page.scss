@@ -20,4 +20,8 @@
 
 .page__cart {
   margin-bottom: 50px;
+
+  @include px1025 {
+    margin-bottom: 80px;
+  }
 }

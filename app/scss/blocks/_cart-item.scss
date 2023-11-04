@@ -8,6 +8,11 @@
   width: 99px;
   height: 99px;
   object-fit: cover;
+
+  @include px1025 {
+    width: 124px;
+    height: 124px;
+  }
 }
 
 .cart-item__row {
@@ -21,11 +26,25 @@
 
 .cart-item__row:nth-child(2) {
   margin-bottom: 11px;
+
+  @include px1025 {
+    margin-bottom: 15px;
+  }
+}
+
+.cart-item__row:nth-child(3) {
+  @include px1025 {
+    align-items: flex-end;
+  }
 }
 
 .cart-item__text-content {
   flex-grow: 1;
   margin-left: 14px;
+
+  @include px1025 {
+    margin-left: 16px;
+  }
 }
 
 .cart-item__title {
@@ -37,6 +56,14 @@
 
   @include px390 {
     font-size: 16px;
+  }
+
+  @include px769 {
+    font-size: 18px;
+  }
+
+  @include px1025 {
+    font-size: 20px;
   }
 }
 
@@ -59,6 +86,13 @@
   width: 20px;
   height: 20px;
   background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+
+  @include px1025 {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .cart-item__delete-button svg {
@@ -71,12 +105,20 @@
 
 .cart-item__specification-row {
   display: flex;
+
+  @include px1025 {
+    margin-bottom: 4px;
+  }
 }
 
 .cart-item__specification-row dt {
   font-weight: 400;
   font-size: 12px;
   color: var(--color-black);
+
+  @include px769 {
+    font-size: 14px;
+  }
 }
 
 .cart-item__specification-row dd {
@@ -84,6 +126,10 @@
   font-weight: 400;
   font-size: 12px;
   color: var(--color-scorpion);
+
+  @include px769 {
+    font-size: 14px;
+  }
 }
 
 .cart-item__quantity .quantity__input {
@@ -95,12 +141,23 @@
     min-width: 105px;
     max-width: 105px;
   }
+
+  @include px1025 {
+    padding: 12px 20px;
+    min-width: 126px;
+    max-width: 126px;
+  }
 }
 
 .cart-item__quantity .quantity__button {
   padding: 1px;
   width: 16px;
   height: 16px;
+
+  @include px1025 {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .cart-item__quantity .quantity__button--minus {

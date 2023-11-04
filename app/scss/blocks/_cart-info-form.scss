@@ -4,15 +4,32 @@
   font-weight: 700;
   font-size: 20px;
   color: var(--color-black);
+
+  @include px1025 {
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
 }
 
 .cart-info-form__order-info {
   margin-bottom: 16px;
+
+  @include px769 {
+    margin-bottom: 20px;
+  }
+
+  @include px1025 {
+    margin-bottom: 24px;
+  }
 }
 
 .cart-info-form__row {
   display: flex;
   margin-bottom: 16px;
+
+  @include px1025 {
+    margin-bottom: 24px;
+  }
 }
 
 .cart-info-form__promocode {
