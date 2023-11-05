@@ -40,6 +40,11 @@
   @include px426 {
     display: flex;
   }
+
+  @include px769 {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .product-reviews__sorting-form {
@@ -47,6 +52,8 @@
 
   @include px769 {
     display: block;
+    flex-shrink: 0;
+    margin-left: 10px;
   }
 }
 
@@ -59,7 +66,7 @@
 
   @include px390 {
     padding: 11px 16px;
-    font-size: 16;
+    font-size: 16px;
   }
 }
 
