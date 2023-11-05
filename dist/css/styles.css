@@ -1105,6 +1105,8 @@ body {
   text-decoration: none;
   color: var(--color-white);
   background-color: var(--color-black);
+  -webkit-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1128,6 +1130,8 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: var(--color-white);
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1138,6 +1142,8 @@ body {
 .button__icon {
   margin-left: 12px;
   fill: currentcolor;
+  -webkit-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -4588,6 +4594,64 @@ body {
 
   .site-navigation__link--dropdown:hover {
     text-decoration: none;
+  }
+
+  .button:focus {
+    border-color: var(--color-black);
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
+
+  .button:focus > .button__text {
+    color: var(--color-black);
+  }
+
+  .button:hover {
+    border-color: var(--color-black);
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
+
+  .button:hover > .button__text {
+    color: var(--color-black);
+  }
+
+  .button--secondary:focus {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    background-color: var(--color-black);
+  }
+
+  .button--secondary:focus > .button__text {
+    color: var(--color-white);
+  }
+
+  .button--secondary:hover {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    background-color: var(--color-black);
+  }
+
+  .button--secondary:hover > .button__text {
+    color: var(--color-white);
+  }
+
+  .button--outline:focus {
+    border: 1px solid var(--color-alto);
+    background-color: var(--color-alto);
+  }
+
+  .button--outline:focus > .button__text {
+    color: var(--color-black);
+  }
+
+  .button--outline:hover {
+    border: 1px solid var(--color-alto);
+    background-color: var(--color-alto);
+  }
+
+  .button--outline:hover > .button__text {
+    color: var(--color-black);
   }
 
   .socials__link:focus {

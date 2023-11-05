@@ -12,26 +12,60 @@
   text-decoration: none;
   color: var(--color-white);
   background-color: var(--color-black);
+  transition:
+    border-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
   cursor: pointer;
   user-select: none;
+
+  @include hover-focus {
+    border-color: var(--color-black);
+    color: var(--color-black);
+    background-color: var(--color-white);
+
+    > .button__text {
+      color: var(--color-black);
+    }
+  }
 }
 
 .button--secondary {
   border: 2px solid var(--color-white);
   color: var(--color-black);
   background-color: var(--color-white);
+
+  @include hover-focus {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    background-color: var(--color-black);
+
+    > .button__text {
+      color: var(--color-white);
+    }
+  }
 }
 
 .button--outline {
   border: 1px solid var(--color-alto);
   color: var(--color-black);
   background-color: var(--color-white);
+
+  @include hover-focus {
+    border: 1px solid var(--color-alto);
+    background-color: var(--color-alto);
+
+    > .button__text {
+      color: var(--color-black);
+    }
+  }
 }
 
 .button__text {
   font-weight: 500;
   font-size: 14px;
   color: var(--color-white);
+  transition: color 0.3s ease-in-out;
   pointer-events: none;
   user-select: none;
 }
@@ -39,6 +73,7 @@
 .button__icon {
   margin-left: 12px;
   fill: currentcolor;
+  transition: fill 0.3s ease-in-out;
   pointer-events: none;
   user-select: none;
 
