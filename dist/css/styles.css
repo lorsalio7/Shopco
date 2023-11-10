@@ -1647,7 +1647,7 @@ body {
 
 .prices__current-price {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--color-black);
 }
 
@@ -2750,12 +2750,14 @@ body {
 
 .card-form__button {
   margin-left: 12px;
+  padding: 15px 30px;
 }
 
 .quantity {
   position: relative;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  overflow: hidden;
 }
 
 .quantity__input {
@@ -2763,10 +2765,15 @@ body {
   width: 100%;
   min-width: 110px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
   color: var(--color-black);
   background-color: var(--color-gallery);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .quantity__button {
@@ -2782,10 +2789,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border: none;
-  border-radius: 50%;
   padding: 2px;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 100%;
   background-color: var(--color-gallery);
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -2800,17 +2806,19 @@ body {
 }
 
 .quantity__button--minus {
-  left: 12px;
+  left: 0;
+  border-radius: 30px 0 0 30px;
 }
 
 .quantity__button--plus {
-  right: 12px;
+  right: 0;
+  border-radius: 0 30px 30px 0;
 }
 
-.quantity__button svg {
+.quantity__icon {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 20px;
+  height: 20px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -3125,8 +3133,8 @@ body {
 .cart-item__image {
   display: block;
   border-radius: 9px;
-  width: 99px;
-  height: 99px;
+  width: 90px;
+  height: 90px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -3219,23 +3227,20 @@ body {
 }
 
 .cart-item__quantity .quantity__input {
-  padding: 7px 36px;
+  padding: 5px 30px;
   min-width: 90px;
   max-width: 90px;
 }
 
 .cart-item__quantity .quantity__button {
   padding: 1px;
+  width: 30px;
+  height: 100%;
+}
+
+.cart-item__quantity .quantity__icon {
   width: 16px;
   height: 16px;
-}
-
-.cart-item__quantity .quantity__button--minus {
-  left: 10px;
-}
-
-.cart-item__quantity .quantity__button--plus {
-  right: 10px;
 }
 
 .cart-info-form__title {
@@ -3442,6 +3447,10 @@ body {
     background-color: transparent;
   }
 
+  .prices__current-price {
+    font-size: 20px;
+  }
+
   .pagination__control:not(.pagination__control[href]) {
     padding: 7px 13px;
   }
@@ -3473,6 +3482,11 @@ body {
 
   .product-reviews__new-review-button {
     padding: 15px 16px;
+  }
+
+  .cart-item__image {
+    width: 99px;
+    height: 99px;
   }
 
   .cart-item__title {
@@ -3511,6 +3525,12 @@ body {
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
+  }
+
+  .card-form__quantity {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 140px;
+            flex: 0 0 140px;
   }
 
   .product-reviews__settings-button {
@@ -3608,6 +3628,16 @@ body {
   .card-tabs__button {
     display: block;
     text-align: center;
+  }
+
+  .cart-item__quantity .quantity__input {
+    padding: 8px 30px;
+    min-width: 115px;
+    max-width: 115px;
+  }
+
+  .cart-item__quantity .quantity__button {
+    width: 35px;
   }
 
   .site-footer__extra {
@@ -3904,6 +3934,10 @@ body {
     height: 350px;
   }
 
+  .quantity__input {
+    font-size: 15px;
+  }
+
   .card-tabs__button {
     font-size: 20px;
   }
@@ -3982,6 +4016,10 @@ body {
   }
 
   .cart-item__specification-row dd {
+    font-size: 14px;
+  }
+
+  .cart-item__quantity .quantity__input {
     font-size: 14px;
   }
 
@@ -4414,13 +4452,28 @@ body {
     font-size: 16px;
   }
 
+  .card-form__quantity {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 170px;
+            flex: 0 0 170px;
+  }
+
   .card-form__button {
     margin-left: 20px;
   }
 
   .quantity__input {
-    padding: 16px 20px;
+    padding: 15px 50px;
     font-size: 16px;
+  }
+
+  .quantity__button {
+    width: 52px;
+  }
+
+  .quantity__icon {
+    width: 24px;
+    height: 24px;
   }
 
   .cart__products {
@@ -4469,14 +4522,13 @@ body {
   }
 
   .cart-item__quantity .quantity__input {
-    padding: 12px 20px;
+    padding: 12px 33px;
     min-width: 126px;
     max-width: 126px;
   }
 
   .cart-item__quantity .quantity__button {
-    width: 20px;
-    height: 20px;
+    width: 40px;
   }
 
   .cart-info-form__title {

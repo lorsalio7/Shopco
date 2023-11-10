@@ -8,8 +8,12 @@
 
 .prices__current-price {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--color-black);
+
+  @include px390 {
+    font-size: 20px;
+  }
 
   @include px769 {
     font-size: 24px;

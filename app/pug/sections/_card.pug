@@ -59,13 +59,13 @@ article.card
               input(type="radio" name="size" value="x-large-size" id="x-large-size" checked="checked").visually-hidden.size-checkboxes__checkbox
               label(for="x-large-size").size-checkboxes__item X-Large
           .card-form__fieldset.card-form__fieldset--row
-            .quantity
+            .card-form__quantity.quantity
               button(type="button" aria-label="Decrease quantity").quantity__button.quantity__button--minus
-                +svg("", "minus-ic", 24, 24)
+                +svg("quantity__icon", "minus-ic", 24, 24, "true")
               button(type="button" aria-label="Increase quantity").quantity__button.quantity__button--plus
-                +svg("", "plus-ic", 24, 24)
+                +svg("quantity__icon", "plus-ic", 24, 24, "true")
               label(for="quantity-input").visually-hidden Quantity product
-              input(type="text" name="quantity" id="quantity-input" pattern="[0-9]*" value="1").quantity__input.input
+              input(tabindex="-1" type="text" name="quantity" id="quantity-input" pattern="[0-9]*" value="1").quantity__input.input
             button(type="submit").card-form__button.button Add to Cart
     .card__extra-content
       .card__tabs.card-tabs

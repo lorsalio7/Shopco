@@ -38,8 +38,19 @@
   margin-bottom: -8px;
 }
 
+.card-form__quantity {
+  @include px426 {
+    flex: 0 0 140px;
+  }
+
+  @include px1025 {
+    flex: 0 0 170px;
+  }
+}
+
 .card-form__button {
   margin-left: 12px;
+  padding: 15px 30px;
 
   @include px1025 {
     margin-left: 20px;
