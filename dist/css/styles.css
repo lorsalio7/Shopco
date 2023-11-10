@@ -888,6 +888,37 @@ body {
   display: block;
 }
 
+.input {
+  border: 2px solid transparent;
+  border-radius: 45px;
+  padding: 15px 14px 15px 48px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.input::-webkit-input-placeholder {
+  color: var(--color-gray);
+}
+
+.input::-moz-placeholder {
+  color: var(--color-gray);
+}
+
+.input:-ms-input-placeholder {
+  color: var(--color-gray);
+}
+
+.input::-ms-input-placeholder {
+  color: var(--color-gray);
+}
+
+.input::placeholder {
+  color: var(--color-gray);
+}
+
 .product-search__close-button {
   position: absolute;
   right: 20px;
@@ -929,12 +960,10 @@ body {
 
 .product-search__input {
   outline: none;
-  border: 2px solid transparent;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  padding: 11px 16px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 15px 14px;
   width: 100%;
-  height: 100%;
   background-color: var(--color-gallery);
 }
 
@@ -1391,44 +1420,6 @@ body {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-.subscribe-form__input {
-  border: 2px solid transparent;
-  border-radius: 32px;
-  padding: 10px 14px 10px 48px;
-  width: 100%;
-  background-color: var(--color-white);
-}
-
-.subscribe-form__input::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--color-gray);
-}
-
-.subscribe-form__input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--color-gray);
-}
-
-.subscribe-form__input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--color-gray);
-}
-
-.subscribe-form__input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--color-gray);
-}
-
-.subscribe-form__input::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--color-gray);
 }
 
 .socials {
@@ -2768,13 +2759,11 @@ body {
 }
 
 .quantity__input {
-  border: none;
-  border-radius: 40px;
-  padding: 14px 36px;
+  padding: 15px 36px;
   width: 100%;
   min-width: 110px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   color: var(--color-black);
   background-color: var(--color-gallery);
@@ -3280,7 +3269,6 @@ body {
       flex-basis: 28.5%;
   margin-left: 12px;
   padding: 15px 16px;
-  font-size: 14px;
 }
 
 .order-info {
@@ -3358,41 +3346,7 @@ body {
 }
 
 .promocode__input {
-  border: none;
-  border-radius: 40px;
-  padding: 12px 16px 12px 46px;
-  width: 100%;
   background-color: var(--color-gallery);
-}
-
-.promocode__input::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--color-gray);
-}
-
-.promocode__input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--color-gray);
-}
-
-.promocode__input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--color-gray);
-}
-
-.promocode__input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--color-gray);
-}
-
-.promocode__input::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--color-gray);
 }
 
 .site-footer__content {
@@ -3726,6 +3680,10 @@ body {
     display: none;
   }
 
+  .input {
+    font-size: 16px;
+  }
+
   .hero__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3828,6 +3786,10 @@ body {
 
   .subscribe-form__wrapper {
     margin-bottom: 14px;
+  }
+
+  .subscribe-form__button {
+    padding: 15px 20px;
   }
 
   .store-navigation {
@@ -4108,8 +4070,7 @@ body {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    border-radius: 0 30px 30px 0;
-    padding: 11px 16px 11px 4px;
+    border-radius: 0 45px 45px 0;
   }
 
   .product-search__button {
@@ -4547,30 +4508,6 @@ body {
     width: 24px;
     height: 24px;
     background-size: 24px 24px;
-  }
-
-  .promocode__input {
-    padding: 15px 16px 14px 52px;
-  }
-
-  .promocode__input::-webkit-input-placeholder {
-    font-size: 16px;
-  }
-
-  .promocode__input::-moz-placeholder {
-    font-size: 16px;
-  }
-
-  .promocode__input:-ms-input-placeholder {
-    font-size: 16px;
-  }
-
-  .promocode__input::-ms-input-placeholder {
-    font-size: 16px;
-  }
-
-  .promocode__input::placeholder {
-    font-size: 16px;
   }
 
   .site-footer__container {

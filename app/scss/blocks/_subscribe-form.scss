@@ -21,16 +21,8 @@
   }
 }
 
-.subscribe-form__input {
-  border: 2px solid transparent;
-  border-radius: 32px;
-  padding: 10px 14px 10px 48px;
-  width: 100%;
-  background-color: var(--color-white);
-}
-
-.subscribe-form__input::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--color-gray);
+.subscribe-form__button {
+  @include px769 {
+    padding: 15px 20px;
+  }
 }
