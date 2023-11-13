@@ -95,3 +95,18 @@
 .review__rating {
   margin-bottom: 12px;
 }
+
+.review__rating .rating__star {
+  width: 19px;
+  height: 19px;
+
+  @include px769 {
+    width: 21px;
+    height: 21px;
+  }
+
+  @include px1025 {
+    width: 23px;
+    height: 23px;
+  }
+}

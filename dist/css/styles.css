@@ -1898,6 +1898,11 @@ body {
   margin-bottom: 12px;
 }
 
+.review__rating .rating__star {
+  width: 19px;
+  height: 19px;
+}
+
 .breadcrumbs__list {
   position: relative;
   display: -webkit-box;
@@ -3849,6 +3854,11 @@ body {
     border-radius: 17px;
   }
 
+  .rating__star {
+    width: 17px;
+    height: 17px;
+  }
+
   .prices__current-price {
     font-size: 24px;
   }
@@ -3876,6 +3886,11 @@ body {
 
   .dress-style__image {
     height: 240px;
+  }
+
+  .review__rating .rating__star {
+    width: 21px;
+    height: 21px;
   }
 
   .catalog-cards__list {
@@ -4204,8 +4219,8 @@ body {
   }
 
   .rating__star {
-    width: 23px;
-    height: 23px;
+    width: 18px;
+    height: 18px;
   }
 
   .rating__star:not(:last-of-type) {
@@ -4259,6 +4274,11 @@ body {
   .review__text {
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .review__rating .rating__star {
+    width: 23px;
+    height: 23px;
   }
 
   .breadcrumbs__list {

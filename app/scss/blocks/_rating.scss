@@ -22,9 +22,14 @@
   height: 15px;
   object-fit: contain;
 
+  @include px769 {
+    width: 17px;
+    height: 17px;
+  }
+
   @include px1025 {
-    width: 23px;
-    height: 23px;
+    width: 18px;
+    height: 18px;
   }
 }
 
