@@ -1422,6 +1422,10 @@ body {
           transform: translateY(-50%);
 }
 
+.subscribe-form__button {
+  padding: 15px 20px;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3829,10 +3833,6 @@ body {
 
   .subscribe-form__wrapper {
     margin-bottom: 14px;
-  }
-
-  .subscribe-form__button {
-    padding: 15px 20px;
   }
 
   .store-navigation {
