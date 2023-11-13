@@ -6,7 +6,7 @@ if(quantities) {
     let quantityPlusButton = el.querySelector(".quantity__button--plus");
     let quantityMinusButton = el.querySelector(".quantity__button--minus");
 
-    let productCount = 1;
+    let productCount = +quantityInput.value;
 
     quantityPlusButton.addEventListener("click", plusProduct);
 

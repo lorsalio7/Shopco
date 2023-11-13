@@ -121,6 +121,10 @@
   font-size: 12px;
   color: var(--color-black);
 
+  @include px550 {
+    font-size: 13px;
+  }
+
   @include px769 {
     font-size: 14px;
   }
@@ -131,6 +135,10 @@
   font-weight: 400;
   font-size: 12px;
   color: var(--color-scorpion);
+
+  @include px550 {
+    font-size: 13px;
+  }
 
   @include px769 {
     font-size: 14px;

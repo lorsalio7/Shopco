@@ -427,7 +427,7 @@ if (quantities) {
     var quantityInput = el.querySelector(".quantity__input");
     var quantityPlusButton = el.querySelector(".quantity__button--plus");
     var quantityMinusButton = el.querySelector(".quantity__button--minus");
-    var productCount = 1;
+    var productCount = +quantityInput.value;
     quantityPlusButton.addEventListener("click", plusProduct);
     quantityMinusButton.addEventListener("click", minusProduct);
     function plusProduct() {

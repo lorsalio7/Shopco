@@ -503,8 +503,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  -webkit-transition: margin-top 0.3s ease-in-out;
-  transition: margin-top 0.3s ease-in-out;
+  -webkit-transition: margin-top 0.2s linear;
+  transition: margin-top 0.2s linear;
 }
 
 .page__brands {
@@ -3628,6 +3628,14 @@ body {
   .card-tabs__button {
     display: block;
     text-align: center;
+  }
+
+  .cart-item__specification-row dt {
+    font-size: 13px;
+  }
+
+  .cart-item__specification-row dd {
+    font-size: 13px;
   }
 
   .cart-item__quantity .quantity__input {
