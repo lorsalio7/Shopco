@@ -78,16 +78,4 @@
 
 .filters-form .simplebar-track.simplebar-vertical {
   right: -15px;
-  width: 5px;
-  background-color: var(--color-gallery);
-}
-
-.filters-form .simplebar-scrollbar::before {
-  left: 0;
-  right: 0;
-  background-color: var(--color-black);
-}
-
-.filters-form .simplebar-scrollbar.simplebar-visible::before {
-  opacity: 1;
 }

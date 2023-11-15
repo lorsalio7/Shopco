@@ -48,17 +48,20 @@
   top: 0;
   bottom: 0;
   z-index: var(--z-index-active-elements);
-  overflow-y: auto;
+  display: none;
   width: 80%;
   transform: translateX(-101%);
   transition: transform 0.3s ease-in-out;
 
   @include px769 {
     position: static;
+    display: block;
     overflow-y: unset;
     margin-right: auto;
     margin-left: 40px;
     width: auto;
+    min-width: 320px;
+    max-width: 320px;
     transform: none;
     transition: none;
   }
@@ -75,6 +78,7 @@
   top: 0;
   bottom: 0;
   z-index: var(--z-index-active-elements);
+  display: none;
   padding: 20px;
   background-color: var(--color-white);
   transform: translateY(-100%);
@@ -82,6 +86,7 @@
 
   @include px1025 {
     position: static;
+    display: block;
     flex-grow: 1;
     margin-right: 40px;
     margin-left: 40px;

@@ -49,7 +49,7 @@ const scrollController = {
     `;
     document.documentElement.style.scrollBehavior = "unset";
   },
-  enabledScrool(fixedElement) {
+  enabledScroll(fixedElement) {
     document.body.style.cssText = "";
     window.scroll({top: scrollController.scrollPosition});
     document.documentElement.style.scrollBehavior = "";
@@ -60,5 +60,66 @@ const scrollController = {
         element.style.paddingRight = "0";
       });
     }
+  }
+}
+
+
+//=========================== Функции fadeIn fadeOut ======================
+
+function fadeIn(element, display, duration = 1000) {
+  let el = element;
+  let elStyles = window.getComputedStyle(el);
+
+  if(elStyles.display === "none") {
+    element.style.display = display;
+    element.style.opacity = 0;
+
+    let startTime = performance.now();
+
+    function animate(currentTime) {
+      let elapsedTime = currentTime - startTime;
+      let progress = elapsedTime / duration;
+      element.style.opacity = progress;
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        element.style.cssText = `display: ${display};`;
+      }
+    }
+    requestAnimationFrame(animate);
+  } else {
+    return;
+  }
+}
+
+function fadeOut(element, duration = 1000) {
+  let el = element;
+  let elStyles = window.getComputedStyle(el);
+
+  if(elStyles.display !== "none") {
+  element.style.opacity = 1;
+    let startTime = performance.now();
+
+    function animate(currentTime) {
+      let elapsedTime = currentTime - startTime;
+      let progress = 1 - (elapsedTime / duration);
+      element.style.opacity = progress;
+      if (progress > 0) {
+        requestAnimationFrame(animate);
+      } else {
+        element.style.cssText = "display: none;";
+      }
+    }
+    requestAnimationFrame(animate);
+  } else {
+    return;
+  }
+}
+
+// =========== Запуск функции на определенной ширине =====================
+
+function changeView(width, function_name) {
+  if(!width) {
+    function_name;
   }
 }

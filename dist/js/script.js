@@ -40,7 +40,7 @@ var scrollController = {
     document.body.style.cssText = "\n      overflow: hidden;\n      position: fixed;\n      top: -".concat(scrollController.scrollPosition, "px;\n      left: 0;\n      height: 100vh;\n      width: 100vw;\n      padding-right: ").concat(parseInt(window.innerWidth - document.body.offsetWidth), "px;\n    ");
     document.documentElement.style.scrollBehavior = "unset";
   },
-  enabledScrool: function enabledScrool(fixedElement) {
+  enabledScroll: function enabledScroll(fixedElement) {
     document.body.style.cssText = "";
     window.scroll({
       top: scrollController.scrollPosition
@@ -54,6 +54,63 @@ var scrollController = {
     }
   }
 };
+
+//=========================== Функции fadeIn fadeOut ======================
+
+function fadeIn(element, display) {
+  var duration = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1000;
+  var el = element;
+  var elStyles = window.getComputedStyle(el);
+  if (elStyles.display === "none") {
+    var animate = function animate(currentTime) {
+      var elapsedTime = currentTime - startTime;
+      var progress = elapsedTime / duration;
+      element.style.opacity = progress;
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        element.style.cssText = "display: ".concat(display, ";");
+      }
+    };
+    element.style.display = display;
+    element.style.opacity = 0;
+    var startTime = performance.now();
+    requestAnimationFrame(animate);
+  } else {
+    return;
+  }
+}
+function fadeOut(element) {
+  var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
+  var el = element;
+  var elStyles = window.getComputedStyle(el);
+  if (elStyles.display !== "none") {
+    var animate = function animate(currentTime) {
+      var elapsedTime = currentTime - startTime;
+      var progress = 1 - elapsedTime / duration;
+      element.style.opacity = progress;
+      if (progress > 0) {
+        requestAnimationFrame(animate);
+      } else {
+        element.style.cssText = "display: none;";
+      }
+    };
+    element.style.opacity = 1;
+    var startTime = performance.now();
+    requestAnimationFrame(animate);
+  } else {
+    return;
+  }
+}
+
+// =========== Запуск функции на определенной ширине =====================
+
+function changeView(width, function_name) {
+  if (!width) {
+    function_name;
+  }
+}
+;
 var siteHeader = document.querySelector(".site-header");
 var siteMain = document.querySelector(".main");
 var quickRegistrationButton = siteHeader.querySelector(".quick-registration__close-button");
@@ -84,17 +141,35 @@ if (quickRegistrationButton) {
 var burgerButton = document.querySelector(".burger-button");
 if (burgerButton) {
   var openSiteMenu = function openSiteMenu() {
-    document.querySelector(".site-header__overlay").classList.add("site-header__overlay--active");
-    siteNavigation.classList.add("site-header__site-navigation--active");
+    siteNavigation.style.display = "block";
+    setTimeout(function () {
+      siteNavigation.classList.add("site-header__site-navigation--active");
+      document.querySelector(".site-header__overlay").classList.add("site-header__overlay--active");
+    }, 10);
+    scrollController.disabledScroll(".fixed-element");
+    window.addEventListener("keydown", function (e) {
+      if (e.keyCode === 27 && siteNavigation.classList.contains("site-header__site-navigation--active")) {
+        closeSiteMenu();
+      }
+    });
   };
-  var closeSiteMenu = function closeSiteMenu() {
-    document.querySelector(".site-header__overlay").classList.remove("site-header__overlay--active");
+  var closeSiteMenu = function closeSiteMenu(event) {
     siteNavigation.classList.remove("site-header__site-navigation--active");
+    document.querySelector(".site-header__overlay").classList.remove("site-header__overlay--active");
+    setTimeout(function () {
+      siteNavigation.removeAttribute("style");
+      scrollController.enabledScroll(".fixed-element");
+    }, 300);
+    window.removeEventListener("keydown", closeSiteMenu);
   };
   var siteNavigation = document.querySelector(".site-header__site-navigation");
+  var changeViewWidth = window.matchMedia("(min-width: 769px)");
   var closeSiteNavButton = siteNavigation.querySelector(".site-navigation__close-button");
   burgerButton.addEventListener("click", openSiteMenu);
   closeSiteNavButton.addEventListener("click", closeSiteMenu);
+  changeViewWidth.onchange = function (e) {
+    changeView(e.matches, closeSiteMenu());
+  };
 }
 ;
 var dropdown = document.querySelectorAll("dropdown");
@@ -113,18 +188,34 @@ if (dropdown) {
 var openProductSearchButton = document.querySelector(".user-navigation__open-search-button");
 if (openProductSearchButton) {
   var openProductSearch = function openProductSearch() {
-    productSearchWindow.classList.add("site-header__product-search--active");
-    productSearchInput.focus();
+    productSearchWindow.style.display = "block";
+    setTimeout(function () {
+      productSearchWindow.classList.add("site-header__product-search--active");
+    }, 10);
+    scrollController.disabledScroll();
+    window.addEventListener("keydown", function (e) {
+      if (e.keyCode === 27 && productSearchWindow.classList.contains("site-header__product-search--active")) {
+        closeProductSearch();
+      }
+      ;
+    });
   };
-  var closeProductSearch = function closeProductSearch() {
+  var closeProductSearch = function closeProductSearch(event) {
     productSearchWindow.classList.remove("site-header__product-search--active");
-    productSearchInput.blur();
+    setTimeout(function () {
+      productSearchWindow.removeAttribute("style");
+      scrollController.enabledScroll();
+    }, 300);
+    window.removeEventListener("keydown", closeProductSearch);
   };
+  var bigWidthScreen = window.matchMedia("(min-width: 1025px)");
   var productSearchWindow = document.querySelector(".site-header__product-search");
-  var productSearchInput = productSearchWindow.querySelector(".product-search__input");
   var closeProductSearchButton = productSearchWindow.querySelector(".product-search__close-button");
   openProductSearchButton.addEventListener("click", openProductSearch);
   closeProductSearchButton.addEventListener("click", closeProductSearch);
+  bigWidthScreen.onchange = function (e) {
+    changeView(e.matches, closeProductSearch());
+  };
 }
 ;
 var advantagesList = document.querySelector(".advantages-list");
@@ -413,7 +504,7 @@ if (filtersActiveButton) {
   var closeCatalogFilters = function closeCatalogFilters() {
     document.querySelector(".overlay").classList.remove("overlay--active");
     catalogFilters.classList.remove("catalog__filters--active");
-    scrollController.enabledScrool();
+    scrollController.enabledScroll();
   };
   var catalogFilters = document.querySelector(".catalog__filters");
   var filtersCloseButton = document.querySelector(".catalog-filters__close-button");
@@ -460,6 +551,7 @@ if (cardTabs) {
   var removeActiveClass = function removeActiveClass(elements, class_name) {
     for (var i = 0; i < elements.length; i++) {
       elements[i].classList.remove(class_name);
+      elements[i].removeAttribute("style");
     }
   };
   var tabButtons = cardTabs.querySelectorAll(".card-tabs__button");

@@ -17,6 +17,6 @@ if(filtersActiveButton) {
   function closeCatalogFilters() {
     document.querySelector(".overlay").classList.remove("overlay--active");
     catalogFilters.classList.remove("catalog__filters--active");
-    scrollController.enabledScrool();
+    scrollController.enabledScroll();
   }
 }

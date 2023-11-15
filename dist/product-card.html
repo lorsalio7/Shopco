@@ -10,11 +10,12 @@
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
     <link rel="stylesheet" href="/libs/css/splide.min.css">
     <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f=satoshi@700,500,400&amp;display=swap">
+    <link rel="stylesheet" href="/libs/css/simplebar.min.css">
     <link rel="stylesheet" href="/css/styles.min.css">
   </head>
   <body class="page__body full-height">
     <div class="wrapper">
-      <header class="site-header">
+      <header class="site-header fixed-element">
         <div class="quick-registration">
           <div class="quick-registration__container container">
             <p class="quick-registration__text">Sign up and get 20% off to your first order.<a class="quick-registration__link" href="#">Sign Up Now</a></p>
@@ -33,13 +34,15 @@
               </svg>
             </button><a class="site-header__logo logo" href="#"><img class="logo__image" src="img/site-logo.svg" width="122" height="18" alt="Logo Shop.co"></a>
             <nav class="site-header__site-navigation site-navigation">
-              <button class="site-navigation__close-button" type="button" aria-label="Close site navigation">
-                <svg width="20" height="20" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#close-ic"></use>
-                </svg>
-              </button>
-              <ul class="site-navigation__list">
-                <li class="site-navigation__item dropdown">
+              <div class="site-navigation__top">
+                <button class="site-navigation__close-button" type="button" aria-label="Close site navigation">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#close-ic"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="site-navigation__list">
+                <div class="site-navigation__item dropdown">
                   <button class="site-navigation__link dropdown__toggle" type="button">Shop</button>
                   <ul class="dropdown__list">
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Shirts</a></li>
@@ -48,11 +51,11 @@
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Shorts</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Hoodie</a></li>
                   </ul>
-                </li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">On Sale</a></li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">New Arrivals</a></li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Brands</a></li>
-              </ul>
+                </div>
+                <div class="site-navigation__item"><a class="site-navigation__link" href="#">On Sale</a></div>
+                <div class="site-navigation__item"><a class="site-navigation__link" href="#">New Arrivals</a></div>
+                <div class="site-navigation__item"><a class="site-navigation__link" href="#">Brands</a></div>
+              </div>
             </nav>
             <div class="site-header__product-search product-search">
               <button class="product-search__close-button" type="button" aria-label="Close search">
@@ -566,6 +569,7 @@
       </footer><span class="overlay"></span>
     </div>
     <script src="/libs/js/splide.min.js" defer></script>
+    <script src="/libs/js/simplebar.min.js" defer></script>
     <script src="/js/script.min.js" defer></script>
   </body>
 </html>

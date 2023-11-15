@@ -1,11 +1,12 @@
 .dropdown {
   position: relative;
+  text-align: left;
 }
 
 .dropdown__toggle {
   position: relative;
   border: none;
-  padding-right: 20px;
+  padding: 0 25px 0 0;
   background-color: transparent;
 
   &::after {
@@ -13,13 +14,23 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background-image: url("../img/dropdown-ic.svg");
     background-position: center;
-    background-size: 16px 16px;
+    background-size: 18px 18px;
     background-repeat: no-repeat;
     transition: transform 0.3s ease-in-out;
+
+    @include px769 {
+      width: 20px;
+      height: 20px;
+      background-size: 16px 16px;
+    }
+  }
+
+  @include px769 {
+    padding: 0 20px 0 0;
   }
 }
 
@@ -30,15 +41,21 @@
 }
 
 .dropdown__list {
-  position: absolute;
+  position: static;
   display: none;
   list-style-type: none;
   margin-top: 10px;
   border-radius: 4px;
-  padding: 15px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 20%);
+  padding: 0 0 0 15px;
   text-align: left;
-  background-color: var(--color-white);
+  background-color: unset;
+
+  @include px769 {
+    position: absolute;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 20%);
+    background-color: var(--color-white);
+  }
 }
 
 .dropdown__list--active {
@@ -54,9 +71,18 @@
 }
 
 .dropdown__link {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 20px;
   text-decoration: none;
   color: var(--color-black);
   cursor: pointer;
+
+  @include hover-focus {
+    text-decoration: underline;
+  }
+
+  @include px769 {
+    font-weight: 400;
+    font-size: 16px;
+  }
 }

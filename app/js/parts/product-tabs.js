@@ -30,6 +30,7 @@ if(cardTabs) {
   function removeActiveClass(elements, class_name) {
     for(let i = 0; i < elements.length; i++) {
       elements[i].classList.remove(class_name);
+      elements[i].removeAttribute("style");
     }
   }
 

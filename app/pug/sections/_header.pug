@@ -1,4 +1,4 @@
-header.site-header
+header.site-header.fixed-element
   .quick-registration
     .quick-registration__container.container
       p.quick-registration__text
@@ -17,19 +17,20 @@ header.site-header
         a.site-header__logo.logo
           img(src="img/site-logo.svg", width="122" height="18" alt="Logo Shop.co").logo__image
       nav.site-header__site-navigation.site-navigation
-        button(type="button" aria-label="Close site navigation").site-navigation__close-button
-          +svg("", "close-ic", 20, 20, "true")
-        ul.site-navigation__list
+        .site-navigation__top
+          button(type="button" aria-label="Close site navigation").site-navigation__close-button
+            +svg("", "close-ic", 20, 20, "true")
+        .site-navigation__list
           each item in pugData.site_navigation
             if item.submenu
-              li.site-navigation__item.dropdown
+              .site-navigation__item.dropdown
                 button(type="button" class="site-navigation__link dropdown__toggle")= item.link_name
                 ul.dropdown__list
                   each submenu_item in item.submenu
                     li.dropdown__item
                       a(href= submenu_item.link_url class="dropdown__link")= submenu_item.link_name
             else
-              li.site-navigation__item
+              .site-navigation__item
                 a(href= item.link_url class="site-navigation__link")= item.link_name
       .site-header__product-search.product-search
         button(type="button" aria-label="Close search").product-search__close-button
