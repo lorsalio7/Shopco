@@ -2145,6 +2145,8 @@ body {
   border-radius: 8px;
   padding: 9px;
   text-decoration: none;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
   cursor: pointer;
 }
 
@@ -4792,6 +4794,14 @@ body {
 
   .breadcrumbs__link[href]:hover {
     text-decoration: underline;
+  }
+
+  .pagination__control[href]:focus {
+    background-color: var(--color-alto);
+  }
+
+  .pagination__control[href]:hover {
+    background-color: var(--color-alto);
   }
 
   .pagination__link:focus {

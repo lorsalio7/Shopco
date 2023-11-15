@@ -42,10 +42,15 @@
   border-radius: 8px;
   padding: 9px;
   text-decoration: none;
+  transition: background-color 0.15s ease-in-out;
   cursor: pointer;
 
   @include px390 {
     padding: 7px 13px;
+  }
+
+  @include hover-focus {
+    background-color: var(--color-alto);
   }
 }
 
