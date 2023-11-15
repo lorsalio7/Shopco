@@ -128,10 +128,10 @@ article.card
                 | All Reviews
                 span.product-reviews__count (451)
               .product-reviews__controls
-                button(type="button").product-reviews__settings-button
+                button(type="button" title="Settings button").product-reviews__settings-button
                   +svg("", "settings-ic", 20, 20)
                 form(action="#" method="POST").product-reviews__sorting-form.sorting-reviews
-                  select(name="sort-reviews").sorting-reviews__select
+                  select(name="sort-reviews" title="Select sort user reviews").sorting-reviews__select
                     option(value="by-date-latest-to-oldest") Latest
                     option(value="by-date-oldest-to-latest") Oldest
                     option(value="by-rating-low-to-high") Low rating
