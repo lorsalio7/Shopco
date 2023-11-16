@@ -50,7 +50,11 @@
   text-decoration: none;
   color: var(--color-scorpion);
 
-  @include hover-focus {
+  &:focus {
+    @include outline;
+  }
+
+  @include hover {
     text-decoration: underline;
   }
 }

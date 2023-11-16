@@ -25,6 +25,10 @@
   height: 24px;
   background-color: transparent;
   cursor: pointer;
+
+  &:focus {
+    @include outline;
+  }
 }
 
 .store-reviews__button svg {

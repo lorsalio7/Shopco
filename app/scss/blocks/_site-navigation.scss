@@ -51,6 +51,11 @@
   }
 }
 
+.site-navigation__link:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
+}
+
 .site-navigation__link {
   font-weight: 500;
   font-size: 20px;
@@ -58,7 +63,7 @@
   color: var(--color-black);
   cursor: pointer;
 
-  @include hover-focus {
+  @include hover {
     text-decoration: underline;
   }
 
@@ -73,7 +78,7 @@
   display: flex;
   align-items: center;
 
-  @include hover-focus {
+  @include hover {
     text-decoration: none;
   }
 }

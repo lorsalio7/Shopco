@@ -18,6 +18,10 @@
   }
 }
 
+.sorting-form__select:focus {
+  @include outline;
+}
+
 .sorting-form__select {
   appearance: none;
   border: none;

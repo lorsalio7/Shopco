@@ -65,3 +65,8 @@
 .filters-accordion__item {
   margin-bottom: 20px;
 }
+
+.filters-accordion .size-checkboxes__checkbox:focus + .size-checkboxes__item {
+  outline: 2px solid var(--color-outline);
+  outline-offset: -2px;
+}

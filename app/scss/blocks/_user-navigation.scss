@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.user-navigation__item:focus {
+  @include outline;
+}
+
 .user-navigation__item {
   display: flex;
   flex-basis: 24px;
@@ -11,6 +15,11 @@
   padding: 0;
   height: 24px;
   background-color: transparent;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.user-navigation__item:hover {
+  opacity: 0.7;
 }
 
 .user-navigation__item:not(:last-child) {

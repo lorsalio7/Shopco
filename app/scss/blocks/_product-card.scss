@@ -3,7 +3,11 @@
   margin-bottom: 10px;
   transition: opacity 0.3s ease-in-out;
 
-  @include hover-focus {
+  &:focus {
+    @include outline;
+  }
+
+  @include hover {
     opacity: 0.8;
   }
 }

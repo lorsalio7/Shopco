@@ -60,6 +60,11 @@
   background-color: var(--color-black);
 }
 
+.filters-form__checkbox-input:focus + .filters-form__custom-box {
+  outline: 2px solid var(--color-outline);
+  outline-offset: -2px;
+}
+
 .filters-form__color-checkboxes {
   margin-right: -8px;
   margin-bottom: -8px;

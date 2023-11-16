@@ -55,6 +55,10 @@
   overflow: hidden;
   border-radius: 20px;
   min-height: 190px;
+
+  &:focus {
+    @include outline;
+  }
 }
 
 .dress-style__heading {

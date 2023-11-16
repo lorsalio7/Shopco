@@ -68,3 +68,7 @@
     max-width: 210px;
   }
 }
+
+.assortment__button:focus {
+  @include outline;
+}

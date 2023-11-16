@@ -2,6 +2,10 @@
   display: block;
 }
 
+.logo:focus {
+  @include outline;
+}
+
 .logo__image {
   display: block;
   width: 122px;

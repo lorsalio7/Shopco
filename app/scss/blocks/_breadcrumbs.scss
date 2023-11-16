@@ -49,8 +49,12 @@
   }
 }
 
+.breadcrumbs__link[href]:focus {
+  @include outline;
+}
+
 .breadcrumbs__link[href] {
-  @include hover-focus {
+  @include hover {
     text-decoration: underline;
   }
 }

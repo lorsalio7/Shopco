@@ -247,7 +247,7 @@
                       <use xlink:href="img/sprite.svg#arrow-left-pagination"></use>
                     </svg><span>Previous</span></a>
                   <ul class="pagination__list">
-                    <li class="pagination__item"><a class="pagination__link pagination__link--current" href="#" title="Page 1">1</a></li>
+                    <li class="pagination__item"><a class="pagination__link pagination__link--current" title="Page 1">1</a></li>
                     <li class="pagination__item"><a class="pagination__link" href="#" title="Page 2">2</a></li>
                     <li class="pagination__item pagination__item--hidden"><a class="pagination__link" href="#" title="Page 3">3</a></li>
                     <li class="pagination__item"><span class="pagination__link--disabled">...</span></li>
@@ -389,10 +389,10 @@
                       <div class="filters-accordion__panel" aria-hidden="false">
                         <div class="filters-form__price-range price-range" data-min-price="0" data-max-price="250"></div>
                         <label class="visually-hidden" for="minimal-price">
-                          <input type="text" placeholder="Minimal price" id="minimal-price" name="minimal-price" value="50"><span class="visually-hidden">Price from</span>
+                          <input tabindex="-1" type="text" placeholder="Minimal price" id="minimal-price" name="minimal-price" value="50"><span class="visually-hidden">Price from</span>
                         </label>
                         <label class="visually-hidden" for="maximum-price">
-                          <input type="text" placeholder="Maximum price" id="maximum-price" name="maximum-price" value="200"><span class="visually-hidden">Price to</span>
+                          <input tabindex="-1" type="text" placeholder="Maximum price" id="maximum-price" name="maximum-price" value="200"><span class="visually-hidden">Price to</span>
                         </label>
                       </div>
                     </fieldset>
@@ -649,7 +649,7 @@
     </div>
     <script src="/libs/js/nouislider.min.js" defer></script>
     <script src="/libs/js/simplebar.min.js" defer></script>
-    <script src="/libs/js/simplebar.min.js" defer></script>
+    <script src="/libs/js/focus-visible.min.js" defer></script>
     <script src="/js/script.min.js" defer></script>
   </body>
 </html>

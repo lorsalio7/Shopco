@@ -27,6 +27,14 @@
   }
 }
 
+.subscribe-form__input:focus {
+  @include outline;
+}
+
 .subscribe-form__button {
   padding: 15px 20px;
+
+  &:focus {
+    @include outline;
+  }
 }

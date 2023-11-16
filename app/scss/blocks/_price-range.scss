@@ -24,6 +24,10 @@
   background-color: var(--color-black);
 }
 
+.price-range .noUi-handle:focus {
+  outline: 2px solid var(--color-outline);
+}
+
 .price-range .noUi-handle::before,
 .price-range .noUi-handle::after {
   display: none;
