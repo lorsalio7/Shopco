@@ -2845,6 +2845,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  outline: none;
   border: none;
   padding: 2px;
   width: 40px;
@@ -2856,6 +2857,10 @@ body {
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
+}
+
+.quantity__button:focus {
+  border: 2px solid var(--color-gray);
 }
 
 .quantity__button:active {
