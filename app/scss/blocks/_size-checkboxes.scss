@@ -25,3 +25,8 @@
   color: var(--color-white);
   background-color: var(--color-black);
 }
+
+.size-checkboxes__checkbox:focus + .size-checkboxes__item {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
+}
