@@ -21,12 +21,16 @@
 }
 
 .size-checkboxes__checkbox:checked + .size-checkboxes__item {
+  padding: 10px 19px;
   font-weight: 500;
   color: var(--color-white);
   background-color: var(--color-black);
+
+  @include px1025 {
+    padding: 12px 23px;
+  }
 }
 
-.size-checkboxes__checkbox:focus + .size-checkboxes__item {
-  outline: 2px solid var(--color-outline);
-  outline-offset: 2px;
+.size-checkboxes__checkbox.focus-visible:focus + .size-checkboxes__item {
+  @include outline-inner;
 }

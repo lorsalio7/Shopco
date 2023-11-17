@@ -38,7 +38,7 @@ section.page__catalog.catalog
                   span.prices__discount= item.card_discount
       .pagination
         .pagination__container
-          a(title="Previous page").pagination__control.pagination__control--prev
+          a(title="Previous page").pagination__control.pagination__control--prev.pagination__control--disable
             +svg("", "arrow-left-pagination", 16, 16)
             span Previous
           ul.pagination__list
@@ -65,7 +65,7 @@ section.page__catalog.catalog
         button(type="button" aria-label="Close filters").catalog-filters__close-button.close-button
           +svg("close-button__icon", "close-ic", 24, 24)
       form(action="#" method="GET").catalog-filters__form.filters-form
-        .filters-form__wrapper(data-simplebar)
+        .filters-form__wrapper
           .filters-form__group
             fieldset.filters-form__fieldset
               legend.visually-hidden Clothes

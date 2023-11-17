@@ -49,7 +49,7 @@
   }
 }
 
-.breadcrumbs__link[href]:focus {
+.breadcrumbs__link.focus-visible[href]:focus {
   @include outline;
 }
 

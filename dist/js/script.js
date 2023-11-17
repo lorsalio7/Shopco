@@ -497,14 +497,14 @@ if (filtersAccordion) {
 var filtersActiveButton = document.querySelector(".catalog-cards__filters-button");
 if (filtersActiveButton) {
   var openCatalogFilters = function openCatalogFilters() {
-    scrollController.disabledScroll();
+    scrollController.disabledScroll(".fixed-element");
     document.querySelector(".overlay").classList.add("overlay--active");
     catalogFilters.classList.add("catalog__filters--active");
   };
   var closeCatalogFilters = function closeCatalogFilters() {
     document.querySelector(".overlay").classList.remove("overlay--active");
     catalogFilters.classList.remove("catalog__filters--active");
-    scrollController.enabledScroll();
+    scrollController.enabledScroll(".fixed-element");
   };
   var catalogFilters = document.querySelector(".catalog__filters");
   var filtersCloseButton = document.querySelector(".catalog-filters__close-button");

@@ -7,16 +7,20 @@
   border-radius: 50%;
   width: 37px;
   height: 37px;
+  box-shadow: 0 0 0 2px transparent inset;
   box-sizing: border-box;
   background-position: center;
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-color: var(--color-black);
   cursor: pointer;
+}
 
-  &:focus {
-    outline: 2px solid var(--color-outline);
-  }
+.color-checkboxes__item.focus-visible:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 2px var(--color-outline) inset,
+    0 0 0 4px var(--color-white) inset;
 }
 
 .color-checkboxes__item:checked {

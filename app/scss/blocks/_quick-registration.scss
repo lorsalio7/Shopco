@@ -41,13 +41,32 @@
   font-weight: 500;
   text-decoration: underline;
   color: var(--color-white);
+  transition: opacity 0.2s ease-in-out;
+
+  &:focus {
+    @include outline;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .quick-registration__close-button {
   display: none;
   margin-left: 20px;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
 
   @include px769 {
     display: block;
+
+    &:focus {
+      @include outline;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

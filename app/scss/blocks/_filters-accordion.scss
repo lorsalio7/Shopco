@@ -9,6 +9,10 @@
   text-align: left;
   background-color: var(--color-white);
   cursor: pointer;
+
+  &:focus {
+    @include outline-inner;
+  }
 }
 
 .filters-accordion__button span {
@@ -64,9 +68,4 @@
 
 .filters-accordion__item {
   margin-bottom: 20px;
-}
-
-.filters-accordion .size-checkboxes__checkbox:focus + .size-checkboxes__item {
-  outline: 2px solid var(--color-outline);
-  outline-offset: -2px;
 }
