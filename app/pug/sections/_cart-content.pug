@@ -30,7 +30,7 @@ section.page__cart.cart
                     button(type="button" aria-label="Increase quantity").quantity__button.quantity__button--plus
                       +svg("quantity__icon", "plus-ic", 24, 24, "true")
                     label(for="quantity-input__4448754").visually-hidden Quantity product
-                    input(type="text" name="quantity" id="quantity-input__4448754" pattern="[0-9]*" value="1").quantity__input.input
+                    input(tabindex="-1" type="text" name="quantity" id="quantity-input__4448754" pattern="[0-9]*" value="1").quantity__input.input
             .cart-products-form__item.cart-item
               img(src="/img/cart-product-2.jpg" width="124" height="124", alt="Gradient Graphic T-shirt").cart-item__image
               .cart-item__text-content
@@ -56,7 +56,7 @@ section.page__cart.cart
                     button(type="button" aria-label="Increase quantity").quantity__button.quantity__button--plus
                       +svg("quantity__icon", "plus-ic", 24, 24, "true")
                     label(for="quantity-input__45832499").visually-hidden Quantity product
-                    input(type="text" name="quantity" id="quantity-input__45832499" pattern="[0-9]*" value="1").quantity__input.input
+                    input(tabindex="-1" type="text" name="quantity" id="quantity-input__45832499" pattern="[0-9]*" value="1").quantity__input.input
             .cart-products-form__item.cart-item
               img(src="/img/cart-product-3.jpg" width="124" height="124", alt="Gradient Graphic T-shirt").cart-item__image
               .cart-item__text-content
@@ -82,7 +82,7 @@ section.page__cart.cart
                     button(type="button" aria-label="Increase quantity").quantity__button.quantity__button--plus
                       +svg("quantity__icon", "plus-ic", 24, 24, "true")
                     label(for="quantity-input__23347384").visually-hidden Quantity product
-                    input(type="text" name="quantity" id="quantity-input__23347384" pattern="[0-9]*" value="1").quantity__input.input
+                    input(tabindex="-1" type="text" name="quantity" id="quantity-input__23347384" pattern="[0-9]*" value="1").quantity__input.input
       .cart__info
         form(action="#" method="POST").cart-info-form
           h2.cart-info-form__title Order Summary
@@ -106,6 +106,6 @@ section.page__cart.cart
               input(type="text" id="promocode-input" placeholder="Add promo code").promocode__input.input
               label(for="promocode-input").visually-hidden Enter promocode
             button(type="submit" method="POST").cart-info-form__promo-button.button Apply
-        a(href="#").button.button--with-icon
+        a(href="#").cart__checkout-button.button.button--with-icon
           span.button__text Go to Checkout
           +svg("button__icon", "arrow-right-ic", 20, 20, "true")

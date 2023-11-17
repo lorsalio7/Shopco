@@ -25,4 +25,8 @@
 
 .promocode__input {
   background-color: var(--color-gallery);
+
+  &:focus {
+    @include outline;
+  }
 }

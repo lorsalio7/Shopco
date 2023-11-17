@@ -53,6 +53,10 @@
   }
 }
 
+.card-tabs__button.focus-visible:focus {
+  @include outline;
+}
+
 .card-tabs__button--active {
   font-weight: 500;
   color: var(--color-black);

@@ -46,3 +46,7 @@
     padding: 20px 24px 33px;
   }
 }
+
+.cart__checkout-button:focus {
+  @include outline;
+}

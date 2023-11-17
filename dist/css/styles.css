@@ -2931,6 +2931,11 @@ body {
   padding: 15px 30px;
 }
 
+.card-form__button.focus-visible:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
+}
+
 .quantity {
   position: relative;
   -ms-flex-item-align: start;
@@ -2980,7 +2985,7 @@ body {
   cursor: pointer;
 }
 
-.quantity__button:focus {
+.quantity__button.focus-visible:focus {
   border: 2px solid var(--color-gray);
 }
 
@@ -3037,6 +3042,11 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: var(--color-scorpion);
+}
+
+.card-tabs__button.focus-visible:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
 }
 
 .card-tabs__button--active {
@@ -3136,6 +3146,11 @@ body {
   background-color: var(--color-gallery);
 }
 
+.product-reviews__settings-button:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
+}
+
 .product-reviews__sorting-form {
   display: none;
 }
@@ -3148,6 +3163,11 @@ body {
       flex-shrink: 1;
   margin-left: 10px;
   padding: 15px 5px;
+}
+
+.product-reviews__new-review-button.focus-visible:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
 }
 
 .product-reviews__list {
@@ -3174,6 +3194,11 @@ body {
   margin-left: auto;
   padding: 16px 22px;
   max-width: 196px;
+}
+
+.product-reviews__load-more-button:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
 }
 
 .sorting-reviews {
@@ -3209,6 +3234,11 @@ body {
   font-size: 16px;
   background-color: var(--color-gallery);
   cursor: pointer;
+}
+
+.sorting-reviews__select:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
 }
 
 .characteristics-list__row {
@@ -3302,6 +3332,11 @@ body {
   padding: 20px;
 }
 
+.cart__checkout-button:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
+}
+
 .cart-products-form__item:not(:last-child) {
   margin-bottom: 16px;
   border-bottom: 1px solid var(--color-alto);
@@ -3360,6 +3395,11 @@ body {
   color: var(--color-black);
 }
 
+.cart-item__link:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
+}
+
 .cart-item__delete-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3381,6 +3421,11 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.cart-item__delete-button:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
 }
 
 .cart-item__delete-button svg {
@@ -3460,6 +3505,11 @@ body {
   padding: 15px 16px;
 }
 
+.cart-info-form__promo-button:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
+}
+
 .order-info {
   margin: 0;
 }
@@ -3536,6 +3586,11 @@ body {
 
 .promocode__input {
   background-color: var(--color-gallery);
+}
+
+.promocode__input:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
 }
 
 .site-footer__content {

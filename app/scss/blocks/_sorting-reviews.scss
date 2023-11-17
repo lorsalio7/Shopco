@@ -28,3 +28,7 @@
   background-color: var(--color-gallery);
   cursor: pointer;
 }
+
+.sorting-reviews__select:focus {
+  @include outline;
+}

@@ -42,13 +42,13 @@
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
 
-  &:focus {
-    border: 2px solid var(--color-gray);
-  }
-
   @include px1025 {
     width: 52px;
   }
+}
+
+.quantity__button.focus-visible:focus {
+  border: 2px solid var(--color-gray);
 }
 
 .quantity__button:active {

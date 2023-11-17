@@ -49,6 +49,10 @@
   }
 }
 
+.product-reviews__settings-button:focus {
+  @include outline;
+}
+
 .product-reviews__sorting-form {
   display: none;
 
@@ -68,6 +72,10 @@
   @include px390 {
     padding: 15px 16px;
   }
+}
+
+.product-reviews__new-review-button.focus-visible:focus {
+  @include outline;
 }
 
 .product-reviews__list {
@@ -112,4 +120,8 @@
   @include px769 {
     max-width: 230px;
   }
+}
+
+.product-reviews__load-more-button:focus {
+  @include outline;
 }

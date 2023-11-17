@@ -81,6 +81,10 @@
   }
 }
 
+.cart-item__link:focus {
+  @include outline;
+}
+
 .cart-item__delete-button {
   display: flex;
   align-items: center;
@@ -98,6 +102,10 @@
     width: 24px;
     height: 24px;
   }
+}
+
+.cart-item__delete-button:focus {
+  @include outline;
 }
 
 .cart-item__delete-button svg {
