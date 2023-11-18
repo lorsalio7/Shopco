@@ -27,6 +27,32 @@
       ]
     },
     {
+      "link_name": "Test",
+      "link_url": "#",
+      "submenu": [
+        {
+          "link_name": "Shirts",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Jeans",
+          "link_url": "#"
+        },
+        {
+          "link_name": "T-shirts",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Shorts",
+          "link_url": "#"
+        },
+        {
+          "link_name": "Hoodie",
+          "link_url": "#"
+        }
+      ]
+    },
+    {
       "link_name": "On Sale",
       "link_url": "#"
     },
