@@ -13,7 +13,7 @@ if(openProductSearchButton) {
     setTimeout(() => {
       productSearchWindow.classList.add("site-header__product-search--active");
     }, 10);
-    scrollController.disabledScroll();
+    scrollController.disabledScroll(".fixed-element");
 
     window.addEventListener("keydown", (e) => {
       if(e.keyCode === 27 && productSearchWindow.classList.contains("site-header__product-search--active")) {
@@ -26,7 +26,7 @@ if(openProductSearchButton) {
     productSearchWindow.classList.remove("site-header__product-search--active");
     setTimeout(() => {
       productSearchWindow.removeAttribute("style");
-      scrollController.enabledScroll();
+      scrollController.enabledScroll(".fixed-element");
     }, 300);
 
     window.removeEventListener("keydown", closeProductSearch);
