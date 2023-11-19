@@ -65,6 +65,10 @@
   }
 }
 
+.catalog-cards__filters-button:focus {
+  @include outline;
+}
+
 .catalog-cards__list {
   display: flex;
   flex-wrap: wrap;

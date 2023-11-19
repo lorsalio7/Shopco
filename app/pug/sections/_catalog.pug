@@ -18,7 +18,7 @@ section.page__catalog.catalog
                 option(value="price-low-to-high") Price: Low to High
                 option(value="price-high-to-low") Price: High to Low
           button(type="button" aria-label="Open products filters").catalog-cards__filters-button
-            +svg("", "settings-ic", 16, 16)
+            +svg("", "settings-ic", 16, 16, "true")
       ul.catalog-cards__list
         each item in pugData.category_cards
           li.catalog-cards__item
@@ -63,7 +63,7 @@ section.page__catalog.catalog
       header.catalog-filters__header
         h2.catalog-filters__title Filters
         button(type="button" aria-label="Close filters").catalog-filters__close-button.close-button
-          +svg("close-button__icon", "close-ic", 24, 24)
+          +svg("close-button__icon", "close-ic", 24, 24, "true")
       form(action="#" method="GET").catalog-filters__form.filters-form
         .filters-form__wrapper
           .filters-form__group

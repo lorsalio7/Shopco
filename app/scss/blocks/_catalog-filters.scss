@@ -62,6 +62,10 @@
   }
 }
 
+.catalog-filters__close-button:focus {
+  @include outline;
+}
+
 .catalog-filters__close-button .close-button__icon {
   fill: var(--color-gray);
 }

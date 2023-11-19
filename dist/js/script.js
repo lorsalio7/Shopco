@@ -521,17 +521,34 @@ if (filtersActiveButton) {
   var openCatalogFilters = function openCatalogFilters() {
     scrollController.disabledScroll(".fixed-element");
     document.querySelector(".overlay").classList.add("overlay--active");
+    filtersCloseButton.focus();
     catalogFilters.classList.add("catalog__filters--active");
+    document.addEventListener("click", closeCatalogFilters);
+    window.addEventListener("keydown", closeCatalogFilters);
   };
-  var closeCatalogFilters = function closeCatalogFilters() {
-    document.querySelector(".overlay").classList.remove("overlay--active");
-    catalogFilters.classList.remove("catalog__filters--active");
-    scrollController.enabledScroll(".fixed-element");
+  var closeCatalogFilters = function closeCatalogFilters(e, width) {
+    if (e && e.keyCode === 27 || e && e.target === filtersCloseButton || e && e.target.classList.contains("overlay") || width) {
+      document.querySelector(".overlay").classList.remove("overlay--active");
+      catalogFilters.classList.remove("catalog__filters--active");
+      setTimeout(function () {
+        scrollController.enabledScroll(".fixed-element");
+      }, 300);
+      document.removeEventListener("click", closeCatalogFilters);
+      window.removeEventListener("click", closeCatalogFilters);
+    }
   };
+  var _changeView = function _changeView(width) {
+    if (width) {
+      closeCatalogFilters(null, width);
+    }
+  };
+  var _bigWidthScreen = window.matchMedia("(min-width: 1025px)");
   var catalogFilters = document.querySelector(".catalog__filters");
   var filtersCloseButton = document.querySelector(".catalog-filters__close-button");
   filtersActiveButton.addEventListener("click", openCatalogFilters);
-  filtersCloseButton.addEventListener("click", closeCatalogFilters);
+  _bigWidthScreen.onchange = function (e) {
+    _changeView(e.matches);
+  };
 }
 ;
 var quantities = document.querySelectorAll(".quantity");

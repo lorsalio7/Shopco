@@ -613,6 +613,7 @@ body {
 
 .close-button__icon {
   fill: var(--color-white);
+  pointer-events: none;
 }
 
 .site-header {
@@ -2149,6 +2150,11 @@ body {
   cursor: pointer;
 }
 
+.catalog-cards__filters-button:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
+}
+
 .catalog-cards__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2460,6 +2466,11 @@ body {
   width: 24px;
   height: 24px;
   cursor: pointer;
+}
+
+.catalog-filters__close-button:focus {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
 }
 
 .catalog-filters__close-button .close-button__icon {
