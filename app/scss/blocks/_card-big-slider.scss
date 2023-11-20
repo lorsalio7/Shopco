@@ -14,10 +14,14 @@
   }
 
   @include px769 {
-    height: 350px;
+    height: 430px;
   }
 
   @include px1025 {
+    height: 490px;
+  }
+
+  @include px1200 {
     height: 530px;
   }
 }

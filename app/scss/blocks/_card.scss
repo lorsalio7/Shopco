@@ -23,13 +23,15 @@
   @include px769 {
     flex-grow: 1;
     flex-basis: calc(50% - 20px);
+    flex-direction: column;
     margin-right: 20px;
     margin-bottom: 0;
   }
 
   @include px1025 {
     flex-shrink: 1;
-    flex-basis: 610px;
+    flex-basis: calc(50% - 10px);
+    flex-direction: row-reverse;
     margin-right: 40px;
   }
 }
@@ -41,17 +43,30 @@
     flex-shrink: 1;
     margin-bottom: 0;
   }
+
+  @include px769 {
+    margin-bottom: 12px;
+  }
+
+  @include px1025 {
+    flex: 1 1 calc(75% - 14px);
+  }
 }
 
 .card__thumbs-slider {
   @include px550 {
     flex-shrink: 0;
-    flex-basis: 100px;
+    flex-basis: 130px;
     margin-right: 14px;
   }
 
+  @include px769 {
+    margin-right: 0;
+  }
+
   @include px1025 {
-    flex-basis: 152px;
+    flex: 1 3 25%;
+    margin-right: 14px;
   }
 }
 
@@ -61,8 +76,7 @@
   }
 
   @include px1025 {
-    flex-grow: 1;
-    flex-basis: 590px;
+    flex-basis: calc(50% - 30px);
   }
 }
 
@@ -79,7 +93,7 @@
   }
 
   @include px769 {
-    font-size: 30px;
+    font-size: 34px;
   }
 
   @include px1025 {

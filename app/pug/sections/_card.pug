@@ -137,23 +137,24 @@ article.card
                     option(value="by-rating-low-to-high") Low rating
                     option(value="by-rating-high-to-low") High rating
                 button(type="button").button.product-reviews__new-review-button Write a Review
-            ul.product-reviews__list
-              each item in pugData.card_reviews
-                li.product-reviews__item
-                  blockquote.review
-                    .review__top
-                      .review__rating.rating
-                        div(role="img" aria-label= item.review_rating).rating__image
-                          each item_star in item.stars
-                            img(src= item_star.star, width="18" height="18" alt="Star").rating__star
-                      button(type="button").review__button
-                        +svg("", "dots-ic", 24, 24)
-                    cite.review__name.review__name--verified= item.review_name
-                    p.review__text= item.review_text
-                    p.review__date
-                      | Posted on
-                      time(datetime= item.review_datetime)= item.review_date
-            button(type="button").button.button--outline.product-reviews__load-more-button Load More Reviews
+            form(action="#").product-reviews__form
+              ul.product-reviews__list
+                each item in pugData.card_reviews
+                  li.product-reviews__item
+                    blockquote.review
+                      .review__top
+                        .review__rating.rating
+                          div(role="img" aria-label= item.review_rating).rating__image
+                            each item_star in item.stars
+                              img(src= item_star.star, width="18" height="18" alt="Star").rating__star
+                        button(type="button").review__button
+                          +svg("", "dots-ic", 24, 24)
+                      cite.review__name.review__name--verified= item.review_name
+                      p.review__text= item.review_text
+                      p.review__date
+                        | Posted on
+                        time(datetime= item.review_datetime)= item.review_date
+              button(type="button").button.button--outline.product-reviews__load-more-button Load More Reviews
         .card-tabs__panel#card-tab-3
           h2.card-tabs__title FAQs
           dl.card-tabs__faq-list.faq-list

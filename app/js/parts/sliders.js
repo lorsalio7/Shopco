@@ -140,10 +140,15 @@ document.addEventListener( 'DOMContentLoaded', function() {
           direction: 'ttb'
         },
         769: {
-          height: 350,
+          height: 150,
+          direction: 'ttr'
         },
         1025: {
-          height: 530,
+          height: 490,
+          direction: 'ttb'
+        },
+        1200: {
+          height: 530
         }
       }
     }).mount();

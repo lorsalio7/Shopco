@@ -50,7 +50,11 @@
 
 .card-form__button {
   margin-left: 12px;
-  padding: 15px 30px;
+  padding: 15px 10px;
+
+  @include px426 {
+    padding: 15px 30px;
+  }
 
   @include px1025 {
     margin-left: 20px;

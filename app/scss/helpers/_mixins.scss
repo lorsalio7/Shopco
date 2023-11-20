@@ -88,3 +88,11 @@
 }
 
 /* @include px1025 {} */
+
+@mixin px1200 {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+/* @include px1200 {} */

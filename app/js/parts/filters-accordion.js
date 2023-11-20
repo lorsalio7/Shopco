@@ -18,8 +18,10 @@ if(filtersAccordion) {
 
       if(!filterAccordionPannels[index].classList.contains("filters-accordion__panel--hidden")) {
         filterAccordionPannels[index].classList.add("filters-accordion__panel--hidden");
+        filterAccordionPannels[index].setAttribute("aria-hidden", "true");
       } else {
         filterAccordionPannels[index].classList.remove("filters-accordion__panel--hidden");
+        filterAccordionPannels[index].setAttribute("aria-hidden", "false");
       }
 
     })

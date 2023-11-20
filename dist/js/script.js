@@ -414,9 +414,14 @@ document.addEventListener('DOMContentLoaded', function () {
           direction: 'ttb'
         },
         769: {
-          height: 350
+          height: 150,
+          direction: 'ttr'
         },
         1025: {
+          height: 490,
+          direction: 'ttb'
+        },
+        1200: {
           height: 530
         }
       }
@@ -509,8 +514,10 @@ if (filtersAccordion) {
       }
       if (!filterAccordionPannels[index].classList.contains("filters-accordion__panel--hidden")) {
         filterAccordionPannels[index].classList.add("filters-accordion__panel--hidden");
+        filterAccordionPannels[index].setAttribute("aria-hidden", "true");
       } else {
         filterAccordionPannels[index].classList.remove("filters-accordion__panel--hidden");
+        filterAccordionPannels[index].setAttribute("aria-hidden", "false");
       }
     });
   });
