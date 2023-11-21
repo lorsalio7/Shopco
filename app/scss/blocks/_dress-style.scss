@@ -13,6 +13,14 @@
   }
 }
 
+.dress-style__title {
+  margin-bottom: 28px;
+
+  @include px1025 {
+    margin-bottom: 64px;
+  }
+}
+
 .dress-style__list {
   display: flex;
   flex-wrap: wrap;
@@ -55,9 +63,14 @@
   overflow: hidden;
   border-radius: 20px;
   min-height: 190px;
+  transition: opacity 0.3s ease-in-out;
 
   &:focus {
     @include outline;
+  }
+
+  @include hover {
+    opacity: 0.8;
   }
 }
 

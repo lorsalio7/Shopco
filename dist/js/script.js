@@ -364,11 +364,6 @@ document.addEventListener('DOMContentLoaded', function () {
       mediaQuery: 'min',
       type: "loop",
       breakpoints: {
-        550: {
-          padding: {
-            right: 100
-          }
-        },
         769: {
           gap: 20,
           perPage: 2,

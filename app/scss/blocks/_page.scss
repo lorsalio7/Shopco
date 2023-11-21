@@ -1,17 +1,33 @@
 .page__brands {
   margin-bottom: 50px;
+
+  @include px1025 {
+    margin-bottom: 72px;
+  }
 }
 
 .page__assortment {
   margin-bottom: 50px;
+
+  @include px1025 {
+    margin-bottom: 64px;
+  }
 }
 
 .page__dress-style {
   margin-bottom: 50px;
+
+  @include px1025 {
+    margin-bottom: 80px;
+  }
 }
 
 .page__store-reviews {
   margin-bottom: 50px;
+
+  @include px1025 {
+    margin-bottom: 80px;
+  }
 }
 
 .page__catalog {

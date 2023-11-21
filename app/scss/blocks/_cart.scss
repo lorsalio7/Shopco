@@ -43,7 +43,15 @@
   }
 
   @include px1025 {
-    padding: 20px 24px 33px;
+    padding: 22px 24px 33px;
+  }
+}
+
+.cart__checkout-button {
+  padding: 14px 30px;
+
+  @include px390 {
+    padding: 14px 50px;
   }
 }
 

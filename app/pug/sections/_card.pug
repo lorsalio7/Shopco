@@ -147,8 +147,8 @@ article.card
                           div(role="img" aria-label= item.review_rating).rating__image
                             each item_star in item.stars
                               img(src= item_star.star, width="18" height="18" alt="Star").rating__star
-                        button(type="button").review__button
-                          +svg("", "dots-ic", 24, 24)
+                        button(type="button" aria-label="Review button").review__button
+                          +svg("", "dots-ic", 24, 24, "true")
                       cite.review__name.review__name--verified= item.review_name
                       p.review__text= item.review_text
                       p.review__date

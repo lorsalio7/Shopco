@@ -10,6 +10,10 @@
   @include hover {
     opacity: 0.8;
   }
+
+  @include px1025 {
+    margin-bottom: 16px;
+  }
 }
 
 .product-card__image {
@@ -34,8 +38,22 @@
   font-weight: 700;
   font-size: 16px;
   color: var(--color-black);
+
+  @include px769 {
+    margin-bottom: 6px;
+    font-size: 18px;
+  }
+
+  @include px1025 {
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
 }
 
 .product-card__rating {
   margin-bottom: 4px;
+
+  @include px1025 {
+    margin-bottom: 8px;
+  }
 }

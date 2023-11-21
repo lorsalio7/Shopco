@@ -3,6 +3,10 @@
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 24px;
+
+  @include px1025 {
+    margin-bottom: 40px;
+  }
 }
 
 .store-reviews__title {

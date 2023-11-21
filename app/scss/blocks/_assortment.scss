@@ -30,6 +30,18 @@
   @include px769 {
     padding-bottom: 40px;
   }
+
+  @include px1025 {
+    padding-bottom: 64px;
+  }
+}
+
+.assortment__title {
+  margin-bottom: 32px;
+
+  @include px1025 {
+    margin-bottom: 55px;
+  }
 }
 
 .assortment__slider {

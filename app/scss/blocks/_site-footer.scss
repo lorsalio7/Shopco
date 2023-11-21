@@ -1,15 +1,27 @@
 .site-footer__content {
   padding-top: 32px;
   background-color: var(--color-gallery);
+
+  @include px1025 {
+    padding-top: 50px;
+  }
 }
 
 .site-footer__container {
+  padding-bottom: 40px;
+
+  @include px426 {
+    padding: 0 45px 40px;
+  }
+
   @include px769 {
     display: flex;
+    padding: 0 15px 40px;
   }
 
   @include px1025 {
     justify-content: space-between;
+    padding: 0 15px 50px;
   }
 }
 
@@ -31,27 +43,39 @@
 
 .site-footer__logo {
   margin-bottom: 14px;
+
+  @include px1025 {
+    margin-bottom: 25px;
+  }
 }
 
 .site-footer__description {
   margin-top: 0;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: var(--color-scorpion);
+
+  @include px1025 {
+    margin-bottom: 35px;
+    line-height: 22px;
+  }
 }
 
 .site-footer__socials {
   margin-bottom: 24px;
+
+  @include px769 {
+    margin-bottom: 0;
+  }
 }
 
 .site-footer__store-navigation {
   margin-right: -16px;
-  margin-bottom: 24px;
 
   @include px769 {
     flex-basis: 66.67%;
-    margin-bottom: 26px;
   }
 
   @include px1025 {
@@ -69,15 +93,22 @@
 
   @include px769 {
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    padding: 20px 0 81px;
   }
 }
 
 .site-footer__copyright {
   order: -1;
+  margin-top: 0;
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 14px;
   text-align: center;
   color: var(--color-scorpion);
+
+  @include px769 {
+    margin-bottom: 0;
+  }
 }

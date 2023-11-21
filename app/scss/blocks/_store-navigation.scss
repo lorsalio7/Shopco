@@ -20,17 +20,24 @@
 
   @include px1025 {
     flex-basis: calc(20% - 16px);
+    margin-bottom: 0;
   }
 }
 
 .store-navigation__title {
   margin-top: 0;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--color-black);
+
+  @include px1025 {
+    margin-bottom: 26px;
+    font-size: 16px;
+  }
 }
 
 .store-navigation__list {
@@ -41,6 +48,10 @@
 
 .store-navigation__item:not(:last-of-type) {
   margin-bottom: 16px;
+
+  @include px1025 {
+    margin-bottom: 19px;
+  }
 }
 
 .store-navigation__link {
@@ -56,5 +67,15 @@
 
   @include hover {
     text-decoration: underline;
+  }
+
+  @include px769 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  @include px1025 {
+    font-size: 16px;
+    line-height: 19px;
   }
 }

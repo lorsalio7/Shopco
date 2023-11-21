@@ -7,6 +7,10 @@
   border-radius: 20px;
   padding: 24px;
   background-color: var(--color-white);
+
+  @include px1025 {
+    padding: 32px;
+  }
 }
 
 .review__top {
@@ -24,7 +28,20 @@
   width: 24px;
   height: 24px;
   background-color: var(--color-white);
+  transition: opacity 0.3s ease-in-out;
   cursor: pointer;
+
+  &:focus {
+    @include outline;
+  }
+
+  @include px1025 {
+    display: block;
+
+    @include hover {
+      opacity: 0.8;
+    }
+  }
 }
 
 .review__button svg {
@@ -41,6 +58,7 @@
   color: var(--color-black);
 
   @include px1025 {
+    margin-bottom: 12px;
     font-size: 20px;
   }
 }
@@ -93,7 +111,11 @@
 }
 
 .review__rating {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+
+  @include px1025 {
+    margin-bottom: 19px;
+  }
 }
 
 .review__rating .rating__star {
