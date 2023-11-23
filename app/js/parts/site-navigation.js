@@ -19,7 +19,8 @@ if(burgerButton) {
       if(e.keyCode === 27 && siteNavigation.classList.contains("site-header__site-navigation--active")) {
         closeSiteMenu();
       }
-    })
+    });
+    document.querySelector(".site-header__overlay").addEventListener("click", closeSiteMenu);
   }
 
   function closeSiteMenu(event) {
@@ -31,6 +32,7 @@ if(burgerButton) {
     }, 300);
 
     window.removeEventListener("keydown", closeSiteMenu);
+    document.querySelector(".site-header__overlay").removeEventListener("click", closeSiteMenu);
   }
 
 

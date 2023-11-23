@@ -1,6 +1,29 @@
-let brands = document.querySelector(".brands");
+let brands = document.querySelector(".brands-slider");
 
 if(brands) {
-  let copyBrandsLine = brands.querySelector(".brands__line").cloneNode(true);
-  brands.querySelector(".brands__ticker").appendChild(copyBrandsLine);
+  new Splide(brands, {
+    type: "loop",
+    arrows: false,
+    pagination: false,
+    mediaQuery: 'min',
+    perPage: 3,
+    gap: 34,
+    autoWidth: true,
+    breakpoints: {
+      550: {
+        perPage: 4,
+        gap: 50
+      },
+      769: {
+        gap: 70
+      },
+      1025: {
+        perPage: 5,
+        gap: 106
+      }
+    },
+    autoScroll: {
+      speed: 2,
+    }
+  }).mount(window.splide.Extensions);
 }

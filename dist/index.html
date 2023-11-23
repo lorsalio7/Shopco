@@ -117,10 +117,14 @@
         </section>
         <section class="page__brands brands">
           <h2 class="visually-hidden">Our store brands</h2>
-          <div class="brands__wrapper container">
-            <div class="brands__container">
-              <div class="brands__ticker">
-                <div class="brands__line"><img class="brands__logo" src="img/versace-logo.svg" alt="Versace logo"><img class="brands__logo" src="img/zara-logo.svg" alt="Zara logo"><img class="brands__logo" src="img/gucci-logo.svg" alt="Gucci logo"><img class="brands__logo" src="img/prada-logo.svg" alt="Prada logo"><img class="brands__logo" src="img/calvin-klein-logo.svg" alt="Calvin Klein logo"></div>
+          <div class="brands-slider container splide">
+            <div class="brands__container splide__track">
+              <div class="brands__ticker splide__list">
+                <div class="splide__slide"><img class="brands__logo" src="img/versace-logo.svg" alt="Versace logo"></div>
+                <div class="splide__slide"><img class="brands__logo" src="img/zara-logo.svg" alt="Zara logo"></div>
+                <div class="splide__slide"><img class="brands__logo" src="img/gucci-logo.svg" alt="Gucci logo"></div>
+                <div class="splide__slide"><img class="brands__logo" src="img/prada-logo.svg" alt="Prada logo"></div>
+                <div class="splide__slide"><img class="brands__logo" src="img/calvin-klein-logo.svg" alt="Calvin Klein logo"></div>
               </div>
             </div>
           </div>
@@ -353,7 +357,7 @@
         <div class="site-footer__content">
           <div class="site-footer__container container">
             <div class="site-footer__extra"><a class="site-footer__logo logo"><img class="logo__image" src="img/site-logo.svg" width="122" height="18" alt="Logo Shop.co"></a>
-              <p class="site-footer__description">We&nbsp;have clothes that suits your style and which you’re&nbsp;proud to&nbsp;wear. From women to&nbsp;men.</p>
+              <p class="site-footer__description">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
               <ul class="site-footer__socials socials">
                 <li class="socials__item"><a class="socials__link" href="#" aria-label="We on X">
                     <svg class="socials__icon" width="30" height="30">
@@ -428,6 +432,7 @@
       </footer><span class="overlay"></span>
     </div>
     <script src="/libs/js/splide.min.js" defer></script>
+    <script src="/libs/js/splide-extension-auto-scroll.min.js" defer></script>
     <script src="/libs/js/focus-visible.min.js" defer></script>
     <script src="/js/script.min.js" defer></script>
   </body>

@@ -771,7 +771,7 @@ body {
   position: fixed;
   left: 0;
   right: 0;
-  top: 84px;
+  top: 70px;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1346,7 +1346,7 @@ body {
 
 .brands__container {
   position: relative;
-  width: 100%;
+  padding: 30px 0;
 }
 
 .brands__container::before {
@@ -1375,64 +1375,20 @@ body {
   background: linear-gradient(to left, var(--color-black) 0%, transparent 100%);
 }
 
-.brands__ticker {
+.brands-slider .splide__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  overflow: hidden;
-  padding: 40px 0;
-  min-width: 100%;
-  white-space: nowrap;
-}
-
-.brands__line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  min-width: 100%;
-  -webkit-animation: slide-to-left 10s linear infinite;
-          animation: slide-to-left 10s linear infinite;
-}
-
-@-webkit-keyframes slide-to-left {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-@keyframes slide-to-left {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .brands__logo {
   display: block;
-  padding: 0 17px;
   width: 100%;
   max-height: 26px;
   -o-object-fit: contain;
@@ -1938,9 +1894,7 @@ body {
   display: block;
   width: 100%;
   height: calc(100% + 2px);
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .store-reviews-slider::after {
@@ -1952,9 +1906,7 @@ body {
   display: block;
   width: 100%;
   height: calc(100% + 2px);
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .store-reviews-slider .splide__track {
@@ -4175,6 +4127,14 @@ body {
     font-size: 14px;
   }
 
+  .brands__container {
+    padding: 48px 0;
+  }
+
+  .brands__logo {
+    max-height: 38px;
+  }
+
   .section-title {
     font-size: 42px;
   }
@@ -4606,10 +4566,6 @@ body {
 
   .advantages-list__title {
     font-size: 16px;
-  }
-
-  .brands__wrapper {
-    padding: 8px 15px;
   }
 
   .section-title {

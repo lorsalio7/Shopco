@@ -152,6 +152,7 @@ if (burgerButton) {
         closeSiteMenu();
       }
     });
+    document.querySelector(".site-header__overlay").addEventListener("click", closeSiteMenu);
   };
   var closeSiteMenu = function closeSiteMenu(event) {
     siteNavigation.classList.remove("site-header__site-navigation--active");
@@ -161,6 +162,7 @@ if (burgerButton) {
       scrollController.enabledScroll(".fixed-element");
     }, 300);
     window.removeEventListener("keydown", closeSiteMenu);
+    document.querySelector(".site-header__overlay").removeEventListener("click", closeSiteMenu);
   };
   var siteNavigation = document.querySelector(".site-header__site-navigation");
   var changeViewWidth = window.matchMedia("(min-width: 769px)");
@@ -273,10 +275,33 @@ if (advantagesList) {
   };
 }
 ;
-var brands = document.querySelector(".brands");
+var brands = document.querySelector(".brands-slider");
 if (brands) {
-  var copyBrandsLine = brands.querySelector(".brands__line").cloneNode(true);
-  brands.querySelector(".brands__ticker").appendChild(copyBrandsLine);
+  new Splide(brands, {
+    type: "loop",
+    arrows: false,
+    pagination: false,
+    mediaQuery: 'min',
+    perPage: 3,
+    gap: 34,
+    autoWidth: true,
+    breakpoints: {
+      550: {
+        perPage: 4,
+        gap: 50
+      },
+      769: {
+        gap: 70
+      },
+      1025: {
+        perPage: 5,
+        gap: 106
+      }
+    },
+    autoScroll: {
+      speed: 2
+    }
+  }).mount(window.splide.Extensions);
 }
 ;
 document.addEventListener('DOMContentLoaded', function () {
