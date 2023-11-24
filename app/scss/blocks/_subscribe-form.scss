@@ -31,6 +31,10 @@
   @include outline;
 }
 
+.subscribe-form__input::placeholder {
+  line-height: normal;
+}
+
 .subscribe-form__button {
   padding: 15px 20px;
 

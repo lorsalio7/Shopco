@@ -3,7 +3,8 @@ let filtersActiveButton = document.querySelector(".catalog-cards__filters-button
 if(filtersActiveButton) {
   let bigWidthScreen = window.matchMedia("(min-width: 1025px)");
   let catalogFilters = document.querySelector(".catalog__filters");
-  let filtersCloseButton = document.querySelector(".catalog-filters__close-button")
+  let filtersCloseButton = document.querySelector(".catalog-filters__close-button");
+
   filtersActiveButton.addEventListener("click", openCatalogFilters);
 
   function openCatalogFilters() {
@@ -17,7 +18,7 @@ if(filtersActiveButton) {
   }
 
   function closeCatalogFilters(e, width) {
-    if(e && e.keyCode === 27 || e && e.target === filtersCloseButton || e && e.target.classList.contains("overlay") || width) {
+    if(e && e.keyCode === 27 || e && e.target === document.querySelector(".overlay") || e && e.target === filtersCloseButton  || width) {
       document.querySelector(".overlay").classList.remove("overlay--active");
       catalogFilters.classList.remove("catalog__filters--active");
       setTimeout(() => {

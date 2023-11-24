@@ -25,32 +25,51 @@ function debounce(func, delay) {
   };
 }
 
+// Проверка на десктоп сафари
+
+var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+var isDesktopSafari = isSafari && !navigator.userAgent.match(/Mobile/);
+
 // =========================== Фикс скачка браузерного скролла и плавной прокрутки ==========================================
 
 var scrollController = {
   scrollPosition: 0,
   disabledScroll: function disabledScroll(fixedElement) {
-    if (fixedElement) {
-      var fixedElements = document.querySelectorAll(fixedElement);
-      fixedElements.forEach(function (element) {
-        element.style.paddingRight = "".concat(parseInt(window.innerWidth - document.body.offsetWidth), "px");
-      });
+    if (isDesktopSafari) {
+      scrollController.scrollPosition = window.scrollY;
+      document.body.style.cssText = "\n        overflow-y: scroll;\n        position: fixed;\n        top: -".concat(scrollController.scrollPosition, "px;\n        left: 0;\n        height: 100vh;\n        width: 100vw;\n        padding-right: ").concat(parseInt(window.innerWidth - document.body.offsetWidth), "px;\n      ");
+      document.documentElement.style.scrollBehavior = "unset";
+    } else {
+      if (fixedElement) {
+        var fixedElements = document.querySelectorAll(fixedElement);
+        fixedElements.forEach(function (element) {
+          element.style.paddingRight = "".concat(parseInt(window.innerWidth - document.body.offsetWidth), "px");
+        });
+      }
+      scrollController.scrollPosition = window.scrollY;
+      document.body.style.cssText = "\n        overflow: hidden;\n        position: fixed;\n        top: -".concat(scrollController.scrollPosition, "px;\n        left: 0;\n        height: 100vh;\n        width: 100vw;\n        padding-right: ").concat(parseInt(window.innerWidth - document.body.offsetWidth), "px;\n      ");
+      document.documentElement.style.scrollBehavior = "unset";
     }
-    scrollController.scrollPosition = window.scrollY;
-    document.body.style.cssText = "\n      overflow: hidden;\n      position: fixed;\n      top: -".concat(scrollController.scrollPosition, "px;\n      left: 0;\n      height: 100vh;\n      width: 100vw;\n      padding-right: ").concat(parseInt(window.innerWidth - document.body.offsetWidth), "px;\n    ");
-    document.documentElement.style.scrollBehavior = "unset";
   },
   enabledScroll: function enabledScroll(fixedElement) {
-    document.body.style.cssText = "";
-    window.scroll({
-      top: scrollController.scrollPosition
-    });
-    document.documentElement.style.scrollBehavior = "";
-    if (fixedElement) {
-      var fixedElements = document.querySelectorAll(fixedElement);
-      fixedElements.forEach(function (element) {
-        element.style.paddingRight = "0";
+    if (isDesktopSafari) {
+      document.body.style.cssText = "";
+      window.scroll({
+        top: scrollController.scrollPosition
       });
+      document.documentElement.style.scrollBehavior = "";
+    } else {
+      if (fixedElement) {
+        var fixedElements = document.querySelectorAll(fixedElement);
+        fixedElements.forEach(function (element) {
+          element.style.paddingRight = "0";
+        });
+      }
+      document.body.style.cssText = "";
+      window.scroll({
+        top: scrollController.scrollPosition
+      });
+      document.documentElement.style.scrollBehavior = "";
     }
   }
 };
@@ -109,6 +128,29 @@ function changeView(width, function_name) {
   if (!width) {
     function_name;
   }
+}
+;
+var addMaximumScaleToMetaViewport = function addMaximumScaleToMetaViewport() {
+  var el = document.querySelector('meta[name=viewport]');
+  if (el !== null) {
+    var content = el.getAttribute('content');
+    var re = /maximum\-scale=[0-9\.]+/g;
+    if (re.test(content)) {
+      content = content.replace(re, 'maximum-scale=1.0');
+    } else {
+      content = [content, 'maximum-scale=1.0'].join(', ');
+    }
+    el.setAttribute('content', content);
+  }
+};
+var disableIosTextFieldZoom = addMaximumScaleToMetaViewport;
+
+// https://stackoverflow.com/questions/9038625/detect-if-device-is-ios/9039885#9039885
+var checkIsIOS = function checkIsIOS() {
+  return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+};
+if (checkIsIOS()) {
+  disableIosTextFieldZoom();
 }
 ;
 var siteHeader = document.querySelector(".site-header");
@@ -554,7 +596,7 @@ if (filtersActiveButton) {
     window.addEventListener("keydown", closeCatalogFilters);
   };
   var closeCatalogFilters = function closeCatalogFilters(e, width) {
-    if (e && e.keyCode === 27 || e && e.target === filtersCloseButton || e && e.target.classList.contains("overlay") || width) {
+    if (e && e.keyCode === 27 || e && e.target === document.querySelector(".overlay") || e && e.target === filtersCloseButton || width) {
       document.querySelector(".overlay").classList.remove("overlay--active");
       catalogFilters.classList.remove("catalog__filters--active");
       setTimeout(function () {

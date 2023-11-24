@@ -26,6 +26,10 @@
 .promocode__input {
   background-color: var(--color-gallery);
 
+  &::placeholder {
+    line-height: normal;
+  }
+
   &:focus {
     @include outline;
   }

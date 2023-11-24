@@ -951,6 +951,7 @@ body {
   display: none;
   background-color: var(--color-black);
   opacity: 0.2;
+  cursor: pointer;
 }
 
 .overlay--active {
@@ -1038,6 +1039,26 @@ body {
 
 .product-search__input:focus {
   border: 2px solid var(--color-gray);
+}
+
+.product-search__input::-webkit-input-placeholder {
+  line-height: normal;
+}
+
+.product-search__input::-moz-placeholder {
+  line-height: normal;
+}
+
+.product-search__input:-ms-input-placeholder {
+  line-height: normal;
+}
+
+.product-search__input::-ms-input-placeholder {
+  line-height: normal;
+}
+
+.product-search__input::placeholder {
+  line-height: normal;
 }
 
 .product-search__button {
@@ -1467,6 +1488,26 @@ body {
 .subscribe-form__input:focus {
   outline: 2px solid var(--color-outline);
   outline-offset: 2px;
+}
+
+.subscribe-form__input::-webkit-input-placeholder {
+  line-height: normal;
+}
+
+.subscribe-form__input::-moz-placeholder {
+  line-height: normal;
+}
+
+.subscribe-form__input:-ms-input-placeholder {
+  line-height: normal;
+}
+
+.subscribe-form__input::-ms-input-placeholder {
+  line-height: normal;
+}
+
+.subscribe-form__input::placeholder {
+  line-height: normal;
 }
 
 .subscribe-form__button {
@@ -2150,6 +2191,7 @@ body {
           justify-content: center;
   border: none;
   border-radius: 50%;
+  padding: 0;
   width: 32px;
   height: 32px;
   background-color: var(--color-gallery);
@@ -3610,6 +3652,26 @@ body {
 
 .promocode__input {
   background-color: var(--color-gallery);
+}
+
+.promocode__input::-webkit-input-placeholder {
+  line-height: normal;
+}
+
+.promocode__input::-moz-placeholder {
+  line-height: normal;
+}
+
+.promocode__input:-ms-input-placeholder {
+  line-height: normal;
+}
+
+.promocode__input::-ms-input-placeholder {
+  line-height: normal;
+}
+
+.promocode__input::placeholder {
+  line-height: normal;
 }
 
 .promocode__input:focus {

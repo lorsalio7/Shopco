@@ -54,6 +54,10 @@
   border: 2px solid var(--color-gray);
 }
 
+.product-search__input::placeholder {
+  line-height: normal;
+}
+
 .product-search__button {
   display: flex;
   flex-shrink: 0;
