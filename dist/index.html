@@ -9,7 +9,10 @@
     <link rel="shortcut icon" type="image/svg+xml" href="/img/favicon.svg">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
     <link rel="stylesheet" href="/libs/css/splide.min.css">
-    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f=satoshi@700,500,400&amp;display=swap">
+    <link rel="preload" href="/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Satoshi-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Satoshi-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/AnybodyBlack.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/styles.min.css">
   </head>
   <body class="page__body full-height">
@@ -112,7 +115,7 @@
                 </div>
               </dl>
             </div>
-            <div class="hero__media-content"><img class="hero__image" src="img/hero-image.png" width="631" height="663" alt="Autumn сollection 2023"></div>
+            <div class="hero__media-content"><img class="hero__image" srcset="img/hero-image-320.png 320w, img/hero-image.png 550w," src="img/hero-image.png" width="631" height="663" alt="Autumn сollection 2023"></div>
           </div>
         </section>
         <section class="page__brands brands">
@@ -120,11 +123,11 @@
           <div class="brands-slider container splide">
             <div class="brands__container splide__track">
               <div class="brands__ticker splide__list">
-                <div class="splide__slide"><img class="brands__logo" src="img/versace-logo.svg" alt="Versace logo"></div>
-                <div class="splide__slide"><img class="brands__logo" src="img/zara-logo.svg" alt="Zara logo"></div>
-                <div class="splide__slide"><img class="brands__logo" src="img/gucci-logo.svg" alt="Gucci logo"></div>
-                <div class="splide__slide"><img class="brands__logo" src="img/prada-logo.svg" alt="Prada logo"></div>
-                <div class="splide__slide"><img class="brands__logo" src="img/calvin-klein-logo.svg" alt="Calvin Klein logo"></div>
+                <div class="splide__slide"><img class="brands__logo" src="img/versace-logo.svg" width="167" height="34" alt="Versace logo"></div>
+                <div class="splide__slide"><img class="brands__logo" src="img/zara-logo.svg" width="92" height="38" alt="Zara logo"></div>
+                <div class="splide__slide"><img class="brands__logo" src="img/gucci-logo.svg" width="157" height="36" alt="Gucci logo"></div>
+                <div class="splide__slide"><img class="brands__logo" src="img/prada-logo.svg" width="195" height="32" alt="Prada logo"></div>
+                <div class="splide__slide"><img class="brands__logo" src="img/calvin-klein-logo.svg" width="208" height="34" alt="Calvin Klein logo"></div>
               </div>
             </div>
           </div>

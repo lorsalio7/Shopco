@@ -1,5 +1,17 @@
 "use strict";
 
+function debounce(func, delay) {
+  var timeout;
+  return function () {
+    var context = this;
+    var args = arguments;
+    clearTimeout(timeout);
+    timeout = setTimeout(function () {
+      return func.apply(context, args);
+    }, delay);
+  };
+}
+;
 function throttle(func, delay) {
   var wait = false;
   return function () {
@@ -13,24 +25,36 @@ function throttle(func, delay) {
     }, delay);
   };
 }
-function debounce(func, delay) {
-  var timeout;
-  return function () {
-    var context = this;
-    var args = arguments;
-    clearTimeout(timeout);
-    timeout = setTimeout(function () {
-      return func.apply(context, args);
-    }, delay);
-  };
-}
+;
+var addMaximumScaleToMetaViewport = function addMaximumScaleToMetaViewport() {
+  var el = document.querySelector('meta[name=viewport]');
+  if (el !== null) {
+    var content = el.getAttribute('content');
+    var re = /maximum\-scale=[0-9\.]+/g;
+    if (re.test(content)) {
+      content = content.replace(re, 'maximum-scale=1.0');
+    } else {
+      content = [content, 'maximum-scale=1.0'].join(', ');
+    }
+    el.setAttribute('content', content);
+  }
+};
+var disableIosTextFieldZoom = addMaximumScaleToMetaViewport;
 
+// https://stackoverflow.com/questions/9038625/detect-if-device-is-ios/9039885#9039885
+var checkIsIOS = function checkIsIOS() {
+  return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+};
+if (checkIsIOS()) {
+  disableIosTextFieldZoom();
+}
+;
 // Проверка на десктоп сафари
 
 var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 var isDesktopSafari = isSafari && !navigator.userAgent.match(/Mobile/);
-
-// =========================== Фикс скачка браузерного скролла и плавной прокрутки ==========================================
+;
+// =========================== Фикс скачка браузерного скролла и плавной прокрутки обязательно подключить isSafari.js ==========================================
 
 var scrollController = {
   scrollPosition: 0,
@@ -73,55 +97,6 @@ var scrollController = {
     }
   }
 };
-
-//=========================== Функции fadeIn fadeOut ======================
-
-function fadeIn(element, display) {
-  var duration = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1000;
-  var el = element;
-  var elStyles = window.getComputedStyle(el);
-  if (elStyles.display === "none") {
-    var animate = function animate(currentTime) {
-      var elapsedTime = currentTime - startTime;
-      var progress = elapsedTime / duration;
-      element.style.opacity = progress;
-      if (progress < 1) {
-        requestAnimationFrame(animate);
-      } else {
-        element.style.cssText = "display: ".concat(display, ";");
-      }
-    };
-    element.style.display = display;
-    element.style.opacity = 0;
-    var startTime = performance.now();
-    requestAnimationFrame(animate);
-  } else {
-    return;
-  }
-}
-function fadeOut(element) {
-  var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
-  var el = element;
-  var elStyles = window.getComputedStyle(el);
-  if (elStyles.display !== "none") {
-    var animate = function animate(currentTime) {
-      var elapsedTime = currentTime - startTime;
-      var progress = 1 - elapsedTime / duration;
-      element.style.opacity = progress;
-      if (progress > 0) {
-        requestAnimationFrame(animate);
-      } else {
-        element.style.cssText = "display: none;";
-      }
-    };
-    element.style.opacity = 1;
-    var startTime = performance.now();
-    requestAnimationFrame(animate);
-  } else {
-    return;
-  }
-}
-
 // =========== Запуск функции на определенной ширине =====================
 
 function changeView(width, function_name) {
@@ -130,28 +105,6 @@ function changeView(width, function_name) {
   }
 }
 ;
-var addMaximumScaleToMetaViewport = function addMaximumScaleToMetaViewport() {
-  var el = document.querySelector('meta[name=viewport]');
-  if (el !== null) {
-    var content = el.getAttribute('content');
-    var re = /maximum\-scale=[0-9\.]+/g;
-    if (re.test(content)) {
-      content = content.replace(re, 'maximum-scale=1.0');
-    } else {
-      content = [content, 'maximum-scale=1.0'].join(', ');
-    }
-    el.setAttribute('content', content);
-  }
-};
-var disableIosTextFieldZoom = addMaximumScaleToMetaViewport;
-
-// https://stackoverflow.com/questions/9038625/detect-if-device-is-ios/9039885#9039885
-var checkIsIOS = function checkIsIOS() {
-  return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-};
-if (checkIsIOS()) {
-  disableIosTextFieldZoom();
-}
 ;
 var siteHeader = document.querySelector(".site-header");
 var siteMain = document.querySelector(".main");

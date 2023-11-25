@@ -467,6 +467,30 @@ template {
 /* @include font("$name", "$font-family", $weight, $style, $font-name-local, $font-name-local-alternate); */
 
 @font-face {
+  src: local("Satoshi Regular"), local("Satoshi-Regular"), url("../fonts/Satoshi-Regular.woff2") format("woff2");
+  font-family: "Satoshi";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: local("Satoshi Medium"), local("Satoshi-Medium"), url("../fonts/Satoshi-Medium.woff2") format("woff2");
+  font-family: "Satoshi";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: local("Satoshi Bold"), local("Satoshi-Bold"), url("../fonts/Satoshi-Bold.woff2") format("woff2");
+  font-family: "Satoshi";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   src: local("Anybody Black"), local("Anybody-Black"), url("../fonts/AnybodyBlack.woff2") format("woff2");
   font-family: "Anybody";
   font-weight: 800;
@@ -514,8 +538,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  -webkit-transition: margin-top 0.2s linear;
-  transition: margin-top 0.2s linear;
 }
 
 .page__brands {

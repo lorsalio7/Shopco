@@ -24,3 +24,4 @@ const checkIsIOS = () =>
 if (checkIsIOS()) {
   disableIosTextFieldZoom();
 }
+

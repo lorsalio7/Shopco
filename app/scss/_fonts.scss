@@ -1,2 +1,5 @@
 /* @include font("$name", "$font-family", $weight, $style, $font-name-local, $font-name-local-alternate); */
+@include font("Satoshi-Regular", "Satoshi", 400, normal, "Satoshi Regular", "Satoshi-Regular");
+@include font("Satoshi-Medium", "Satoshi", 500, normal, "Satoshi Medium", "Satoshi-Medium");
+@include font("Satoshi-Bold", "Satoshi", 700, normal, "Satoshi Bold", "Satoshi-Bold");
 @include font("AnybodyBlack", "Anybody", 800, normal, "Anybody Black", "Anybody-Black");
