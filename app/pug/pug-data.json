@@ -128,25 +128,25 @@
   "new_arrivals_cards": [
     {
       "card_link": "#",
-      "card_image": "/img/new-arrivals-img-1.jpg",
+      "card_image": "img/new-arrivals-img-1.jpg",
       "card_id": "Gwbdzu",
       "card_title": "T-shirt with Tape Details",
       "card_rating": "Rating 4.5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ],
       "card_rating_text": "4.5/5",
@@ -156,22 +156,22 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/new-arrivals-img-2.jpg",
+      "card_image": "img/new-arrivals-img-2.jpg",
       "card_id": "fFshs7",
       "card_title": "Skinny Fit Jeans",
       "card_rating": "Rating 3.5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ],
       "card_rating_text": "3.5/5",
@@ -181,25 +181,25 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/new-arrivals-img-3.jpg",
+      "card_image": "img/new-arrivals-img-3.jpg",
       "card_id": "IPeuBR",
       "card_title": "Checkered Shirt",
       "card_rating": "Rating 4.5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ],
       "card_rating_text": "4.5/5",
@@ -209,25 +209,25 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/new-arrivals-img-4.jpg",
+      "card_image": "img/new-arrivals-img-4.jpg",
       "card_id": "wOOnEz",
       "card_title": "Sleeve Striped T-shirt",
       "card_rating": "Rating 4.5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ],
       "card_rating_text": "4.5/5",
@@ -239,25 +239,25 @@
   "top_selling_cards": [
     {
       "card_link": "#",
-      "card_image": "/img/top-selling-img-1.jpg",
+      "card_image": "img/top-selling-img-1.jpg",
       "card_id": "k6PUVf",
       "card_title": "Vertical Striped Shirt",
       "card_rating": "Rating 5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ],
       "card_rating_text": "5/5",
@@ -267,22 +267,22 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/top-selling-img-2.jpg",
+      "card_image": "img/top-selling-img-2.jpg",
       "card_id": "QyqODO",
       "card_title": "Courage Graphic T-shirt",
       "card_rating": "Rating 4 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ],
       "card_rating_text": "4.0/5",
@@ -292,19 +292,19 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/top-selling-img-3.jpg",
+      "card_image": "img/top-selling-img-3.jpg",
       "card_id": "dmO6J0",
       "card_title": "Loose Fit Bermuda Shorts",
       "card_rating": "Rating 3 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ],
       "card_rating_text": "3.0/5",
@@ -314,25 +314,25 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/top-selling-img-4.jpg",
+      "card_image": "img/top-selling-img-4.jpg",
       "card_id": "tTe3In",
       "card_title": "Faded Skinny Jeans",
       "card_rating": "Rating 4.5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ],
       "card_rating_text": "4.5/5",
@@ -346,7 +346,7 @@
       "additional_class": "dress-style__item--small",
       "card_url": "#",
       "card_name": "Casual",
-      "card_image": "/img/casual-style-img.jpg",
+      "card_image": "img/casual-style-img.jpg",
       "card_image_width": "407",
       "card_image_height": "289",
       "card_image_alt": "Casual dress style"
@@ -354,7 +354,7 @@
     {
       "card_url": "#",
       "card_name": "Formal",
-      "card_image": "/img/formal-style-img.jpg",
+      "card_image": "img/formal-style-img.jpg",
       "card_image_width": "684",
       "card_image_height": "290",
       "card_image_alt": "Formal dress style"
@@ -362,7 +362,7 @@
     {
       "card_url": "#",
       "card_name": "Party",
-      "card_image": "/img/party-style-img.jpg",
+      "card_image": "img/party-style-img.jpg",
       "card_image_width": "684",
       "card_image_height": "290",
       "card_image_alt": "Party dress style"
@@ -371,7 +371,7 @@
       "additional_class": "dress-style__item--small",
       "card_url": "#",
       "card_name": "Gym",
-      "card_image": "/img/gym-style-img.jpg",
+      "card_image": "img/gym-style-img.jpg",
       "card_image_width": "407",
       "card_image_height": "289",
       "card_image_alt": "Gym dress style"
@@ -383,19 +383,19 @@
       "review_text": "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.\"",
       "stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ]
     },
@@ -404,19 +404,19 @@
       "review_text": "\"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.\"",
       "stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ]
     },
@@ -425,19 +425,19 @@
       "review_text": "\"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.\"",
       "stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ]
     },
@@ -446,19 +446,19 @@
       "review_text": "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.\"",
       "stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ]
     },
@@ -467,19 +467,19 @@
       "review_text": "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.\"",
       "stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ]
     }
@@ -525,22 +525,22 @@
   "category_cards": [
     {
       "card_link": "#",
-      "card_image": "/img/category-img-1.jpg",
+      "card_image": "img/category-img-1.jpg",
       "card_id": "i9uzq3",
       "card_title": "Gradient Graphic T-shirt",
       "card_rating": "Rating 3.5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ],
       "card_rating_text": "3.5/5",
@@ -550,25 +550,25 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/category-img-2.jpg",
+      "card_image": "img/category-img-2.jpg",
       "card_id": "qz4rZG",
       "card_title": "Polo with Tipping Details",
       "card_rating": "Rating 4.5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ],
       "card_rating_text": "4.5/5",
@@ -578,25 +578,25 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/category-img-3.jpg",
+      "card_image": "img/category-img-3.jpg",
       "card_id": "aPrUhO",
       "card_title": "Black Striped T-shirt",
       "card_rating": "Rating 5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ],
       "card_rating_text": "5.0/5",
@@ -606,22 +606,22 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/category-img-4.jpg",
+      "card_image": "img/category-img-4.jpg",
       "card_id": "fFshs7",
       "card_title": "Skinny Fit Jeans",
       "card_rating": "Rating 3.5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ],
       "card_rating_text": "3.5/5",
@@ -631,25 +631,25 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/category-img-5.jpg",
+      "card_image": "img/category-img-5.jpg",
       "card_id": "IPeuBR",
       "card_title": "Checkered Shirt",
       "card_rating": "Rating 4.5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ],
       "card_rating_text": "4.5/5",
@@ -659,25 +659,25 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/category-img-6.jpg",
+      "card_image": "img/category-img-6.jpg",
       "card_id": "wOOnEz",
       "card_title": "Sleeve Striped T-shirt",
       "card_rating": "Rating 4.5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ],
       "card_rating_text": "4.5/5",
@@ -687,25 +687,25 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/category-img-7.jpg",
+      "card_image": "img/category-img-7.jpg",
       "card_id": "k6PUVf",
       "card_title": "Vertical Striped Shirt",
       "card_rating": "Rating 5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ],
       "card_rating_text": "5/5",
@@ -715,22 +715,22 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/category-img-8.jpg",
+      "card_image": "img/category-img-8.jpg",
       "card_id": "QyqODO",
       "card_title": "Courage Graphic T-shirt",
       "card_rating": "Rating 4 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ],
       "card_rating_text": "4.0/5",
@@ -740,19 +740,19 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/category-img-9.jpg",
+      "card_image": "img/category-img-9.jpg",
       "card_id": "dmO6J0",
       "card_title": "Loose Fit Bermuda Shorts",
       "card_rating": "Rating 3 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ],
       "card_rating_text": "3.0/5",
@@ -769,19 +769,19 @@
       "review_datetime": "2023-08-14",
       "stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ]
     },
@@ -792,16 +792,16 @@
       "review_datetime": "2023-08-15",
       "stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ]
     },
@@ -812,16 +812,16 @@
       "review_datetime": "2023-08-16",
       "stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ]
     },
@@ -832,16 +832,16 @@
       "review_datetime": "2023-08-17",
       "stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ]
     },
@@ -852,16 +852,16 @@
       "review_datetime": "2023-08-18",
       "stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ]
     },
@@ -872,19 +872,19 @@
       "review_datetime": "2023-08-19",
       "stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ]
     }
@@ -892,22 +892,22 @@
   "see_also_cards": [
     {
       "card_link": "#",
-      "card_image": "/img/see-also-image-1.jpg",
+      "card_image": "img/see-also-image-1.jpg",
       "card_id": "uwbdzq",
       "card_title": "Polo with Contrast Trims",
       "card_rating": "Rating 4 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ],
       "card_rating_text": "4.0/5",
@@ -917,22 +917,22 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/see-also-image-2.jpg",
+      "card_image": "img/see-also-image-2.jpg",
       "card_id": "i9uzq3",
       "card_title": "Gradient Graphic T-shirt",
       "card_rating": "Rating 3.5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ],
       "card_rating_text": "3.5/5",
@@ -942,25 +942,25 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/see-also-image-3.jpg",
+      "card_image": "img/see-also-image-3.jpg",
       "card_id": "qz4rZG",
       "card_title": "Polo with Tipping Details",
       "card_rating": "Rating 4.5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/half-star-ic.svg"
+          "star": "img/half-star-ic.svg"
         }
       ],
       "card_rating_text": "4.5/5",
@@ -970,25 +970,25 @@
     },
     {
       "card_link": "#",
-      "card_image": "/img/see-also-image-4.jpg",
+      "card_image": "img/see-also-image-4.jpg",
       "card_id": "aPrUhO",
       "card_title": "Black Striped T-shirt",
       "card_rating": "Rating 5 out of 5",
       "card_stars": [
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         },
         {
-          "star": "/img/star-ic.svg"
+          "star": "img/star-ic.svg"
         }
       ],
       "card_rating_text": "5.0/5",
