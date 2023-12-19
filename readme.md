@@ -2,10 +2,10 @@
 
 Проект созданный для сайта-портфолио [sezak.ru](https://sezak.ru/)
 
-[Главная страница](https://lorsalio7.github.io/Shopco/dist/)
-[Страница каталога](https://lorsalio7.github.io/Shopco/dist/category.html)
-[Карточка товара](https://lorsalio7.github.io/Shopco/dist/product-card.html)
-[Корзина](https://lorsalio7.github.io/Shopco/dist/cart.html)
+[Главная страница](https://lorsalio7.github.io/Shopco/dist/)  
+[Страница каталога](https://lorsalio7.github.io/Shopco/dist/category.html)  
+[Карточка товара](https://lorsalio7.github.io/Shopco/dist/product-card.html)  
+[Корзина](https://lorsalio7.github.io/Shopco/dist/cart.html)  
 
 **Используемые плагины:**
 
