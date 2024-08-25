@@ -5,7 +5,7 @@
   padding: 20px 0 20px 18px;
   background-color: var(--color-white);
 
-  @include px1025 {
+  @include min-lg {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 20px 24px 29px;
@@ -33,12 +33,12 @@
     background-size: 24px 24px;
     background-repeat: no-repeat;
 
-    @include px1025 {
+    @include min-lg {
       display: block;
     }
   }
 
-  @include px1025 {
+  @include min-lg {
     padding-right: 0;
   }
 }
@@ -57,7 +57,7 @@
   height: 24px;
   cursor: pointer;
 
-  @include px1025 {
+  @include min-lg {
     display: none;
   }
 }
@@ -77,7 +77,7 @@
   padding-bottom: 40px;
   height: 100%;
 
-  @include px1025 {
+  @include min-lg {
     overflow-y: unset;
     padding-right: 0;
     padding-bottom: 0;

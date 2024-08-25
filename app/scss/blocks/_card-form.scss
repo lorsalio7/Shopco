@@ -12,7 +12,7 @@
   border-top: 1px solid var(--color-alto);
   padding-top: 30px;
 
-  @include px1025 {
+  @include min-lg {
     padding-top: 24px;
   }
 }
@@ -25,7 +25,7 @@
   font-size: 14px;
   color: var(--color-scorpion);
 
-  @include px1025 {
+  @include min-lg {
     font-size: 16px;
   }
 }
@@ -39,11 +39,11 @@
 }
 
 .card-form__quantity {
-  @include px426 {
+  @include min-xs {
     flex: 0 0 140px;
   }
 
-  @include px1025 {
+  @include min-lg {
     flex: 0 0 170px;
   }
 }
@@ -52,11 +52,11 @@
   margin-left: 12px;
   padding: 15px 10px;
 
-  @include px426 {
+  @include min-xs {
     padding: 15px 30px;
   }
 
-  @include px1025 {
+  @include min-lg {
     margin-left: 20px;
   }
 }

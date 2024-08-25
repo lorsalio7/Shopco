@@ -11,7 +11,7 @@
     opacity: 0.8;
   }
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 16px;
   }
 }
@@ -23,11 +23,11 @@
   height: 100%;
   object-fit: contain;
 
-  @include px769 {
+  @include min-md {
     border-radius: 17px;
   }
 
-  @include px1025 {
+  @include min-lg {
     border-radius: 20px;
   }
 }
@@ -39,12 +39,12 @@
   font-size: 16px;
   color: var(--color-black);
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 6px;
     font-size: 18px;
   }
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 8px;
     font-size: 20px;
   }
@@ -53,7 +53,7 @@
 .product-card__rating {
   margin-bottom: 4px;
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 8px;
   }
 }

@@ -11,7 +11,7 @@
   font-size: 12px;
   color: var(--color-black);
 
-  @include px1025 {
+  @include min-lg {
     font-size: 14px;
   }
 }
@@ -26,12 +26,12 @@
   height: 15px;
   object-fit: contain;
 
-  @include px769 {
+  @include min-md {
     width: 17px;
     height: 17px;
   }
 
-  @include px1025 {
+  @include min-lg {
     width: 18px;
     height: 18px;
   }
@@ -40,7 +40,7 @@
 .rating__star:not(:last-of-type) {
   margin-right: 4px;
 
-  @include px1025 {
+  @include min-lg {
     margin-right: 6px;
   }
 }

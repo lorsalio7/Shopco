@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -421,17 +423,29 @@ template {
 
 /* @include hover-focus {} */
 
-/* @include px390 {} */
+/*
+Шаблон переменных медиа запросов
 
-/* @include px426 {} */
+$xxs: 320px;
+$xs: 375px;
+$sm: 425px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+$xxxl: 1920px; */
 
-/* @include px550 {} */
+/* @include min-xxs {} */
 
-/* @include px769 {} */
+/* @include min-xs {} */
 
-/* @include px1025 {} */
+/* @include min-sm {} */
 
-/* @include px1200 {} */
+/* @include min-md {} */
+
+/* @include min-lg {} */
+
+/* @include min-xl {} */
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;

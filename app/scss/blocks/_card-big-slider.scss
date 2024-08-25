@@ -5,23 +5,23 @@
   height: 290px;
   object-fit: cover;
 
-  @include px390 {
+  @include min-xxs {
     height: 320px;
   }
 
-  @include px550 {
+  @include min-sm {
     height: 400px;
   }
 
-  @include px769 {
+  @include min-md {
     height: 430px;
   }
 
-  @include px1025 {
+  @include min-lg {
     height: 490px;
   }
 
-  @include px1200 {
+  @include min-xl {
     height: 530px;
   }
 }

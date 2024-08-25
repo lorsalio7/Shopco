@@ -15,14 +15,14 @@
     background-repeat: no-repeat;
     transform: translateY(-50%);
 
-    @include px1025 {
+    @include min-lg {
       width: 24px;
       height: 24px;
       background-size: 24px 24px;
     }
   }
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 14px;
   }
 }

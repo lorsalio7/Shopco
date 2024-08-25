@@ -5,11 +5,11 @@
   padding: 0 15px;
   max-width: var(--container-width);
 
-  @include px426 {
+  @include min-xs {
     padding: 0 45px;
   }
 
-  @include px769 {
+  @include min-md {
     padding: 0 15px;
   }
 }

@@ -17,12 +17,12 @@
     width: 20px;
     height: 20px;
 
-    @include px769 {
+    @include min-md {
       display: block;
     }
   }
 
-  @include px769 {
+  @include min-md {
     justify-content: space-between;
   }
 }
@@ -58,7 +58,7 @@
   transition: opacity 0.2s ease-in-out;
   cursor: pointer;
 
-  @include px769 {
+  @include min-md {
     display: block;
 
     &:focus {

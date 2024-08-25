@@ -22,11 +22,11 @@
     opacity: 0.8;
   }
 
-  @include px390 {
+  @include min-xxs {
     height: 106px;
   }
 
-  @include px550 {
+  @include min-sm {
     width: 100%;
     height: 100%;
   }

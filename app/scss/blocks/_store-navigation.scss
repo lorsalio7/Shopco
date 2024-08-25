@@ -4,11 +4,11 @@
   align-items: flex-start;
   justify-content: flex-start;
 
-  @include px769 {
+  @include min-md {
     justify-content: flex-end;
   }
 
-  @include px1025 {
+  @include min-lg {
     justify-content: space-between;
   }
 }
@@ -18,7 +18,7 @@
   margin-right: 16px;
   margin-bottom: 24px;
 
-  @include px1025 {
+  @include min-lg {
     flex-basis: calc(20% - 16px);
     margin-bottom: 0;
   }
@@ -34,7 +34,7 @@
   text-transform: uppercase;
   color: var(--color-black);
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 26px;
     font-size: 16px;
   }
@@ -49,7 +49,7 @@
 .store-navigation__item:not(:last-of-type) {
   margin-bottom: 16px;
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 19px;
   }
 }
@@ -69,12 +69,12 @@
     text-decoration: underline;
   }
 
-  @include px769 {
+  @include min-md {
     font-size: 15px;
     line-height: 17px;
   }
 
-  @include px1025 {
+  @include min-lg {
     font-size: 16px;
     line-height: 19px;
   }

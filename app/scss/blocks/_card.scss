@@ -1,13 +1,13 @@
 .card__main-content {
   margin-bottom: 26px;
 
-  @include px769 {
+  @include min-md {
     display: flex;
     align-items: flex-start;
     margin-bottom: 55px;
   }
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 80px;
   }
 }
@@ -15,12 +15,12 @@
 .card__gallery {
   margin-bottom: 20px;
 
-  @include px550 {
+  @include min-sm {
     display: flex;
     flex-direction: row-reverse;
   }
 
-  @include px769 {
+  @include min-md {
     flex-grow: 1;
     flex-basis: calc(50% - 20px);
     flex-direction: column;
@@ -28,7 +28,7 @@
     margin-bottom: 0;
   }
 
-  @include px1025 {
+  @include min-lg {
     flex-shrink: 1;
     flex-basis: calc(50% - 10px);
     flex-direction: row-reverse;
@@ -39,43 +39,43 @@
 .card__big-slider {
   margin-bottom: 12px;
 
-  @include px550 {
+  @include min-sm {
     flex-shrink: 1;
     margin-bottom: 0;
   }
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 12px;
   }
 
-  @include px1025 {
+  @include min-lg {
     flex: 1 1 calc(75% - 14px);
   }
 }
 
 .card__thumbs-slider {
-  @include px550 {
+  @include min-sm {
     flex-shrink: 0;
     flex-basis: 130px;
     margin-right: 14px;
   }
 
-  @include px769 {
+  @include min-md {
     margin-right: 0;
   }
 
-  @include px1025 {
+  @include min-lg {
     flex: 1 3 25%;
     margin-right: 14px;
   }
 }
 
 .card__description {
-  @include px769 {
+  @include min-md {
     flex-basis: calc(50% - 20px);
   }
 
-  @include px1025 {
+  @include min-lg {
     flex-basis: calc(50% - 30px);
   }
 }
@@ -88,15 +88,15 @@
   font-size: 24px;
   text-transform: uppercase;
 
-  @include px550 {
+  @include min-sm {
     font-size: 27px;
   }
 
-  @include px769 {
+  @include min-md {
     font-size: 34px;
   }
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 14px;
     font-size: 40px;
   }
@@ -110,12 +110,12 @@
   width: 18px;
   height: 18px;
 
-  @include px769 {
+  @include min-md {
     width: 20px;
     height: 20px;
   }
 
-  @include px1025 {
+  @include min-lg {
     width: 24px;
     height: 24px;
   }
@@ -124,7 +124,7 @@
 .card__rating .rating__text {
   font-size: 14px;
 
-  @include px1025 {
+  @include min-lg {
     font-size: 16px;
   }
 }
@@ -136,11 +136,11 @@
 .card__prices .prices__current-price {
   font-size: 24px;
 
-  @include px769 {
+  @include min-md {
     font-size: 28px;
   }
 
-  @include px1025 {
+  @include min-lg {
     font-size: 32px;
   }
 }
@@ -148,11 +148,11 @@
 .card__prices .prices__old-price {
   font-size: 24px;
 
-  @include px769 {
+  @include min-md {
     font-size: 28px;
   }
 
-  @include px1025 {
+  @include min-lg {
     font-size: 32px;
   }
 }
@@ -162,7 +162,7 @@
   font-size: 14px;
   text-align: center;
 
-  @include px1025 {
+  @include min-lg {
     padding: 6px 14px;
     font-size: 16px;
   }
@@ -176,7 +176,7 @@
   line-height: 20px;
   color: var(--color-scorpion);
 
-  @include px1025 {
+  @include min-lg {
     font-size: 16px;
     line-height: 22px;
   }

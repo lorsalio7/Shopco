@@ -9,17 +9,17 @@
   height: 90px;
   object-fit: cover;
 
-  @include px390 {
+  @include min-xxs {
     width: 99px;
     height: 99px;
   }
 
-  @include px426 {
+  @include min-xs {
     width: 110px;
     height: 110px;
   }
 
-  @include px1025 {
+  @include min-lg {
     width: 124px;
     height: 124px;
   }
@@ -39,7 +39,7 @@
 }
 
 .cart-item__row:nth-child(3) {
-  @include px1025 {
+  @include min-lg {
     align-items: flex-end;
   }
 }
@@ -48,7 +48,7 @@
   flex-grow: 1;
   margin-left: 14px;
 
-  @include px1025 {
+  @include min-lg {
     margin-left: 16px;
   }
 }
@@ -61,15 +61,15 @@
   line-height: normal;
   color: var(--color-black);
 
-  @include px390 {
+  @include min-xxs {
     font-size: 16px;
   }
 
-  @include px769 {
+  @include min-md {
     font-size: 18px;
   }
 
-  @include px1025 {
+  @include min-lg {
     font-size: 20px;
   }
 }
@@ -100,7 +100,7 @@
   cursor: pointer;
   user-select: none;
 
-  @include px1025 {
+  @include min-lg {
     width: 24px;
     height: 24px;
   }
@@ -121,7 +121,7 @@
 .cart-item__specification-row {
   display: flex;
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 4px;
   }
 }
@@ -132,11 +132,11 @@
   line-height: normal;
   color: var(--color-black);
 
-  @include px550 {
+  @include min-sm {
     font-size: 13px;
   }
 
-  @include px769 {
+  @include min-md {
     font-size: 14px;
   }
 }
@@ -148,11 +148,11 @@
   line-height: normal;
   color: var(--color-scorpion);
 
-  @include px550 {
+  @include min-sm {
     font-size: 13px;
   }
 
-  @include px769 {
+  @include min-md {
     font-size: 14px;
   }
 }
@@ -162,22 +162,22 @@
   min-width: 90px;
   max-width: 90px;
 
-  @include px390 {
+  @include min-xxs {
     min-width: 105px;
     max-width: 105px;
   }
 
-  @include px550 {
+  @include min-sm {
     padding: 8px 30px;
     min-width: 115px;
     max-width: 115px;
   }
 
-  @include px769 {
+  @include min-md {
     font-size: 14px;
   }
 
-  @include px1025 {
+  @include min-lg {
     padding: 12px 33px;
     min-width: 126px;
     max-width: 126px;
@@ -189,11 +189,11 @@
   width: 30px;
   height: 100%;
 
-  @include px550 {
+  @include min-sm {
     width: 35px;
   }
 
-  @include px1025 {
+  @include min-lg {
     width: 40px;
   }
 }

@@ -1,12 +1,12 @@
 .catalog__container {
-  @include px1025 {
+  @include min-lg {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
 .catalog__cards {
-  @include px1025 {
+  @include min-lg {
     flex-basis: 925px;
   }
 }
@@ -24,17 +24,17 @@
   transform: translate(0, 100%);
   transition: transform 0.3s ease-in-out;
 
-  @include px426 {
+  @include min-xs {
     left: 50%;
     width: 295px;
     transform: translate(-50%, 100%);
   }
 
-  @include px769 {
+  @include min-md {
     width: 395px;
   }
 
-  @include px1025 {
+  @include min-lg {
     position: static;
     z-index: 0;
     flex-shrink: 0;
@@ -50,7 +50,7 @@
 .catalog__filters--active {
   transform: translateY(0);
 
-  @include px426 {
+  @include min-xs {
     transform: translate(-50%, 0);
   }
 }

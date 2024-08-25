@@ -68,7 +68,7 @@
   margin-right: -8px;
   margin-bottom: -8px;
 
-  @include px1025 {
+  @include min-lg {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;

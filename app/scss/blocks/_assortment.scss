@@ -12,26 +12,26 @@
     height: 1px;
     background-color: var(--color-alto);
 
-    @include px426 {
+    @include min-xs {
       left: 45px;
       right: 45px;
     }
 
-    @include px769 {
+    @include min-md {
       left: 15px;
       right: 15px;
     }
   }
 
-  @include px426 {
+  @include min-xs {
     padding-bottom: 40px;
   }
 
-  @include px769 {
+  @include min-md {
     padding-bottom: 40px;
   }
 
-  @include px1025 {
+  @include min-lg {
     padding-bottom: 64px;
   }
 }
@@ -39,7 +39,7 @@
 .assortment__title {
   margin-bottom: 32px;
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 55px;
   }
 }
@@ -47,7 +47,7 @@
 .assortment__slider {
   margin-bottom: 24px;
 
-  @include px550 {
+  @include min-sm {
     margin-bottom: 36px;
   }
 }
@@ -61,19 +61,19 @@
 }
 
 .assortment__slider .splide__track .splide__slide {
-  @include px1025 {
+  @include min-lg {
     flex-basis: calc((100% - 20px * 3) / 4);
   }
 }
 
 .assortment__slider .splide__track .splide__slide:not(:last-child) {
-  @include px1025 {
+  @include min-lg {
     margin-right: 20px;
   }
 }
 
 .assortment__button {
-  @include px550 {
+  @include min-sm {
     display: block;
     margin-right: auto;
     margin-left: auto;

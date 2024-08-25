@@ -8,7 +8,7 @@
   padding: 24px;
   background-color: var(--color-white);
 
-  @include px1025 {
+  @include min-lg {
     padding: 32px;
   }
 }
@@ -35,7 +35,7 @@
     @include outline;
   }
 
-  @include px1025 {
+  @include min-lg {
     display: block;
 
     @include hover {
@@ -57,7 +57,7 @@
   line-height: 22px;
   color: var(--color-black);
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 12px;
     font-size: 20px;
   }
@@ -79,7 +79,7 @@
     background-size: 24px 24px;
     background-repeat: no-repeat;
 
-    @include px1025 {
+    @include min-lg {
       width: 24px;
       height: 24px;
     }
@@ -93,7 +93,7 @@
   line-height: 20px;
   color: var(--color-scorpion);
 
-  @include px1025 {
+  @include min-lg {
     font-size: 16px;
     line-height: 22px;
   }
@@ -113,7 +113,7 @@
 .review__rating {
   margin-bottom: 15px;
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 19px;
   }
 }
@@ -122,12 +122,12 @@
   width: 19px;
   height: 19px;
 
-  @include px769 {
+  @include min-md {
     width: 21px;
     height: 21px;
   }
 
-  @include px1025 {
+  @include min-lg {
     width: 23px;
     height: 23px;
   }

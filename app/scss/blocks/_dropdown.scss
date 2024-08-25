@@ -22,14 +22,14 @@
     background-repeat: no-repeat;
     transition: transform 0.3s ease-in-out;
 
-    @include px769 {
+    @include min-md {
       width: 20px;
       height: 20px;
       background-size: 16px 16px;
     }
   }
 
-  @include px769 {
+  @include min-md {
     padding: 0 20px 0 0;
   }
 }
@@ -50,7 +50,7 @@
   text-align: left;
   background-color: unset;
 
-  @include px769 {
+  @include min-md {
     position: absolute;
     padding: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 20%);
@@ -85,7 +85,7 @@
     text-decoration: underline;
   }
 
-  @include px769 {
+  @include min-md {
     font-weight: 400;
     font-size: 16px;
   }

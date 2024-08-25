@@ -10,7 +10,7 @@
   width: 100%;
   background-color: var(--color-white);
 
-  @include px769 {
+  @include min-md {
     display: none;
   }
 }
@@ -31,7 +31,7 @@
   padding: 0 20px 20px;
   height: calc(100% - 84px);
 
-  @include px769 {
+  @include min-md {
     position: static;
     flex-flow: row wrap;
     overflow-y: unset;
@@ -45,7 +45,7 @@
 .site-navigation__item {
   margin-bottom: 20px;
 
-  @include px769 {
+  @include min-md {
     margin-right: 24px;
     margin-bottom: 10px;
   }
@@ -67,7 +67,7 @@
     text-decoration: underline;
   }
 
-  @include px769 {
+  @include min-md {
     font-weight: 400;
     font-size: 16px;
   }
@@ -118,7 +118,7 @@
   background-color: transparent;
   cursor: pointer;
 
-  @include px769 {
+  @include min-md {
     display: none;
   }
 }

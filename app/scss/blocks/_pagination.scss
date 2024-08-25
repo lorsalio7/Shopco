@@ -35,7 +35,7 @@
     @include outline-inner;
   }
 
-  @include px390 {
+  @include min-xxs {
     padding: 7px 13px;
   }
 
@@ -55,7 +55,7 @@
   opacity: 0.5;
   cursor: default;
 
-  @include px390 {
+  @include min-xxs {
     padding: 7px 13px;
   }
 
@@ -74,7 +74,7 @@
   height: 16px;
   object-fit: contain;
 
-  @include px1025 {
+  @include min-lg {
     width: 20px;
     height: 20px;
   }
@@ -88,11 +88,11 @@
   color: var(--color-black);
   user-select: none;
 
-  @include px390 {
+  @include min-xxs {
     display: block;
   }
 
-  @include px1025 {
+  @include min-lg {
     font-size: 14px;
   }
 }
@@ -116,7 +116,7 @@
 .pagination__item--hidden {
   display: none;
 
-  @include px769 {
+  @include min-md {
     display: list-item;
   }
 }
@@ -147,7 +147,7 @@
     background-color: var(--color-gallery);
   }
 
-  @include px1025 {
+  @include min-lg {
     width: 40px;
     height: 40px;
     font-size: 14px;

@@ -5,7 +5,7 @@
   font-size: 20px;
   color: var(--color-black);
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 28px;
     font-size: 24px;
   }
@@ -14,11 +14,11 @@
 .cart-info-form__order-info {
   margin-bottom: 16px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 20px;
   }
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 24px;
   }
 }
@@ -27,7 +27,7 @@
   display: flex;
   margin-bottom: 16px;
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 24px;
   }
 }

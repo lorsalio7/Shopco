@@ -7,15 +7,15 @@
   text-transform: uppercase;
   color: var(--color-black);
 
-  @include px550 {
+  @include min-sm {
     font-size: 36px;
   }
 
-  @include px769 {
+  @include min-md {
     font-size: 42px;
   }
 
-  @include px1025 {
+  @include min-lg {
     font-size: 42px;
   }
 }

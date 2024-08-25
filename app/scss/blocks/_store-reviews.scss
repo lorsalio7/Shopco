@@ -4,7 +4,7 @@
   justify-content: space-between;
   margin-bottom: 24px;
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 40px;
   }
 }

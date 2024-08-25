@@ -30,7 +30,7 @@
     background: linear-gradient(to left, var(--color-black) 0%, transparent 100%);
   }
 
-  @include px769 {
+  @include min-md {
     padding: 48px 0;
   }
 }
@@ -47,7 +47,7 @@
   max-height: 26px;
   object-fit: contain;
 
-  @include px769 {
+  @include min-md {
     max-height: 38px;
   }
 }

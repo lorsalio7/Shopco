@@ -2,7 +2,7 @@
   padding-top: 32px;
   background-color: var(--color-gallery);
 
-  @include px1025 {
+  @include min-lg {
     padding-top: 50px;
   }
 }
@@ -10,33 +10,33 @@
 .site-footer__container {
   padding-bottom: 40px;
 
-  @include px426 {
+  @include min-xs {
     padding: 0 45px 40px;
   }
 
-  @include px769 {
+  @include min-md {
     display: flex;
     padding: 0 15px 40px;
   }
 
-  @include px1025 {
+  @include min-lg {
     justify-content: space-between;
     padding: 0 15px 50px;
   }
 }
 
 .site-footer__extra {
-  @include px550 {
+  @include min-sm {
     max-width: 280px;
   }
 
-  @include px769 {
+  @include min-md {
     flex-basis: 33.33%;
     margin-right: 16px;
     max-width: none;
   }
 
-  @include px1025 {
+  @include min-lg {
     flex-basis: 20%;
   }
 }
@@ -44,7 +44,7 @@
 .site-footer__logo {
   margin-bottom: 14px;
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 25px;
   }
 }
@@ -57,7 +57,7 @@
   line-height: 20px;
   color: var(--color-scorpion);
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 35px;
     line-height: 22px;
   }
@@ -66,7 +66,7 @@
 .site-footer__socials {
   margin-bottom: 24px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 0;
   }
 }
@@ -74,11 +74,11 @@
 .site-footer__store-navigation {
   margin-right: -16px;
 
-  @include px769 {
+  @include min-md {
     flex-basis: 66.67%;
   }
 
-  @include px1025 {
+  @include min-lg {
     flex-basis: 71%;
   }
 }
@@ -91,7 +91,7 @@
   padding: 16px 0 77px;
   width: 100%;
 
-  @include px769 {
+  @include min-md {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -108,7 +108,7 @@
   text-align: center;
   color: var(--color-scorpion);
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 0;
   }
 }

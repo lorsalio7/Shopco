@@ -3,11 +3,11 @@
   padding: 40px 16px 19px;
   background-color: var(--color-gallery);
 
-  @include px769 {
+  @include min-md {
     border-radius: 30px;
   }
 
-  @include px1025 {
+  @include min-lg {
     border-radius: 40px;
     padding: 70px 64px 66px;
   }
@@ -16,7 +16,7 @@
 .dress-style__title {
   margin-bottom: 28px;
 
-  @include px1025 {
+  @include min-lg {
     margin-bottom: 64px;
   }
 }
@@ -28,7 +28,7 @@
   margin: 0;
   padding: 0;
 
-  @include px1025 {
+  @include min-lg {
     margin-right: -20px;
     margin-bottom: -20px;
   }
@@ -38,12 +38,12 @@
   flex: 1 1 100%;
   margin: 8px;
 
-  @include px769 {
+  @include min-md {
     flex: 0 0 calc((100% - 20px * 2) / 2);
     margin: 10px;
   }
 
-  @include px1025 {
+  @include min-lg {
     flex: 1 0 calc((100% - 37.79%) - 20px);
     margin: 0;
     margin-right: 20px;
@@ -52,7 +52,7 @@
 }
 
 .dress-style__item--small {
-  @include px1025 {
+  @include min-lg {
     flex: 1 0 calc((100% - 62.21%) - 20px);
   }
 }
@@ -85,13 +85,13 @@
   color: var(--color-black);
   background-color: var(--color-white);
 
-  @include px769 {
+  @include min-md {
     left: 26px;
     top: 20px;
     font-size: 30px;
   }
 
-  @include px1025 {
+  @include min-lg {
     left: 36px;
     top: 25px;
     font-size: 36px;
@@ -104,11 +104,11 @@
   height: 190px;
   object-fit: cover;
 
-  @include px769 {
+  @include min-md {
     height: 240px;
   }
 
-  @include px1025 {
+  @include min-lg {
     height: 289px;
   }
 }
