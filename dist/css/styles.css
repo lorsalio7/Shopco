@@ -4919,7 +4919,6 @@ body {
 
   .catalog__filters {
     position: static;
-    z-index: 0;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     -ms-flex-preferred-size: 295px;
