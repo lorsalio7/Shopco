@@ -4918,7 +4918,12 @@ body {
   }
 
   .catalog__filters {
-    position: static;
+    position: relative;
+    left: unset;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    z-index: var(--z-index-default);
     -ms-flex-negative: 0;
         flex-shrink: 0;
     -ms-flex-preferred-size: 295px;

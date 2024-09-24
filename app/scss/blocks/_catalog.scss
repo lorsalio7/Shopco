@@ -35,7 +35,12 @@
   }
 
   @include min-lg {
-    position: static;
+    position: relative;
+    left: unset;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    z-index: var(--z-index-default);
     flex-shrink: 0;
     flex-basis: 295px;
     align-self: flex-start;
