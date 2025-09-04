@@ -1463,19 +1463,7 @@ body {
 }
 
 .subscribe {
-  position: relative;
-}
-
-.subscribe::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  z-index: -1;
-  width: 100%;
-  height: 50%;
-  background-color: var(--color-gallery);
+  background: linear-gradient(0deg, var(--color-gallery) 50%, var(--color-white) calc(50% + 1px));
 }
 
 .subscribe__container {
