@@ -1,4 +1,4 @@
-document.addEventListener( 'DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   let newArrivalsSlider = document.querySelector(".new-arrivals-slider");
   let topSellingSlider = document.querySelector(".top-selling-slider");
   let storeReviewsSlider = document.querySelector(".store-reviews-slider");
@@ -6,7 +6,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
   let productCardSliderThumbs = document.querySelector(".card-thumbs-slider");
   let seeAlsoSlider = document.querySelector(".see-also-slider");
 
-  if(newArrivalsSlider) {
+  if (newArrivalsSlider) {
     new Splide(newArrivalsSlider, {
       perMove: 1,
       padding: {
@@ -41,7 +41,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
     }).mount();
   }
 
-  if(topSellingSlider) {
+  if (topSellingSlider) {
     new Splide(topSellingSlider, {
       perMove: 1,
       padding: {
@@ -76,7 +76,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
     }).mount();
   }
 
-  if(storeReviewsSlider) {
+  if (storeReviewsSlider) {
     let storeReviewsSliderPrevButton = document.querySelector(".store-reviews__left-button");
     let storeReviewsSliderNextButton = document.querySelector(".store-reviews__right-button");
     storeReviewsSlider = new Splide(storeReviewsSlider, {
@@ -108,7 +108,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
     });
   }
 
-  if(productCardSlider) {
+  if (productCardSlider) {
     productCardSlider = new Splide(productCardSlider, {
       mediaQuery: 'min',
       gap: 30,
@@ -151,7 +151,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
     productCardSlider.sync(productCardSliderThumbs);
   }
 
-  if(seeAlsoSlider) {
+  if (seeAlsoSlider) {
     new Splide(seeAlsoSlider, {
       perMove: 1,
       padding: {

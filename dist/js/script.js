@@ -240,7 +240,7 @@ if (openProductSearchButton) {
   openProductSearchButton.addEventListener("click", openProductSearch);
   closeProductSearchButton.addEventListener("click", closeProductSearch);
   bigWidthScreen.onchange = function (e) {
-    changeView(e.matches, closeProductSearch());
+    changeView(e.matches, closeProductSearch);
   };
 }
 ;

@@ -1,6 +1,6 @@
 let openProductSearchButton = document.querySelector(".user-navigation__open-search-button");
 
-if(openProductSearchButton) {
+if (openProductSearchButton) {
   let bigWidthScreen = window.matchMedia("(min-width: 1025px)");
   let productSearchWindow = document.querySelector(".site-header__product-search");
   let closeProductSearchButton = productSearchWindow.querySelector(".product-search__close-button");
@@ -16,7 +16,7 @@ if(openProductSearchButton) {
     scrollController.disabledScroll(".fixed-element");
 
     window.addEventListener("keydown", (e) => {
-      if(e.keyCode === 27 && productSearchWindow.classList.contains("site-header__product-search--active")) {
+      if (e.keyCode === 27 && productSearchWindow.classList.contains("site-header__product-search--active")) {
         closeProductSearch();
       };
     })
@@ -33,6 +33,6 @@ if(openProductSearchButton) {
   }
 
   bigWidthScreen.onchange = (e) => {
-    changeView(e.matches, closeProductSearch());
+    changeView(e.matches, closeProductSearch);
   }
 }
