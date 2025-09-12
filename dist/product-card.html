@@ -18,83 +18,85 @@
   <body class="page__body full-height">
     <div class="wrapper">
       <header class="site-header fixed-element">
-        <div class="quick-registration">
-          <div class="quick-registration__container container">
-            <p class="quick-registration__text">Sign up and get 20% off to your first order.<a class="quick-registration__link" href="#">Sign Up Now</a></p>
-            <button class="quick-registration__close-button close-button" type="button" aria-label="Close offer content">
-              <svg class="close-button__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#close-ic"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="site-header__container">
-          <div class="container">
-            <button class="site-header__burger-button burger-button" type="button" aria-label="Open site navigation">
-              <svg width="24" height="24" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#burger-ic"></use>
-              </svg>
-            </button><a class="site-header__logo logo" href="#"><img class="logo__image" src="img/site-logo.svg" width="122" height="18" alt="Logo Shop.co"></a>
-            <nav class="site-header__site-navigation site-navigation">
-              <div class="site-navigation__top">
-                <button class="site-navigation__close-button" type="button" aria-label="Close site navigation">
-                  <svg width="20" height="20" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#close-ic"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="site-navigation__list">
-                <div class="site-navigation__item dropdown">
-                  <button class="site-navigation__link dropdown__toggle" type="button">Shop</button>
-                  <ul class="dropdown__list">
-                    <li class="dropdown__item"><a class="dropdown__link" href="#">Shirts</a></li>
-                    <li class="dropdown__item"><a class="dropdown__link" href="#">Jeans</a></li>
-                    <li class="dropdown__item"><a class="dropdown__link" href="#">T-shirts</a></li>
-                    <li class="dropdown__item"><a class="dropdown__link" href="#">Shorts</a></li>
-                    <li class="dropdown__item"><a class="dropdown__link" href="#">Hoodie</a></li>
-                  </ul>
-                </div>
-                <div class="site-navigation__item"><a class="site-navigation__link" href="#">On Sale</a></div>
-                <div class="site-navigation__item"><a class="site-navigation__link" href="#">New Arrivals</a></div>
-                <div class="site-navigation__item"><a class="site-navigation__link" href="#">Brands</a></div>
-              </div>
-            </nav>
-            <div class="site-header__product-search product-search">
-              <button class="product-search__close-button" type="button" aria-label="Close search">
-                <svg width="20" height="20">
+        <div class="site-header__wrapper">
+          <div class="quick-registration">
+            <div class="quick-registration__container container">
+              <p class="quick-registration__text">Sign up and get 20% off to your first order.<a class="quick-registration__link" href="#">Sign Up Now</a></p>
+              <button class="quick-registration__close-button close-button" type="button" aria-label="Close offer content">
+                <svg class="close-button__icon" width="20" height="20">
                   <use xlink:href="img/sprite.svg#close-ic"></use>
                 </svg>
               </button>
-              <form class="product-search__form" action="#" method="GET">
-                <label class="visually-hidden" for="product-search-input">Search for products</label>
-                <div class="product-search__wrapper">
-                  <input class="product-search__input input" type="text" placeholder="Search for products..." id="product-search-input">
-                  <button class="product-search__button" type="submit" aria-label="Search">
-                    <svg width="24" height="24">
-                      <use xlink:href="img/sprite.svg#search-ic"></use>
+            </div>
+          </div>
+          <div class="site-header__container">
+            <div class="container">
+              <button class="site-header__burger-button burger-button" type="button" aria-label="Open site navigation">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#burger-ic"></use>
+                </svg>
+              </button><a class="site-header__logo logo" href="#"><img class="logo__image" src="img/site-logo.svg" width="122" height="18" alt="Logo Shop.co"></a>
+              <nav class="site-header__site-navigation site-navigation">
+                <div class="site-navigation__top">
+                  <button class="site-navigation__close-button" type="button" aria-label="Close site navigation">
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#close-ic"></use>
                     </svg>
                   </button>
                 </div>
-              </form>
+                <div class="site-navigation__list">
+                  <div class="site-navigation__item dropdown">
+                    <button class="site-navigation__link dropdown__toggle" type="button">Shop</button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__item"><a class="dropdown__link" href="#">Shirts</a></li>
+                      <li class="dropdown__item"><a class="dropdown__link" href="#">Jeans</a></li>
+                      <li class="dropdown__item"><a class="dropdown__link" href="#">T-shirts</a></li>
+                      <li class="dropdown__item"><a class="dropdown__link" href="#">Shorts</a></li>
+                      <li class="dropdown__item"><a class="dropdown__link" href="#">Hoodie</a></li>
+                    </ul>
+                  </div>
+                  <div class="site-navigation__item"><a class="site-navigation__link" href="#">On Sale</a></div>
+                  <div class="site-navigation__item"><a class="site-navigation__link" href="#">New Arrivals</a></div>
+                  <div class="site-navigation__item"><a class="site-navigation__link" href="#">Brands</a></div>
+                </div>
+              </nav>
+              <div class="site-header__product-search product-search">
+                <button class="product-search__close-button" type="button" aria-label="Close search">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#close-ic"></use>
+                  </svg>
+                </button>
+                <form class="product-search__form" action="#" method="GET">
+                  <label class="visually-hidden" for="product-search-input">Search for products</label>
+                  <div class="product-search__wrapper">
+                    <input class="product-search__input input" type="text" placeholder="Search for products..." id="product-search-input">
+                    <button class="product-search__button" type="submit" aria-label="Search">
+                      <svg width="24" height="24">
+                        <use xlink:href="img/sprite.svg#search-ic"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="user-navigation">
+                <button class="user-navigation__open-search-button user-navigation__item" type="button" aria-label="Open search products">
+                  <svg width="24" height="24">
+                    <use xlink:href="img/sprite.svg#search-ic"></use>
+                  </svg>
+                </button><a class="user-navigation__item" href="#" aria-label="Cart">
+                  <svg width="24" height="24">
+                    <use xlink:href="img/sprite.svg#cart-ic"></use>
+                  </svg></a><a class="user-navigation__item" href="#" aria-label="User account">
+                  <svg width="24" height="24">
+                    <use xlink:href="img/sprite.svg#user-accaunt-ic"></use>
+                  </svg></a>
+              </div><span class="site-header__overlay"></span>
             </div>
-            <div class="user-navigation">
-              <button class="user-navigation__open-search-button user-navigation__item" type="button" aria-label="Open search products">
-                <svg width="24" height="24">
-                  <use xlink:href="img/sprite.svg#search-ic"></use>
-                </svg>
-              </button><a class="user-navigation__item" href="#" aria-label="Cart">
-                <svg width="24" height="24">
-                  <use xlink:href="img/sprite.svg#cart-ic"></use>
-                </svg></a><a class="user-navigation__item" href="#" aria-label="User account">
-                <svg width="24" height="24">
-                  <use xlink:href="img/sprite.svg#user-accaunt-ic"></use>
-                </svg></a>
-            </div><span class="site-header__overlay"></span>
           </div>
         </div>
       </header>
-      <main class="page__main main">
-        <div class="breadcrumbs">
+      <main class="page__main main" style="--header-height-mobile: 88px;--header-height-tablet: 92px;--header-height-desktop: 134px;">
+        <div class="breadcrumbs site-header-offset">
           <div class="container">
             <ul class="breadcrumbs__list">
               <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a>
@@ -569,7 +571,7 @@
             </div>
           </div>
         </div>
-      </footer><span class="overlay"></span>
+      </footer><span class="overlay fixed-element"></span>
     </div>
     <script src="libs/js/splide.min.js" defer></script>
     <script src="libs/js/focus-visible.min.js" defer></script>

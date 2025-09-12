@@ -9,7 +9,15 @@
   text-align: center;
   color: #fff;
   background-color: var(--color-white);
+}
+
+.site-header__wrapper {
   transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0);
+}
+
+.site-header--drop-shadow .site-header__wrapper {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .site-header__container {

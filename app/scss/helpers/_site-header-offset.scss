@@ -1,0 +1,11 @@
+.site-header-offset {
+  padding-top: var(--header-height-mobile);
+
+  @include min-md {
+    padding-top: var(--header-height-tablet);
+  }
+
+  @include min-lg {
+    padding-top: var(--header-height-desktop);
+  }
+}

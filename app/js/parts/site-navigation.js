@@ -1,6 +1,6 @@
 let burgerButton = document.querySelector(".burger-button");
 
-if(burgerButton) {
+if (burgerButton) {
   let siteNavigation = document.querySelector(".site-header__site-navigation");
   let changeViewWidth = window.matchMedia("(min-width: 769px)");
   let closeSiteNavButton = siteNavigation.querySelector(".site-navigation__close-button");
@@ -16,7 +16,7 @@ if(burgerButton) {
     scrollController.disabledScroll(".fixed-element");
 
     window.addEventListener("keydown", (e) => {
-      if(e.keyCode === 27 && siteNavigation.classList.contains("site-header__site-navigation--active")) {
+      if (e.keyCode === 27 && siteNavigation.classList.contains("site-header__site-navigation--active")) {
         closeSiteMenu();
       }
     });
@@ -37,6 +37,6 @@ if(burgerButton) {
 
 
   changeViewWidth.onchange = (e) => {
-    changeView(e.matches, closeSiteMenu());
+    changeView(e.matches, closeSiteMenu);
   }
 }

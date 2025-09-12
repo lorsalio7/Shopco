@@ -49,19 +49,21 @@ if (checkIsIOS()) {
   disableIosTextFieldZoom();
 }
 ;
-// Проверка на десктоп сафари
+// ===========================   Фикс скачка браузерного скролла и плавной прокрутки   ==========================================
 
 var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 var isDesktopSafari = isSafari && !navigator.userAgent.match(/Mobile/);
-;
-// =========================== Фикс скачка браузерного скролла и плавной прокрутки обязательно подключить isSafari.js ==========================================
-
 var scrollController = {
   scrollPosition: 0,
   disabledScroll: function disabledScroll(fixedElement) {
+    var scrollBarWidth = window.innerWidth - document.body.offsetWidth;
+
+    // записываем в html css-переменную
+    document.documentElement.style.setProperty("--scroll-width", "".concat(scrollBarWidth, "px"));
     if (isDesktopSafari) {
       scrollController.scrollPosition = window.scrollY;
-      document.body.style.cssText = "\n        overflow-y: scroll;\n        position: fixed;\n        top: -".concat(scrollController.scrollPosition, "px;\n        left: 0;\n        height: 100vh;\n        width: 100vw;\n        padding-right: ").concat(parseInt(window.innerWidth - document.body.offsetWidth), "px;\n      ");
+      document.body.style.cssText = "\n        overflow-y: scroll;\n        position: fixed;\n        top: -".concat(scrollController.scrollPosition, "px;\n        left: 0;\n        height: 100vh;\n        width: 100vw;\n        padding-right: ").concat(scrollBarWidth, "px;\n      ");
+      document.documentElement.classList.add("no-scroll");
       document.documentElement.style.scrollBehavior = "unset";
     } else {
       if (fixedElement) {
@@ -71,11 +73,14 @@ var scrollController = {
         });
       }
       scrollController.scrollPosition = window.scrollY;
-      document.body.style.cssText = "\n        overflow: hidden;\n        position: fixed;\n        top: -".concat(scrollController.scrollPosition, "px;\n        left: 0;\n        height: 100vh;\n        width: 100vw;\n        padding-right: ").concat(parseInt(window.innerWidth - document.body.offsetWidth), "px;\n      ");
+      document.body.style.cssText = "\n        overflow: hidden;\n        position: fixed;\n        top: -".concat(scrollController.scrollPosition, "px;\n        left: 0;\n        height: 100vh;\n        width: 100vw;\n        padding-right: ").concat(scrollBarWidth, "px;\n      ");
+      document.documentElement.classList.add("no-scroll");
       document.documentElement.style.scrollBehavior = "unset";
     }
   },
   enabledScroll: function enabledScroll(fixedElement) {
+    // убираем переменную, если не нужна
+    document.documentElement.style.removeProperty("--scroll-width");
     if (isDesktopSafari) {
       document.body.style.cssText = "";
       window.scroll({
@@ -86,13 +91,15 @@ var scrollController = {
       if (fixedElement) {
         var fixedElements = document.querySelectorAll(fixedElement);
         fixedElements.forEach(function (element) {
-          element.style.paddingRight = "0";
+          // element.style.paddingRight = "0";
+          element.removeAttribute("style");
         });
       }
       document.body.style.cssText = "";
       window.scroll({
         top: scrollController.scrollPosition
       });
+      document.documentElement.classList.remove("no-scroll");
       document.documentElement.style.scrollBehavior = "";
     }
   }
@@ -109,29 +116,29 @@ function changeView(width, function_name) {
 var siteHeader = document.querySelector(".site-header");
 var siteMain = document.querySelector(".main");
 var quickRegistrationButton = siteHeader.querySelector(".quick-registration__close-button");
-function updateMarginTop() {
-  siteMain.style.marginTop = siteHeader.offsetHeight + "px";
-}
-window.addEventListener("load", updateMarginTop);
-window.addEventListener("resize", debounce(function () {
-  updateMarginTop();
-}, 200));
-window.addEventListener("scroll", debounce(addShadow, 150));
-function addShadow() {
-  var offsetTop = window.pageYOffset;
-  if (offsetTop > 0) {
-    siteHeader.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
-  } else {
-    siteHeader.style.boxShadow = "0 2px 6px rgba(0,0,0,0)";
-  }
-}
 if (quickRegistrationButton) {
   var quickRegistration = document.querySelector(".quick-registration");
   quickRegistrationButton.addEventListener("click", function () {
     quickRegistration.style.display = "none";
-    updateMarginTop();
   });
 }
+window.addEventListener("scroll", debounce(addShadow, 150));
+function addShadow() {
+  var offsetTop;
+  if (document.documentElement.classList.contains("no-scroll")) {
+    // Используем сохраненную позицию во время no-scroll, чтобы обойти обнуление
+    offsetTop = scrollController.scrollPosition;
+  } else {
+    // Обычный режим: используем реальную прокрутку
+    offsetTop = window.pageYOffset || window.scrollY;
+  }
+  if (offsetTop > 0) {
+    siteHeader.classList.add("site-header--drop-shadow");
+  } else {
+    siteHeader.classList.remove("site-header--drop-shadow");
+  }
+}
+addShadow();
 ;
 var burgerButton = document.querySelector(".burger-button");
 if (burgerButton) {
@@ -165,7 +172,7 @@ if (burgerButton) {
   burgerButton.addEventListener("click", openSiteMenu);
   closeSiteNavButton.addEventListener("click", closeSiteMenu);
   changeViewWidth.onchange = function (e) {
-    changeView(e.matches, closeSiteMenu());
+    changeView(e.matches, closeSiteMenu);
   };
 }
 ;
